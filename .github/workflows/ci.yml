@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate curriculum content
+        run: npm run content:validate
+      - name: Check curriculum coverage
+        run: npm run content:coverage
+      - name: Check source registry
+        run: npm run content:sources
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm run test
+      - name: Test desktop protocol boundaries
+        run: npm run desktop:test
+      - name: Build
+        run: npm run build
+      - name: Export desktop static assets
+        run: npm run desktop:build

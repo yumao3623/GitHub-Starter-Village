@@ -1,0 +1,62 @@
+{
+  "name": "github-starter-village",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A game-based Chinese learning project for GitHub beginners.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "desktop:build": "node scripts/build-desktop.mjs",
+    "desktop:open": "electron desktop/main.mjs",
+    "desktop:package": "node scripts/package-desktop.mjs",
+    "desktop:package:windows": "node scripts/package-desktop.mjs win32",
+    "desktop:test": "node --test tests/desktop/*.test.mjs",
+    "desktop:verify": "node scripts/verify-desktop.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:phase-a": "playwright test tests/e2e/adventure.spec.ts",
+    "content:validate": "node --import tsx scripts/validate-content.ts",
+    "content:coverage": "node --import tsx scripts/generate-coverage-report.ts",
+    "content:sources": "node --import tsx scripts/check-source-links.ts",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "next": "16.3.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tailwind-merge": "^3.4.0",
+    "zod": "4.6.1"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "electron": "44.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.4",
+    "jsdom": "^27.2.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "5.0.0"
+  }
+}

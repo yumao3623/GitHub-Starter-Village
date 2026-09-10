@@ -1,0 +1,31 @@
+name: Content correction
+description: 报告术语、翻译、按钮名称或安全说明问题
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: 术语或章节
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 当前内容与问题
+    validations:
+      required: true
+  - type: input
+    id: official_source
+    attributes:
+      label: 官方来源 URL
+      description: 优先 GitHub Docs、Git、Node.js 或 npm 官方文档。
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: 核验日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

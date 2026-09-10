@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { brandConfig } from "@/config/brand";
+
+export const metadata: Metadata = { title: "关于项目" };
+export default function AboutPage() { return <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16"><h1 className="text-4xl font-black tracking-tight">关于 {brandConfig.chineseName}</h1><p className="mt-5 text-lg leading-8 text-muted-foreground">这是一个帮助中文初学者完成真实 GitHub 入门闭环的开源项目。内容以 GitHub、Git、Node.js 和 npm 官方文档为优先依据，游戏剧情和 nightwalk-map 仓库均为原创教学场景。</p><section className="mt-10 rounded-2xl border bg-surface p-6"><h2 className="text-2xl font-bold">独立项目声明</h2><p className="mt-4 leading-8">{brandConfig.disclaimer}</p></section><section className="mt-10"><h2 className="text-2xl font-bold">隐私与安全</h2><p className="mt-4 leading-8 text-muted-foreground">项目不接 GitHub OAuth，不调用 GitHub API，不创建账号系统，不收集个人信息。学习进度只保存在浏览器 localStorage。真实操作由用户在 GitHub 官方产品中完成并自我检查。</p></section><section className="mt-10"><h2 className="text-2xl font-bold">内容纠错</h2><p className="mt-4 leading-8 text-muted-foreground">GitHub 界面会变化。发现术语、按钮或安全说明过期时，请使用 Content correction Issue 模板，并附官方来源和核验日期。</p><div className="mt-5 flex flex-wrap gap-5"><Link href="/glossary">查看词典</Link><Link href="/sponsor">支持项目</Link></div></section></div>; }

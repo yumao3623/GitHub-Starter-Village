@@ -1,0 +1,13 @@
+{
+  "appId": "org.startervillage.learning",
+  "executableName": "GitHubStarterVillage",
+  "displayName": "GitHub 新手村",
+  "entryPath": "/adventure/",
+  "scheme": "village",
+  "host": "app",
+  "externalHosts": ["github.com", "docs.github.com", "desktop.github.com", "git-scm.com", "nodejs.org", "docs.npmjs.com"],
+  "width": 1440,
+  "height": 940,
+  "minWidth": 1024,
+  "minHeight": 720
+}
