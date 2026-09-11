@@ -1,6 +1,6 @@
 {
   "status": "published",
-  "releaseTag": "v0.1.2",
+  "releaseTag": "v0.1.3",
   "targets": [
     { "platform": "darwin", "arch": "arm64", "label": "macOS · Apple 芯片", "public": true },
     { "platform": "win32", "arch": "x64", "label": "Windows · x64", "public": false },

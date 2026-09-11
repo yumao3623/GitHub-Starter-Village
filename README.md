@@ -11,15 +11,15 @@
 <!-- BEGIN GENERATED DOWNLOADS -->
 ## 下载桌面应用
 
-- [下载 macOS · Apple 芯片](https://github.com/yumao3623/GitHub-Starter-Village/releases/download/v0.1.2/GitHubStarterVillage-0.1.0-darwin-arm64.zip)；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
+- [下载 macOS · Apple 芯片](https://github.com/yumao3623/GitHub-Starter-Village/releases/download/v0.1.3/GitHubStarterVillage-0.1.0-darwin-arm64.zip)；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
 - Windows · x64：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-win32-x64.zip`
 - macOS · Intel（实验构建）：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-x64.zip`
 
-[版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.2)
+[版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.3)
 
 成品包自带运行环境，不需要安装 Node.js、npm 或 Git。下载后完整解压，再打开应用（保留 Windows 解压文件夹内的运行时文件）。
 
-当前 macOS 包使用本机临时签名，尚未经过 Apple 公证。首次打开可能提示“Apple 无法验证”。确认下载自本项目 Release 且文件未遭篡改后，点“完成”，进入“系统设置 → 隐私与安全性 → 仍要打开”，按系统提示确认。此操作仅为该应用添加例外；不要关闭系统安全保护。
+当前 macOS 包使用本机临时签名，尚未经过 Apple 公证。首次打开可能提示“Apple 无法验证”。请先确认下载自本项目 Release 且文件未遭篡改，再按这套官方引导：1）点击警告框右上角“？”打开帮助，进入 Apple 官方提示（地址应为 support.apple.com）；2）返回警告框点“完成”；3）打开苹果菜单 → 系统设置 → 隐私与安全性，在安全性区域找到 GitHubStarterVillage，点“仍要打开”；4）再次确认点“打开”。如果系统要求，输入你自己的 Mac 登录密码；密码只在 macOS 系统设置中输入，不要发给维护者或输入游戏。不要关闭系统安全保护。
 
 [下载位置、解压和首次打开说明](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
 <!-- END GENERATED DOWNLOADS -->

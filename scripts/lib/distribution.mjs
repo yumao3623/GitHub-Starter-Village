@@ -3,7 +3,7 @@ import { createReadStream } from "node:fs";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 export const artifactName = (name, version, platform, arch) => `${name}-${version}-${platform}-${arch}.zip`;
-export const macosFirstOpenNotice = "当前 macOS 包使用本机临时签名，尚未经过 Apple 公证。首次打开可能提示“Apple 无法验证”。确认下载自本项目 Release 且文件未遭篡改后，点“完成”，进入“系统设置 → 隐私与安全性 → 仍要打开”，按系统提示确认。此操作仅为该应用添加例外；不要关闭系统安全保护。";
+export const macosFirstOpenNotice = "当前 macOS 包使用本机临时签名，尚未经过 Apple 公证。首次打开可能提示“Apple 无法验证”。请先确认下载自本项目 Release 且文件未遭篡改，再按这套官方引导：1）点击警告框右上角“？”打开帮助，进入 Apple 官方提示（地址应为 support.apple.com）；2）返回警告框点“完成”；3）打开苹果菜单 → 系统设置 → 隐私与安全性，在安全性区域找到 GitHubStarterVillage，点“仍要打开”；4）再次确认点“打开”。如果系统要求，输入你自己的 Mac 登录密码；密码只在 macOS 系统设置中输入，不要发给维护者或输入游戏。不要关闭系统安全保护。";
 export async function sha256(file) {
   const hash = createHash("sha256");
   for await (const chunk of createReadStream(file)) hash.update(chunk);
