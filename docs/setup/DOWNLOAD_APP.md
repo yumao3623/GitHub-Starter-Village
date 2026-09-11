@@ -1,18 +1,19 @@
 # 在哪里下载，下载后怎么打开
 
-**当前还没有公开桌面 Release。** README 没有可点击的占位下载链接。现在只能运行源码，或由维护者交付明确标记的内部测试包；不要在搜索引擎中找同名不明安装器。
+当前已发布 `v0.1.0` 预发布桌面包。README 的 macOS Apple 芯片按钮会直接下载成品；Windows x64 和 Intel Mac 仍在后续验收中。不要把 `Code → Download ZIP` 或 Release 附带的源码 ZIP 当成应用。
 
-公开后，推荐在电脑浏览器打开维护者提供的真实仓库地址：
+推荐在电脑浏览器打开维护者提供的真实仓库地址：
 
 ```text
 仓库首页（Repository）
   └─ 下方 README「下载桌面应用」
-       ├─ macOS · Apple 芯片：M 系列 Mac
-       ├─ Windows · x64：常见 Intel / AMD Windows 电脑
+       ├─ macOS · Apple 芯片：M 系列 Mac（当前 v0.1.0 预发布）
+       ├─ Windows · x64：后续验收
+       ├─ macOS · Intel：后续验收
        └─ 版本说明与校验值 → Release → Assets（成品文件列表）
 ```
 
-这是一张位置示意，不是 GitHub 官方界面截图。GitHub 窄窗口中 Releases 入口可能移到页面下方；README 下载区优先。Intel Mac、Windows ARM 和 Linux 只有经过实际验收并列入支持列表后才可以推荐。
+这是一张位置示意，不是 GitHub 官方界面截图。GitHub 窄窗口中 Releases 入口可能移到页面下方；README 下载区优先。Windows ARM 和 Linux 只有经过实际验收并列入支持列表后才可以推荐。
 
 ## 打开成品
 

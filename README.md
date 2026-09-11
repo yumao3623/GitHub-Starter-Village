@@ -17,7 +17,7 @@
 
 [版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.0)
 
-成品包自带运行环境，不需要安装 Node.js、npm 或 Git。公开后：按电脑类型下载 → 解压 → Mac 打开 .app，Windows 打开解压文件夹内的 .exe（保留同目录文件）。第一次打开若被系统阻止，请停止并联系维护者，不要关闭系统安全保护。
+成品包自带运行环境，不需要安装 Node.js、npm 或 Git。下载后按电脑类型解压并打开应用（保留 Windows 解压文件夹内的运行时文件）。第一次打开若被系统阻止，请停止并联系维护者，不要关闭系统安全保护。
 
 [下载位置、解压和校验图解](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
 <!-- END GENERATED DOWNLOADS -->
