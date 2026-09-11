@@ -1,12 +1,12 @@
 # GitHub 新手村
 
-> 从登录、Fork、Clone 到提交第一个 Pull Request，用一场完整的新手村冒险学会 GitHub。
+一款打开就能玩的武侠风 GitHub 学习游戏。
 
-## 武侠改版 · 阶段 D 内部候选
+如果你是从抖音链接第一次来到这里，不需要先学 Git，也不需要配置 Node.js、npm 或命令行。按下面三步即可开始：
 
-当前为内部验收候选版：入村引导 → 陆行舟 / 沈知微 / 阿团选角 → 云溪谷地图，主线包含第 0–12 章的路标、安全机关、拓印、营火、搜证、鉴宝、传书、悬赏、货运、分支、提交、评审和检查发布。完成章节后回地图揭雾、移动和领取道具。武林宝典提供分卷、术语、书签和待复习；自由探索不读写正式进度。启动开发版后访问 **http://localhost:3000/**。
+## 下载并开始
 
-真实初学者测试尚未执行（0/3），不能据此声称已验证适合小白。验收记录见 [本轮交付报告](docs/product/JOURNEY_IMPLEMENTATION_2026-09-11.md)，测试招募与观察表见 [初学者测试](docs/testing/BEGINNER_USABILITY_TEST.md)。
+### 1. 下载适合你电脑的桌面版
 
 <!-- BEGIN GENERATED DOWNLOADS -->
 ## 下载桌面应用
@@ -22,121 +22,63 @@
 [下载位置、解压和校验图解](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
 <!-- END GENERATED DOWNLOADS -->
 
-[阶段 A 的本地体验、打包和限制说明 →](docs/setup/DESKTOP_PREVIEW.md)
+当前 GitHub 仓库还没有公开桌面 Release，所以暂时不要把源码 ZIP 当成游戏安装包。Release 上传后，下载方式只有：选择电脑类型 → 下载 ZIP → 完整解压 → 打开应用。
 
-[阶段 D 实施与验收记录 →](docs/product/PHASE_D_PROGRESS.md) · [出师实战：只在自己的 Fork 创建 PR →](docs/setup/FIELD_PRACTICE.md)
+打开时遇到系统安全提示，请先停止并核对 Release 页面中的版本和 SHA-256，不要关闭系统安全保护，也不要运行来历不明的解除隔离命令。
 
-桌面包只包含应用，不会替你 Fork/Clone 源码。真实实践需另外按照下方指南取得自己的源码仓库。
+[下载位置与打开说明](docs/setup/DOWNLOAD_APP.md)
 
-## 第一次使用 GitHub？
+### 2. 打开应用
 
-# [从这里开始 →](docs/START_HERE.md)
+解压后：
 
-你不需要先会 Git，也不需要先看懂所有英文。第零章就是：在真实 GitHub 找到这个项目，把它安全地复制到自己的账号和电脑，再成功运行。
+- Mac：打开 `GitHubStarterVillage.app`；
+- Windows：打开解压文件夹中的 `GitHubStarterVillage.exe`，不要单独移动 exe 文件。
 
-> **安全提醒：** 本项目不会制作 GitHub 登录页，不会要求你输入 GitHub 密码、Personal Access Token、SSH 私钥、2FA 代码或 Recovery codes。注册、登录、2FA、Fork 与 Clone 均发生在 GitHub 官方网站或 GitHub Desktop。
+第一次进入会看到：入村引导 → 选择陆行舟、沈知微或阿团 → 江湖地图。游戏支持断网游玩；官方 GitHub 页面、Fork 和源码练习仍需联网。
 
-## 先看懂当前仓库页面
+### 3. 开始游戏
 
-- **Repository**：仓库，保存项目文件、版本历史与协作记录。
-- **README**：你正在读的项目说明，也是第零章入口。
-- **Public**：任何人可以查看，不代表任何人都有写入权限。
-- **Star**：可选收藏。**不 Star 也能使用和通关。**
-- **Fork**：在你的 GitHub 账号下创建有关联的仓库副本。
-- **Code 页签**：查看文件与 README。
-- **绿色 Code 按钮**：打开 Clone、Codespaces 和 Download ZIP 菜单。
+沿着地图从第 0 章走到第 12 章：
 
-## 四步进入游戏
+村口路标 → 护身堂 → 拓印坊 → 营火工坊 → 藏图阁 → 集市鉴宝 → 飞鸽传书 → 悬赏亭 → 双城驿站 → 分流竹林 → 合卷台 → 议事堂 → 百炼炉。
 
-### 1. 注册或登录 GitHub
+每章都有独立场景、角色对话、可操作机关、错误反馈、撤销/重试和地图奖励。武林宝典可以随时解释英文术语和当前任务。
 
-只使用 [GitHub 官方注册页](https://github.com/signup) 或 [GitHub 官方登录页](https://github.com/login)。验证邮箱后，建议阅读 [GitHub 账号安全指南](docs/setup/GITHUB_ACCOUNT.md)，设置 2FA 或 Passkey，并把 Recovery codes 安全保存到密码管理器。
+## 这个项目教什么
 
-### 2. Fork 到自己的账号
+游戏中的操作是安全的本地模拟，帮助你理解真实 GitHub 的概念：Repository、README、Fork、Clone、Branch、Commit、Pull Request、Review、Actions 和 Release。
 
-1. 回到本仓库首页。
-2. 在页面右上方找到 **Fork**。
-3. 点击 **Create fork**。
-4. 等待页面跳转，确认地址中的 Owner 已变成你的 GitHub 用户名。
+真正的 GitHub 学习路线是：
 
-Fork 不会修改原项目。它与 Clone 不同：Fork 在 GitHub 账号之间复制仓库，Clone 把仓库复制到电脑。
+官方仓库 → 阅读中文 README → Fork → Clone / GitHub Desktop / Codespaces → 本地运行 → 回到自己的 Fork → 完成安全毕业练习。
 
-### 3. 选择一种复制方式
+游戏不会替你登录 GitHub，也不会收集密码、Token、SSH 私钥、2FA 或 Recovery codes。不会调用 OAuth、GitHub API，也不会要求 Star、分享、赞助或向原仓库提交无意义的 PR。
 
-#### 路线 A：GitHub Desktop，新手推荐
+## 想学习 GitHub 操作？
 
-1. 安装 [GitHub Desktop](https://desktop.github.com/)。
-2. 在浏览器中登录 GitHub 并打开你自己的 Fork。
-3. 点击 **Code → Open with GitHub Desktop**。
-4. 选择容易找到的本地目录，点击 **Clone**。
+下载应用和学习 GitHub 是两件事：你可以先玩游戏，再按需要学习真实仓库操作。
 
-[查看逐步说明](docs/setup/GITHUB_DESKTOP.md)
+- [从 GitHub 找到自己的 Fork](docs/START_HERE.md)
+- [GitHub Desktop 路线](docs/setup/GITHUB_DESKTOP.md)
+- [命令行路线](docs/setup/COMMAND_LINE.md)
+- [Codespaces 路线](docs/setup/CODESPACES.md)
+- [出师实战：只在自己的 Fork 中练习](docs/setup/FIELD_PRACTICE.md)
 
-#### 路线 B：命令行
+这些页面是给想继续学习 GitHub 的人准备的，不是第一次打开游戏前的安装要求。
 
-1. 安装 [Git](https://git-scm.com/downloads)。
-2. 在你自己的 Fork 中点击 **Code → HTTPS**，复制 URL。
-3. 打开 Terminal（终端），进入准备存放项目的目录。
-4. 执行：
+## 给维护者和开发者
+
+源码仍是 Next.js App Router、严格 TypeScript 和静态优先架构。开发者需要 Node.js LTS，普通玩家不需要。
 
 ```bash
-git clone https://github.com/你的用户名/github-starter-village.git
-cd github-starter-village
-```
-
-GitHub 已移除 Git 操作的账号密码认证。终端要求认证时，不要输入 GitHub 账号密码；优先使用 GitHub Desktop、Git Credential Manager、GitHub CLI 的浏览器授权，或按照 [GitHub 官方认证说明](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github) 配置 HTTPS/SSH。
-
-[查看命令行说明](docs/setup/COMMAND_LINE.md)
-
-#### 路线 C：Codespaces
-
-在自己的 Fork 中选择 **Code → Codespaces → Create codespace**。Codespaces 是云端开发环境，个人账号的计算与存储有额度限制，请在使用前查看 [GitHub 官方额度说明](https://docs.github.com/en/codespaces/troubleshooting/troubleshooting-included-usage)。
-
-[查看 Codespaces 说明](docs/setup/CODESPACES.md)
-
-#### Download ZIP 是什么？
-
-Download ZIP 可以获得当前文件快照，但它不是完整 Git Clone，不包含正常的 Git 历史和远程同步关系。可以临时查看文件，不推荐用于完整课程。
-
-### 4. 安装并运行
-
-先从 [Node.js 官网](https://nodejs.org/en/download) 安装 LTS 版本。Node.js 安装包通常会一起安装 npm。
-
-在包含 `package.json` 的项目目录中运行：
-
-```bash
-npm run doctor
 npm install
 npm run dev
 ```
 
-终端会显示本地地址，通常是：
-
-```text
-http://localhost:3000
-```
-
-把它复制到浏览器打开。`localhost` 指你的电脑自己，不是公开网站。停止开发服务器时，回到终端按 `Ctrl + C`。
-
-如果出现 `command not found`、端口占用、依赖安装失败或打开空白页，请看 [故障排查](docs/setup/TROUBLESHOOTING.md)。
-
-## 开始第一章
-
-游戏运行后打开 `/play`。首次默认使用“全中文辅助”，可以随时切换中英对照、悬停翻译、挑战模式或自由探索。
-
-课程包含 14 章：
-
-- 0-3：真实进入、账号安全、复制和运行项目。
-- 4-6：仓库地图、判断项目、关注方式。
-- 7-13：Issue、本地与远程、Branch、Commit、Pull Request、Review、Actions、Release 和社区健康。
-- 毕业任务：只在你自己的 Fork 内完成一次真实 Branch → Commit → Push → Pull Request → Merge。
-
-默认不要向原仓库提交毕业 PR，避免制造大量无意义贡献。
-
-## 开发者入口
+完整检查：
 
 ```bash
-npm install
 npm run content:validate
 npm run content:coverage
 npm run content:sources
@@ -144,24 +86,15 @@ npm run typecheck
 npm run lint
 npm run test
 npm run build
+npm run desktop:test
+npm run desktop:verify
 ```
 
-- [课程范围](docs/curriculum/SCOPE.md)
-- [课程路径](docs/curriculum/LEARNING_PATH.md)
-- [设计方向](docs/design/DESIGN_DIRECTION.md)
-- [架构说明](docs/architecture/ARCHITECTURE.md)
-- [贡献指南](CONTRIBUTING.md)
-- [安全政策](SECURITY.md)
-
-## 品牌与赞助配置
-
-品牌名称、仓库地址和网站地址集中在 `src/config/brand.json`（`brand.ts` 是类型化入口）；平台发布状态在 `src/config/distribution.json`，桌面标识在 `src/config/desktop.json`。正式发布前替换 `OWNER` 与 `example.com`，完成签名/系统验收。用 `npm run desktop:release-check -- --print-readme` 生成下载标记区，再运行 `npm run desktop:release-check` 检查同步；没有真实 Release 时不要启用下载链接。
-
-赞助默认关闭。只有在维护者提供真实二维码后，才把图片放入 `public/sponsor/` 并更新 `src/config/sponsor.ts`。个人收款二维码可能暴露真实姓名，启用前请确认隐私风险。本仓库不会生成虚假二维码或验证支付。
+产品审计与实施记录保留在 [`docs/product/`](docs/product/)，不放在普通玩家的首屏路径中。
 
 ## 独立项目声明
 
-GitHub Starter Village 是一个独立开发的开源学习项目，不是 GitHub 官方产品，与 GitHub, Inc. 无关联、授权或背书。GitHub 及相关商标归其权利人所有。
+GitHub Starter Village 是独立开发的开源学习项目，不是 GitHub 官方产品，与 GitHub, Inc. 无关联、授权或背书。GitHub 及相关商标归其权利人所有。
 
 ## License
 
