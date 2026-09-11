@@ -1,6 +1,6 @@
 # 桌面分发与系统验收清单
 
-2026-09-11。阶段 D 的代码可以进入内部复测，公开发布仍有硬门禁。生成 ZIP ≠ 签名 ≠ 实机验收 ≠ 获准发布。
+2026-09-11。`v0.1.1` 已上传，但维护者下载后仍被 macOS 拦截，正常启动验收尚未通过。详见[下载启动失败记录](../testing/BEGINNER_USABILITY_TEST.md)。上传成功、代码签名完整性、公证和实际启动必须分别记录。
 
 ## 已核实的条件
 
@@ -30,15 +30,15 @@ npm run desktop:package -- win32 x64
 npm run desktop:package:mac-intel
 ```
 
-打包输出到 artifacts/desktop/<平台-架构-时间戳>/，包含应用文件夹、版本化 ZIP、SHA256SUMS.txt 和 artifact.json。包内有项目和依赖许可证、资产来源及 START_HERE.txt。不会自动推送、上传或签名。跨系统 Windows 生成只算交叉打包，非 Windows 运行验证。
+打包输出到 artifacts/desktop/<平台-架构-时间戳>/，包含应用文件夹、版本化 ZIP、SHA256SUMS.txt 和 artifact.json。包内有项目和依赖许可证、资产来源及 START_HERE.txt。macOS 当前自动进行 ad-hoc 临时签名及完整性检查；不会自动执行 Developer ID 签名、公证、推送或上传。跨系统 Windows 生成只算交叉打包，非 Windows 运行验证。
 
 ```sh
 npm run desktop:release-check -- --artifact /绝对路径/artifact.json
-npm run desktop:verify:d -- --app /绝对路径/GitHubStarterVillage.app/Contents/MacOS/GitHubStarterVillage
+npm run desktop:verify -- --app /绝对路径/GitHubStarterVillage.app/Contents/MacOS/GitHubStarterVillage
 # Windows 把 --app 路径换成解压包的 GitHubStarterVillage.exe
 ```
 
-请先用上述命令打印的真实路径替换示例。desktop:verify:d 会创建独立临时用户数据，不碰正式学习存档。记录协议隔离、断网、重启、六章链路/四支线、真实自查、分享图与录屏数据隔离。
+请先用上述命令打印的真实路径替换示例。desktop:verify 会创建独立临时用户数据，不碰正式学习存档。记录协议隔离、断网、重启、0–12 章、真实自查、自由探索隔离和窗口缩放。该技术检查不能代替浏览器下载后由 Finder 启动的 Gatekeeper 验收。
 
 ## 公开门禁（须单独审批）
 

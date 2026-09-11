@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import config from "../src/config/desktop.json" with { type: "json" };
 import distribution from "../src/config/distribution.json" with { type: "json" };
-import { artifactName, sha256, verifyArtifact } from "./lib/distribution.mjs";
+import { artifactName, macosFirstOpenNotice, sha256, verifyArtifact } from "./lib/distribution.mjs";
 import { buildInputDigest } from "./lib/build-inputs.mjs";
 
 const target = process.argv[2] ?? process.platform;
@@ -47,7 +47,7 @@ await cp(path.join(root, "THIRD_PARTY_NOTICES.md"), path.join(folder, "THIRD_PAR
 await cp(path.join(root, "LICENSE"), path.join(folder, "PROJECT_LICENSE.txt"));
 await cp(path.join(root, "docs/assets"), path.join(folder, "asset-notices"), { recursive: true });
 await cp(path.join(stage, "dependency-licenses"), path.join(folder, "dependency-licenses"), { recursive: true });
-await writeFile(path.join(folder, "START_HERE.txt"), "这是 GitHub 新手村桌面预览版。\n解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node/Git。macOS 首次打开若出现安全提示，请在 Finder 中右键应用选择“打开”，确认来源后再启动。\n本版本使用本机临时签名，尚未 Apple 公证；请只从项目 GitHub Release 下载并核对 SHA-256。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n");
+await writeFile(path.join(folder, "START_HERE.txt"), `这是 GitHub 新手村桌面预览版。\n完整解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node.js、npm 或 Git。\n${target === "darwin" ? `${macosFirstOpenNotice}\nApple 官方说明：https://support.apple.com/zh-cn/102445\n若提示“已损坏”或检测到恶意软件，请停止并联系维护者。\n` : "若有系统安全提示，请停止并联系维护者。\n"}请只从项目 GitHub Release 下载并核对 SHA-256。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n`);
 if (target === "darwin") {
   // Electron's packager leaves linker signatures on nested binaries. Any files
   // copied above change the final bundle, so re-sign the complete app before

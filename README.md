@@ -1,8 +1,8 @@
 # GitHub 新手村
 
-一款打开就能玩的武侠风 GitHub 学习游戏。
+一款武侠风 GitHub 学习游戏，桌面包自带运行环境。
 
-如果你是从抖音链接第一次来到这里，不需要先学 Git，也不需要配置 Node.js、npm 或命令行。按下面三步即可开始：
+如果你是从抖音链接第一次来到这里，不需要先学 Git，也不需要配置 Node.js、npm 或命令行。**当前 Mac 版尚未经过 Apple 公证，首次启动可能被系统拦截，需要按下方说明确认打开。**
 
 ## 下载并开始
 
@@ -17,22 +17,20 @@
 
 [版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.1)
 
-成品包自带运行环境，不需要安装 Node.js、npm 或 Git。下载后按电脑类型解压并打开应用（保留 Windows 解压文件夹内的运行时文件）。第一次打开若被系统阻止，请停止并联系维护者，不要关闭系统安全保护。
+成品包自带运行环境，不需要安装 Node.js、npm 或 Git。下载后完整解压，再打开应用（保留 Windows 解压文件夹内的运行时文件）。
 
-[下载位置、解压和校验图解](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
+当前 macOS 包使用本机临时签名，尚未经过 Apple 公证。首次打开可能提示“Apple 无法验证”。确认下载自本项目 Release 且文件未遭篡改后，点“完成”，进入“系统设置 → 隐私与安全性 → 仍要打开”，按系统提示确认。此操作仅为该应用添加例外；不要关闭系统安全保护。
+
+[下载位置、解压和首次打开说明](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
 <!-- END GENERATED DOWNLOADS -->
 
-macOS Apple 芯片版本已经发布为预发布 Release；Windows x64 和 Intel Mac 仍在后续验收中。请不要把 `Code → Download ZIP` 或 Release 附带的源码 ZIP 当成游戏安装包。下载成品的方式是：选择电脑类型 → 下载 ZIP → 完整解压 → 打开应用。
-
-打开时遇到系统安全提示，请先停止并核对 Release 页面中的版本和 SHA-256，不要关闭系统安全保护，也不要运行来历不明的解除隔离命令。
-
-[下载位置与打开说明](docs/setup/DOWNLOAD_APP.md)
+请不要把 `Code → Download ZIP` 或 Release 附带的 `Source code (zip)` 当成游戏安装包。
 
 ### 2. 打开应用
 
 解压后：
 
-- Mac：打开 `GitHubStarterVillage.app`；
+- Mac：打开 `GitHubStarterVillage.app`；若提示“Apple 无法验证”，按上方首次打开说明操作。若提示“已损坏”或检测到恶意软件，请停止并联系维护者；
 - Windows：打开解压文件夹中的 `GitHubStarterVillage.exe`，不要单独移动 exe 文件。
 
 第一次进入会看到：入村引导 → 选择陆行舟、沈知微或阿团 → 江湖地图。游戏支持断网游玩；官方 GitHub 页面、Fork 和源码练习仍需联网。

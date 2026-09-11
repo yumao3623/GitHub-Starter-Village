@@ -39,4 +39,13 @@
 
 ## 工程走查（不是新手实测）
 
+### 2026-09-11：维护者从 GitHub 下载后启动失败（P0，未关闭）
+
+- 维护者提供两次实际下载启动截图：21:25 旧包提示“已损坏”；23:10 在 `v0.1.1` 发布后的重试提示“Apple 无法验证”并阻止启动。用户反馈：“没变化”。
+- 截图证明正常双击启动仍然失败；未确认参与者符合初学者招募条件，不计入 P01–P03。为避免公开个人桌面信息，不将原始截图提交仓库。
+- 发布附件：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`；发布页记录 SHA-256 为 `54bc4f49e0b8cba27700ede58d2a22fef34b98f184f3c205cfa397517e9c9487`。截图未单独验证用户下载文件的哈希，不能把发布页的哈希当作该下载副本的实测值。
+- 同一发布包的本地产物检查：`codesign --verify --deep --strict` 通过；`codesign -dv` 为 `Signature=adhoc`、`TeamIdentifier=not set`；沙箱外 `spctl --assess --type execute -vv` 返回 `rejected`（退出码 3）。当前可访问钥匙串返回 `0 valid identities found`；未进行 Apple 公证。
+- 已修正文档和未来打包的首次打开说明，采用 Apple 官方“系统设置 → 隐私与安全性 → 仍要打开”流程。文档修正不会改变已上传包的签名或公证状态，也不是启动成功证据。
+- 关闭条件：Developer ID 正式签名 → Apple 公证 → 附加公证票据 → 生成新的最终 ZIP/哈希 → 从 GitHub 下载并正常启动 → 验证引导、选角、章节、存档重启。人工放行后的个人试用另行记录，不能替代正常分发验收。目前未取得放行后启动成功的证据。
+
 维护者代理在本机验证了入口、角色、地图、逐章操作、错误恢复和宝典。自动化脚本是 `tests/e2e/journey.spec.ts` 与 `scripts/verify-journey-desktop.ts`，输出位于 `artifacts/journey/`、`artifacts/journey-desktop/`。具体版本和结果见 [`JOURNEY_IMPLEMENTATION_2026-09-11.md`](../product/JOURNEY_IMPLEMENTATION_2026-09-11.md) 及 JSON；这些工程证据不替代 P01–P03 真实参与者记录。
