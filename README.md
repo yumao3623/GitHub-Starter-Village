@@ -11,18 +11,18 @@
 <!-- BEGIN GENERATED DOWNLOADS -->
 ## 下载桌面应用
 
-- macOS · Apple 芯片：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
+- [下载 macOS · Apple 芯片](https://github.com/yumao3623/GitHub-Starter-Village/releases/download/v0.1.0/GitHubStarterVillage-0.1.0-darwin-arm64.zip)；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
 - Windows · x64：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-win32-x64.zip`
 - macOS · Intel（实验构建）：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-x64.zip`
 
-目前只有内部验收候选包：未完成签名/公证及跨系统验收，未上传 Release。请勿把源码 ZIP 当作应用。
+[版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.0)
 
 成品包自带运行环境，不需要安装 Node.js、npm 或 Git。公开后：按电脑类型下载 → 解压 → Mac 打开 .app，Windows 打开解压文件夹内的 .exe（保留同目录文件）。第一次打开若被系统阻止，请停止并联系维护者，不要关闭系统安全保护。
 
 [下载位置、解压和校验图解](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
 <!-- END GENERATED DOWNLOADS -->
 
-当前 GitHub 仓库还没有公开桌面 Release，所以暂时不要把源码 ZIP 当成游戏安装包。Release 上传后，下载方式只有：选择电脑类型 → 下载 ZIP → 完整解压 → 打开应用。
+macOS Apple 芯片版本已经发布为预发布 Release；Windows x64 和 Intel Mac 仍在后续验收中。请不要把 `Code → Download ZIP` 或 Release 附带的源码 ZIP 当成游戏安装包。下载成品的方式是：选择电脑类型 → 下载 ZIP → 完整解压 → 打开应用。
 
 打开时遇到系统安全提示，请先停止并核对 Release 页面中的版本和 SHA-256，不要关闭系统安全保护，也不要运行来历不明的解除隔离命令。
 
