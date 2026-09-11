@@ -4,8 +4,8 @@ import { graduationQuiz } from "../../src/content/quizzes/zh-CN/graduation";
 
 test("home, glossary and game task are usable", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: /把第一次贡献/ })).toBeVisible();
-  await page.getByRole("link", { name: /从这里开始/ }).first().click();
+  await expect(page.getByRole("heading", { name: /先读路标/ })).toBeVisible();
+  await page.getByRole("link", { name: /Fork \/ Clone 指南/ }).first().click();
   await expect(page).toHaveURL(/\/start/);
   await page.goto("/glossary");
   await page.getByPlaceholder(/搜索 Pull Request/).fill("Pull Request");
@@ -44,8 +44,8 @@ test("demo reset does not read or overwrite ordinary progress", async ({ page })
     }));
   });
   await page.goto("/demo");
-  await page.getByRole("button", { name: "重置演示" }).click();
-  await expect(page.getByRole("heading", { name: "Pull Request", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "准备演示角色" }).click();
+  await expect(page.getByRole("combobox", { name: "自由探索章节" })).toBeVisible();
   const stored = await page.evaluate(() => localStorage.getItem("gsv:progress:v1"));
   expect(JSON.parse(stored ?? "{}").completedMissionIds).toEqual(["sentinel"]);
 });

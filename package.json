@@ -20,7 +20,7 @@
     "desktop:package": "node scripts/package-desktop.mjs",
     "desktop:package:windows": "node scripts/package-desktop.mjs win32",
     "desktop:test": "node --test tests/desktop/*.test.mjs",
-    "desktop:verify": "node scripts/verify-desktop.mjs",
+    "desktop:verify": "node --import tsx scripts/verify-journey-desktop.ts",
     "desktop:verify:c": "node scripts/verify-desktop.mjs --chain",
     "desktop:verify:d": "node scripts/verify-desktop.mjs --chain --phase-d",
     "desktop:package:mac-intel": "node scripts/package-desktop.mjs darwin x64",
@@ -36,7 +36,8 @@
     "content:validate": "node --import tsx scripts/validate-content.ts",
     "content:coverage": "node --import tsx scripts/generate-coverage-report.ts",
     "content:sources": "node --import tsx scripts/check-source-links.ts",
-    "doctor": "node scripts/doctor.mjs"
+    "doctor": "node scripts/doctor.mjs",
+    "test:journey": "playwright test tests/e2e/journey.spec.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

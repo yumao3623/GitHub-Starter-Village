@@ -138,6 +138,555 @@
       "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
       "references": [],
       "bundled": false
+    },
+    {
+      "id": "characters/atuan-celebrating",
+      "file": "public/characters/atuan-celebrating.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "aeb4a0d4c6319034c0456fe6580646da55190282860a7e7dc40b89275ec90042",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 457
+      },
+      "crop": {
+        "left": 1296,
+        "top": 758,
+        "width": 324,
+        "height": 213,
+        "foreground": {
+          "left": 74,
+          "top": 0,
+          "width": 156,
+          "height": 212
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/atuan-inspecting",
+      "file": "public/characters/atuan-inspecting.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "f13c00660178070751ce32a300271a311f10174d58f920d94feac200acc55e71",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 457
+      },
+      "crop": {
+        "left": 972,
+        "top": 758,
+        "width": 324,
+        "height": 213,
+        "foreground": {
+          "left": 74,
+          "top": 0,
+          "width": 167,
+          "height": 213
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/atuan-standing",
+      "file": "public/characters/atuan-standing.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "4812c0d1f59703c679da287f890f658221cb6ba05dcdc1cf439bb524796e45c8",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 457
+      },
+      "crop": {
+        "left": 1100,
+        "top": 0,
+        "width": 436,
+        "height": 1024,
+        "foreground": {
+          "left": 12,
+          "top": 429,
+          "width": 316,
+          "height": 558
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/atuan-walking",
+      "file": "public/characters/atuan-walking.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "0bd9da69b83bacccdbae3f658c7ddd829dbb2c1740ffdd34b3db0c5ef1f34457",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 457
+      },
+      "crop": {
+        "left": 324,
+        "top": 758,
+        "width": 324,
+        "height": 213,
+        "foreground": {
+          "left": 99,
+          "top": 0,
+          "width": 181,
+          "height": 210
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/wuxia-actions-transparent-final",
+      "file": "public/characters/wuxia-actions-transparent-final.png",
+      "width": 1620,
+      "height": 971,
+      "sha256": "daab0f03aaae2a50f9468e0b63da584e235d9ba143cf1b5924850849a6b82e99",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "internal-reviewed",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true
+    },
+    {
+      "id": "characters/wuxia-cast-transparent-final",
+      "file": "public/characters/wuxia-cast-transparent-final.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "db3fad96a26779d13661da195779370a2c2a532c542b2fef8f6b0c2da560cc42",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "internal-reviewed",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true
+    },
+    {
+      "id": "characters/xingzhou-celebrating",
+      "file": "public/characters/xingzhou-celebrating.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "49ab506516abfb61aa17ea2720a55663cfb1d9b6641cdef81d949e41f0e13394",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 1296,
+        "top": 0,
+        "width": 324,
+        "height": 382,
+        "foreground": {
+          "left": 64,
+          "top": 5,
+          "width": 177,
+          "height": 377
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/xingzhou-inspecting",
+      "file": "public/characters/xingzhou-inspecting.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "33c63c2b62a019c47fd84b9a37ba0b4745cd0e7e7b01665e6a93d91f70781f12",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 972,
+        "top": 0,
+        "width": 324,
+        "height": 382,
+        "foreground": {
+          "left": 68,
+          "top": 3,
+          "width": 178,
+          "height": 378
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/xingzhou-standing",
+      "file": "public/characters/xingzhou-standing.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "1a285193d0b609fafe6df42460ee30a7e0932fec0c65de5a01d04db5455addc4",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 600,
+        "height": 1024,
+        "foreground": {
+          "left": 70,
+          "top": 10,
+          "width": 508,
+          "height": 993
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/xingzhou-walking",
+      "file": "public/characters/xingzhou-walking.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "e7d3fdac6a6d5f9f565078b512806063c97d261e6925c65a5c7df7f97dc79b0e",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 324,
+        "top": 0,
+        "width": 324,
+        "height": 382,
+        "foreground": {
+          "left": 86,
+          "top": 4,
+          "width": 216,
+          "height": 375
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/zhiwei-celebrating",
+      "file": "public/characters/zhiwei-celebrating.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "b48fe97d5706970059a47188f3db18db8fa7b3e9b00a58099ef952bdd5e808bc",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 1296,
+        "top": 383,
+        "width": 324,
+        "height": 374,
+        "foreground": {
+          "left": 56,
+          "top": 0,
+          "width": 194,
+          "height": 373
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/zhiwei-inspecting",
+      "file": "public/characters/zhiwei-inspecting.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "ba3992285e34c38bb8ad72eafe7d75582fb30c324cdd8ae6e028ebb7f7a1972c",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 972,
+        "top": 383,
+        "width": 324,
+        "height": 374,
+        "foreground": {
+          "left": 67,
+          "top": 0,
+          "width": 189,
+          "height": 372
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/zhiwei-standing",
+      "file": "public/characters/zhiwei-standing.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "fd8aad003a7340d2b34d0fe54b716d2057bd5b29d9ff03649df238c55c2d818e",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 600,
+        "top": 0,
+        "width": 500,
+        "height": 1024,
+        "foreground": {
+          "left": 10,
+          "top": 49,
+          "width": 458,
+          "height": 955
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/zhiwei-walking",
+      "file": "public/characters/zhiwei-walking.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "e3eab6eaf469b91fb0b616c0e6bf9964a0e10b4481d176379ba4d12dd4619789",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project artwork; RGBA extraction from existing transparent atlas",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "characters/wuxia-cast-v1"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 324,
+        "top": 383,
+        "width": 324,
+        "height": 374,
+        "foreground": {
+          "left": 102,
+          "top": 0,
+          "width": 208,
+          "height": 372
+        }
+      },
+      "revision": 2
+    },
+    {
+      "id": "characters/qingyan-inspecting",
+      "file": "public/characters/qingyan-inspecting.png",
+      "width": 420,
+      "height": 640,
+      "sha256": "9a5ba04975c06f9908a8c8303830c7c3b3b94305942f2dc3956108339f60a52f",
+      "kind": "generated-illustration",
+      "sourceRecord": "docs/assets/SPRITE_EXTRACTION_2026-09-11.md",
+      "distribution": "Internal review; generation-service terms apply; not exclusive copyright",
+      "attribution": "Project generated artwork; retain source record",
+      "review": "metadata-and-contact-sheet",
+      "creator": "Original project cast derivative, robe palette adjusted locally",
+      "sourceUrl": null,
+      "license": "Generated output subject to service terms; see sourceRecord, no exclusivity claim",
+      "references": [
+        "public/characters/xingzhou-inspecting.png"
+      ],
+      "bundled": true,
+      "channels": 4,
+      "hasAlpha": true,
+      "footBaseline": 632,
+      "visualCenter": {
+        "x": 210,
+        "y": 332
+      },
+      "crop": {
+        "left": 972,
+        "top": 0,
+        "width": 324,
+        "height": 382,
+        "foreground": {
+          "left": 68,
+          "top": 3,
+          "width": 178,
+          "height": 378
+        }
+      },
+      "revision": 2
     }
   ]
 }

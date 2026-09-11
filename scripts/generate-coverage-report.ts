@@ -6,6 +6,8 @@ import { contributionMissions } from "../src/content/minigames/contribution-less
 import { contributionGuidanceIds } from "../src/content/vocabulary/zh-CN/contribution-review";
 import { regionLessons } from "../src/content/minigames/region-lessons";
 
+import { chapterLessons } from "../src/content/minigames/chapters";
+const journeyTerms=new Set(chapterLessons.flatMap(l=>l.stages.flatMap(s=>s.termIds)));
 const mainline = new Set(missions.flatMap((item) => item.termIds));
 const interactive = new Set(missions.flatMap((item) => item.tasks.flatMap((task) => task.termIds)));
 const graduation = new Set(graduationQuiz.map((item) => item.termId));
@@ -41,6 +43,12 @@ ${vocabulary.filter((item) => item.priority !== "P2" && !mainline.has(item.id)).
 ## 解释
 
 “主线覆盖”表示术语出现在章节的明确学习范围中；“互动覆盖”表示术语至少由一道可操作的场景题覆盖；“结业测试覆盖”只对 P0 强制。P2 只要求进入可搜索词典，不阻塞毕业。
+
+## 本次 13 章页游主线
+
+- 独立章节：${chapterLessons.length}；操作绑定词条：${journeyTerms.size}。
+- P0 操作覆盖：${percent(covered("P0",journeyTerms),byPriority("P0").length)}；P1 操作覆盖：${percent(covered("P1",journeyTerms),byPriority("P1").length)}。
+- 以上仅表示内容存在操作绑定，不代表玩家掌握或真实新手验证。
 
 ## 武侠阶段 C：单独统计，不混算掌握率
 

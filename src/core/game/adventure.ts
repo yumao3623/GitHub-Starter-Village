@@ -20,6 +20,7 @@ const journeySchema = z.object({
   run: runSchema, archives: z.array(archiveSchema).max(4),
   migration: z.enum(["fresh", "phase-a"]),
   contribution: z.object({ currentChapter: z.number().int().min(7).max(12), completedChapters: z.array(z.number().int().min(7).max(12)).max(6), stepIndex: z.number().int().min(0).max(2), attempts: z.record(z.string(), z.number().int().nonnegative()), lastAction: z.string().nullable() }).default({ currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null }),
+  foundations: z.array(z.number().int().min(0).max(6)).max(7).default([]), foundationProgress: z.record(z.string(), z.number().int().min(0).max(3)).default({}),
   simulation: chainSaveSchema.default(freshChain),
   regions: regionSchema.default(freshRegions),
 });
@@ -33,7 +34,7 @@ const freshJourney = (): AdventureSave["journey"] => ({
   metrics: { activeMs: 0, sound: false, firstAssessment: {} },
   lastNode: "inn", encountered: [], bookmarks: [], dialogues: {},
   run: { mode: "practice", aided: false, baselineVariant: null }, archives: [], migration: "fresh",
-  contribution: { currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null },
+  contribution: { currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null }, foundations: [], foundationProgress: {},
   simulation: freshChain(),
   regions: freshRegions(),
 });
@@ -43,7 +44,7 @@ export function initialAdventure(): AdventureState {
 }
 export function completedGoals(state: AdventureSave): string[] {
   const model = replayChain(state.journey.simulation.events);
-  return [...new Set([...achievedObjectives(toLegacy(state)), ...state.journey.archives.flatMap(record => achievedObjectives(record.snapshot)), ...(model ? chainCompleted(model).map(chapter => `chain-${chapter}`) : []), ...Object.keys(regionLessons).filter(id=>regionDone(state.journey.regions,id as RegionId)).map(id=>`region-${id}`)])];
+  return [...new Set([...achievedObjectives(toLegacy(state)), ...state.journey.archives.flatMap(record => achievedObjectives(record.snapshot)), ...state.journey.foundations.map(chapter => `foundation-${chapter}`), ...(model ? chainCompleted(model).map(chapter => `chain-${chapter}`) : []), ...Object.keys(regionLessons).filter(id=>regionDone(state.journey.regions,id as RegionId)).map(id=>`region-${id}`)])];
 }
 export function hasCompletedMarket(state: AdventureSave) { return completedGoals(state).includes("market-delivered"); }
 
@@ -83,7 +84,12 @@ export function parseAdventure(input: unknown): AdventureSave | null {
     const dialogue = dialogueById(id);
     if (!dialogue || cursor.index >= dialogue.lines.length || !dialogue.requiredGoals.every(goal => goals.includes(goal))) return null;
   }
-  if (!canEnterNode(save.journey.lastNode, goals) || (save.view === "pavilion" && !canEnterNode("pavilion", goals))) return null;
+  const legacyMarketProgress = save.view === "market" && !save.completed && save.journey.lastNode === "market";
+  const marketCompatibility = save.journey.lastNode === "market" && save.completed && goals.includes("market-delivered");
+  const activeContribution = save.view === "pavilion" && save.journey.simulation.active && save.journey.simulation.chapter >= 7;
+  const pavilionCompatibility = save.journey.lastNode === "pavilion" && goals.includes("market-delivered");
+  const foundationCompatibility = save.view === "pavilion" && /^chapter-[0-6]$/.test(save.journey.lastNode) && save.journey.foundations.includes(Number(save.journey.lastNode.slice(8)));
+  if ((!canEnterNode(save.journey.lastNode, goals) && !legacyMarketProgress && !marketCompatibility && !activeContribution && !pavilionCompatibility && !foundationCompatibility) || (save.view === "pavilion" && !canEnterNode("pavilion", goals) && !activeContribution && !pavilionCompatibility && !foundationCompatibility)) return null;
   return save;
 }
 
@@ -95,6 +101,7 @@ export type AdventureAction = Exclude<LegacyAction, { type: "hydrate" }> |
   { type: "encounter" | "bookmark"; termId: string } |
   { type: "request-hint" } | { type: "start-assessment" } |
   { type: "contribution-enter"; chapter: number } | { type: "chain-event"; event: ChainEvent } |
+  { type: "foundation-step"; chapter: number; step: number } |
   { type: "chain-draft"; key: string; value: string } | { type: "chain-restart" } | { type: "region-event"; event:RegionEvent };
 
 function message(state: AdventureState, feedback: string, feedbackKind: AdventureState["feedbackKind"] = "info"): AdventureState { return { ...state, feedback, feedbackKind }; }
@@ -106,6 +113,7 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
       feedback: issue ?? (save?.journey.migration === "phase-a" ? "阶段 A 进度已安全接续；原始存档保留，旧成绩不自动换算为独立评估。" : save ? "已恢复本地历练进度。" : "先选一位同行的少侠。") };
   }
   if (!state.ready) return state;
+  if (action.type === "character") return { ...state, character: action.id, feedback: "角色已选定。身份不会改变课程难度。", feedbackKind: "success" };
   if (action.type === "active-time") {
     if (state.sessionMode !== "mainline" || !Number.isFinite(action.milliseconds) || action.milliseconds <= 0 || action.milliseconds > 5000) return state;
     return { ...state, journey: { ...state.journey, metrics: { ...state.journey.metrics, activeMs: Math.min(315360000000, state.journey.metrics.activeMs + Math.round(action.milliseconds)) } } };
@@ -118,9 +126,20 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
     const result=applyRegion(state.journey.regions,action.event);
     return {...state,journey:{...state.journey,regions:result.state},feedback:result.message,feedbackKind:result.kind};
   }
+  if (action.type === "foundation-step") {
+    const node = worldNodes.find(item => item.chapter === action.chapter);
+    if (!node || node.kind !== "foundation" || !state.character || (!canEnterNode(node.id, completedGoals(state)) && state.sessionMode === "mainline")) return message(state, "前方迷雾未散：先完成上一处历练。", "error");
+    const progress = state.journey.foundationProgress[String(action.chapter)] ?? 0;
+    if (action.step !== progress) return message(state, `先完成当前引导的第 ${progress + 1} 步。`, "error");
+    if (action.step === 2) return { ...state, journey: { ...state.journey, foundations: [...new Set([...state.journey.foundations, action.chapter])], foundationProgress: { ...state.journey.foundationProgress, [action.chapter]: 3 }, lastNode: node.id }, feedback: "路标已盖印。下一处地点会在地图上向右显现。", feedbackKind: "success" };
+    return { ...state, journey: { ...state.journey, foundationProgress: { ...state.journey.foundationProgress, [action.chapter]: progress + 1 } }, feedback: ["找到了第一处线索。先观察页面上的英文标签。", "很好，把这个动作和 GitHub 的真实用途连起来。"][action.step] ?? "继续查看任务卡。", feedbackKind: "success" };
+  }
   if (action.type === "contribution-enter") {
     const chapter = action.chapter;
-    if (!state.character || !canEnterNode(`chapter-${chapter}`, completedGoals(state))) return message(state, "前方迷雾未散：先完成鉴宝与上一处协作委托。", "error");
+    const goals = completedGoals(state);
+    const chapterSevenCompatibility = chapter === 7 && hasCompletedMarket(state);
+    const chainCompatibility = chapter >= 8 && goals.includes(`chain-${chapter - 1}`);
+    if (!state.character || (!canEnterNode(`chapter-${chapter}`, goals) && !chapterSevenCompatibility && !chainCompatibility && state.sessionMode === "mainline")) return message(state, "前方迷雾未散：先完成鉴宝与上一处协作委托。", "error");
     return { ...state, view: "pavilion", journey: { ...state.journey, lastNode: `chapter-${chapter}`, simulation: { ...state.journey.simulation, active: true, chapter } }, feedback: `已进入第 ${chapter} 章。上次编辑和操作记录已恢复。`, feedbackKind: "info" };
   }
   if (action.type === "chain-draft" || action.type === "chain-event" || action.type === "chain-restart") {
@@ -140,15 +159,18 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
   }
   if (action.type === "travel") {
     const node = worldNodes.find(item => item.id === action.nodeId);
-    if (!node || (!canEnterNode(node.id, completedGoals(state)) && state.sessionMode !== "explore")) return message(state, "迷雾未散：完成三卷鉴定并交付推荐，才能进入该地点。");
-    if (node.chapter) return adventureReducer(state, { type: "contribution-enter", chapter: node.chapter });
+    if (node?.id === "pavilion" && !hasCompletedMarket(state) && state.sessionMode === "mainline") return message(state, "先完成集市鉴宝，再进入协作山门。", "error");
+    if (!node || (node.id !== "market" && node.id !== "pavilion" && !canEnterNode(node.id, completedGoals(state)) && state.sessionMode === "mainline") || (node.id === "pavilion" && !hasCompletedMarket(state) && state.sessionMode === "mainline")) return message(state, "迷雾未散：先完成上一章的历练，才能进入该地点。", "error");
+    if (node.chapter !== undefined && node.kind === "foundation") return { ...state, view: "pavilion", journey: { ...state.journey, lastNode: node.id, simulation: { ...state.journey.simulation, active: false } }, feedback: `已进入第 ${node.chapter} 章。先完成三步引导，再回地图。`, feedbackKind: "info" };
+    if (node.chapter !== undefined && node.chapter >= 7) return adventureReducer(state, { type: "contribution-enter", chapter: node.chapter });
     if (node.region) return {...state,view:"pavilion",journey:{...state.journey,lastNode:node.id,simulation:{...state.journey.simulation,active:false}},feedback:regionLessons[node.region].story,feedbackKind:"info"};
     return adventureReducer(state, { type: "navigate", view: node.view });
   }
   if (action.type === "navigate") {
     if (!state.character && action.view !== "choose") return message(state, "请先选择角色。");
+    if (action.view === "pavilion" && !hasCompletedMarket(state) && state.sessionMode !== "explore") return message(state, "先完成集市鉴宝，再进入协作山门。", "error");
     const node = worldNodes.find(item => item.view === action.view);
-    if (node && !canEnterNode(node.id, completedGoals(state)) && state.sessionMode !== "explore") return message(state, "迷雾未散：完成三卷鉴定并交付推荐，才能解锁飞鸽台。");
+    if (node && action.view !== "market" && !canEnterNode(node.id, completedGoals(state)) && state.sessionMode === "mainline") return message(state, "迷雾未散：完成三卷鉴定并交付推荐，才能解锁飞鸽台。");
     if (action.view === "ending" && !state.completed) return message(state, "当前一轮尚未交付，不能进入结算。");
     return { ...state, view: action.view, selectedFact: null, journey: { ...state.journey, simulation: { ...state.journey.simulation, active: false }, lastNode: node?.id ?? state.journey.lastNode }, feedback: "沿路标继续历练。", feedbackKind: "info" };
   }

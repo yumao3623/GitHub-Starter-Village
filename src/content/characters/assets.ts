@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { characters, characterAtlas, type CharacterId } from ".";
+import { characters, type CharacterId } from ".";
 
 export const characterAssetSchema = z.object({
   id: z.string(), characterId: z.enum(["xingzhou", "zhiwei", "atuan"]), revision: z.number().int().positive(),
@@ -10,19 +10,19 @@ export const characterAssetSchema = z.object({
 }).refine(asset => asset.crop.x + asset.crop.width <= asset.atlasWidth && asset.crop.y + asset.crop.height <= asset.atlasHeight, "角色裁切超出图集");
 
 export const characterAssets = characters.map(character => characterAssetSchema.parse({
-  id: `${character.id}-standing-v1`, characterId: character.id, revision: 1,
-  path: characterAtlas.path, atlasWidth: characterAtlas.width, atlasHeight: characterAtlas.height,
-  crop: { x: character.x, y: 0, width: character.width, height: characterAtlas.height },
-  sourceRecord: "docs/assets/PHASE_A_ASSETS.md", provenance: "generated-original", status: "approved-phase-a",
+  id: `${character.id}-standing-v1`, characterId: character.id, revision: 2,
+  path: `/characters/${character.id}-standing.png`, atlasWidth: 420, atlasHeight: 640,
+  crop: { x: 0, y: 0, width: 420, height: 640 },
+  sourceRecord: "docs/assets/character-sprites-v2.json", provenance: "generated-original", status: "approved-phase-a",
   consistencyAnchors: ["保持阶段 A 原始图集中的衣着与轮廓", character.id === "atuan" ? "保持猫毛色、花纹与尾部一致" : "保持发型、面部和随身物件一致"],
 }));
 export type CharacterPose = "standing" | "portrait" | "walking" | "inspecting" | "celebrating";
-// Opaque paper vignettes, not transparent sprites. Original map silhouettes stay unchanged.
+// Transparent generated sprite atlas. Original silhouettes and spacing stay unchanged.
 export const actionAssets = characters.flatMap((character, row) => (["walking", "inspecting", "celebrating"] as const).map(pose => characterAssetSchema.parse({
-  id: `${character.id}-${pose}-v1`, characterId: character.id, revision: 1,
-  path: "/characters/wuxia-actions-v1.png", atlasWidth: 1620, atlasHeight: 971,
-  crop: { x: pose === "walking" ? 324 : pose === "inspecting" ? 972 : 1296, y: [0, 380, 757][row], width: 324, height: [380, 377, 214][row] },
-  sourceRecord: "docs/assets/PHASE_D_ASSETS.md", provenance: "generated-original", status: "phase-d-internal-reviewed",
+  id: `${character.id}-${pose}-v1`, characterId: character.id, revision: 2,
+  path: `/characters/${character.id}-${pose}.png`, atlasWidth: 420, atlasHeight: 640,
+  crop: { x: 0, y: 0, width: 420, height: 640 },
+  sourceRecord: "docs/assets/character-sprites-v2.json", provenance: "generated-original", status: "phase-d-internal-reviewed",
   consistencyAnchors: characterAssets[row].consistencyAnchors,
 })));
 export function resolveCharacterAsset(id: CharacterId, pose: CharacterPose = "standing") {

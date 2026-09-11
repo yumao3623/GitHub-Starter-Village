@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { AdventureGame } from "@/components/adventure/adventure-game";
+import { WuxiaGame } from "@/components/adventure/wuxia-game";
 import "./wuxia.css";
 import "./contribution.css";
+import "./journey.css";
 
-export const metadata: Metadata = { title: "江湖历练 · 夜行图贡献链" };
-export default function AdventurePage() { return <AdventureGame />; }
+export const metadata: Metadata = { title: "云溪谷 · 武侠 GitHub 页游" };
+export default function AdventurePage() { return <WuxiaGame />; }

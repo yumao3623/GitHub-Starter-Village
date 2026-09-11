@@ -1,0 +1,1 @@
+export const journeyConfig = { version: 3, storageKey: 'gsv:wuxia:v3', chapterCount: 13, map: { height: 700, width: 1200, travelMs: 2200 }, sprite: { width: 420, height: 640, footBaseline: 632 }, desktop: { minWidth: 1024, minHeight: 720 } } as const;

@@ -6,6 +6,8 @@ import { p0TermIds, vocabulary } from "../src/content/vocabulary/zh-CN";
 import { validateAdventureContent } from "../src/core/validation/adventure-content";
 
 const officialHosts = new Set(["docs.github.com", "git-scm.com", "nodejs.org", "docs.npmjs.com"]);
+import { chapterLessons } from "../src/content/minigames/chapters";
+import { chapterScenes } from "../src/content/scenarios/chapter-scenes";
 const errors: string[] = validateAdventureContent();
 
 function duplicates(values: string[]) {
@@ -65,9 +67,13 @@ for (const id of p0TermIds) if (!interactiveTermIds.has(id)) errors.push(`P0 缺
 const graduationTermIds = new Set(graduationQuiz.map((item) => item.termId));
 for (const id of p0TermIds) if (!graduationTermIds.has(id)) errors.push(`P0 未进入结业测试: ${id}`);
 
+const journeyTerms = new Set(chapterLessons.flatMap(l => l.stages.flatMap(s => s.termIds)));
+for (const id of journeyTerms) if (!termIds.has(id)) errors.push(`新版章节未知术语: ${id}`);
+for (const term of vocabulary.filter(t => t.priority !== "P2")) if (!journeyTerms.has(term.id)) errors.push(`新版主线遗漏 ${term.priority}: ${term.id}`);
+if (chapterScenes.length !== 13 || chapterLessons.some((l,i) => l.chapter !== i || l.stages.length < 3)) errors.push("新版章节顺序/数量/动作循环不完整");
 if (errors.length) {
   console.error(`内容校验失败，共 ${errors.length} 项：\n${errors.map((error) => `- ${error}`).join("\n")}`);
   process.exit(1);
 }
 
-console.log(`内容校验通过：${vocabulary.length} 个术语、${missions.length} 个章节、${graduationQuiz.length} 道 P0 结业题。`);
+console.log(`内容校验通过：${vocabulary.length} 个术语、${missions.length} 个章节、${graduationQuiz.length} 道 P0 结业题；新版 13 个独立场景、${journeyTerms.size} 条动作绑定术语。`);

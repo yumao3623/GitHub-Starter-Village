@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CharacterArt } from "./character-art";
 import { contributionByChapter } from "@/content/minigames/contribution-lessons";
 import { chainCompleted, originalReadme, replayChain, type ChainEvent, type ChainModel } from "@/core/game/contribution";
 import type { AdventureAction, AdventureState } from "@/core/game/adventure";
 import { vocabularyById } from "@/content/vocabulary/zh-CN";
+import { chapterSceneByChapter } from "@/content/scenarios/chapter-scenes";
 
 type DeskProps = {
   m: ChainModel; draft: (key: string, fallback?: string) => string;
@@ -75,19 +75,20 @@ export function ContributionChain({ state, dispatch, openBook }: { state: Advent
   const sim = state.journey.simulation;
   const m = replayChain(sim.events)!;
   const lesson = contributionByChapter(sim.chapter);
+  const scene = chapterSceneByChapter.get(sim.chapter)!;
   const done = chainCompleted(m);
   const [reset, setReset] = useState(false);
   const draft = (key: string, fallback = "") => sim.drafts[key] ?? fallback;
   const set = (key: string, value: string) => dispatch({ type: "chain-draft", key, value });
   const act = (op: ChainEvent["op"], value = "", extra = "") => dispatch({ type: "chain-event", event: { op, value, extra } });
   const props = { m, draft, set, act };
-  return <section className="chain-scene" data-chapter={sim.chapter}>
+  return <section className="chain-scene" data-chapter={sim.chapter} data-parent-map-region={scene.parentMapRegionId}>
     <header className="chain-header"><div><span className="seal-small">第 {sim.chapter} 章 · {lesson.place}</span><h1>{lesson.title}</h1><p>{lesson.objective}</p></div><Button variant="secondary" onClick={() => dispatch({ type: "navigate", view: "map" })}>返回江湖地图</Button></header>
-    <div className="chain-layout"><aside className="chain-story"><div className="scene-panorama" style={{ backgroundPosition: `${((sim.chapter - 7) % 3) * 50}% ${sim.chapter < 10 ? 0 : 100}%` }} aria-hidden/>{state.character && <CharacterArt id={state.character} pose={done.includes(sim.chapter) ? "celebrating" : "inspecting"} className="chain-hero"/>}<div className="story-scroll"><strong>青砚的来信</strong><p>{lesson.story}</p><small>原创教学模拟 · 不操作真实仓库</small></div><nav aria-label="贡献链地点">{[7,8,9,10,11,12].map(chapter => <Button key={chapter} variant={chapter === sim.chapter ? "default" : "secondary"} aria-disabled={chapter > 7 && !done.includes(chapter - 1)} onClick={() => dispatch({ type: "contribution-enter", chapter })}>{chapter} · {contributionByChapter(chapter).place}{done.includes(chapter) ? " ✓" : ""}</Button>)}</nav></aside>
+    <div className="chain-layout"><aside className="chain-story"><div className="scene-panorama" data-camera-start={`${scene.cameraStart.x},${scene.cameraStart.y},${scene.cameraStart.zoom}`} style={{ backgroundPosition: `${((sim.chapter - 7) % 3) * 50}% ${sim.chapter < 10 ? 0 : 100}%` }} aria-label={`局部地图：${scene.parentMapRegionId}`} />{state.character && <CharacterArt id={state.character} pose={done.includes(sim.chapter) ? "celebrating" : "inspecting"} className="chain-hero"/>}<div className="story-scroll"><strong>青砚的来信</strong><p>{lesson.story}</p><small>原创教学模拟 · 不操作真实仓库</small></div></aside>
     <section className="chain-workbench" aria-label={lesson.place}>
       <div className={`chain-feedback ${state.feedbackKind}`} role="status">{state.feedback}</div>
       {sim.chapter === 7 ? <IssueDesk {...props}/> : sim.chapter === 8 ? <RemoteDesk {...props}/> : sim.chapter === 9 ? <><label>Create branch · 修复分支名<input value={draft("branch")} onChange={e => set("branch", e.target.value)} placeholder="fix/south-gate"/></label><Button onClick={() => act("branch", draft("branch"))}>创建并切换 Branch</Button><FileDesk {...props}/></> : sim.chapter === 10 ? <PullRequestDesk {...props}/> : sim.chapter === 11 ? <ReviewDesk {...props}/> : <ChecksDesk {...props}/>}
-      {done.includes(sim.chapter) && <section className="chain-success"><strong>第 {sim.chapter} 章交付完成</strong><p>操作记录已保存。重复点击不会重复创建交付物。</p>{sim.chapter < 12 ? <Button onClick={() => dispatch({ type: "contribution-enter", chapter: sim.chapter + 1 })}>前往第 {sim.chapter + 1} 章</Button> : <Link href="/field-practice/">前往自己的 Fork 完成真实实践 →</Link>}</section>}
+      {done.includes(sim.chapter) && <section className="chain-success"><strong>第 {sim.chapter} 章交付完成 · {scene.returnMapReward.item}</strong><p>印章已收入行囊。{scene.returnMapReward.nextHint}</p><Button onClick={() => dispatch({ type: "navigate", view: "map" })}>返回江湖地图</Button></section>}
       <details className="chain-notes"><summary>武林宝典 · 本场景英文与使用边界</summary>{lesson.notes.map(note => <p key={note}>{note}</p>)}<div className="scene-actions">{lesson.termIds.map(termId => <Button key={termId} variant="ghost" onClick={() => openBook(termId)}>{vocabularyById.get(termId)?.english} · {vocabularyById.get(termId)?.chinese}</Button>)}</div><a href={lesson.sourceUrl} target="_blank" rel="noreferrer">官方依据 · 核验于 {lesson.lastVerifiedAt}</a>{lesson.commands.length > 0 && <pre>{lesson.commands.join("\n")}</pre>}</details>
       <p className="chain-footnote">本轮有效操作 {sim.events.length} 次，错误尝试 {sim.mistakes} 次。不是能力认证，不增加旧版 P0 掌握率。</p>
       <Button variant="ghost" onClick={() => setReset(true)}>重新练习整条贡献链</Button>{reset && <div role="group" aria-label="确认重新练习"><p>归档当前链路并重新从第 7 章开始；鉴宝与角色不变。</p><Button onClick={() => { dispatch({ type: "chain-restart" }); setReset(false); }}>确认重新练习</Button><Button variant="secondary" onClick={() => setReset(false)}>取消</Button></div>}

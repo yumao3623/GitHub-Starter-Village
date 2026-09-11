@@ -5,8 +5,8 @@ import { worldNodes } from "@/content/world";
 import type { CharacterId } from "@/content/characters";
 
 export const demoStops = [
-  { id: "choose", title: "选角开场" }, { id: "map", title: "迷雾地图" }, { id: "market", title: "集市鉴宝" },
-  ...worldNodes.filter(n => n.chapter || n.region).map(n => ({ id: n.id, title: n.title })),
+  { id: "choose", title: "选角开场" }, { id: "map", title: "江湖地图 · 迷雾" },
+  ...worldNodes.filter(n => n.chapter !== undefined).sort((a,b) => (a.chapter ?? 99) - (b.chapter ?? 99)).map(n => ({ id: n.id, title: `第 ${n.chapter} 章 · ${n.title}` })),
   { id: "ending", title: "贡献链完成 · 留影" },
 ];
 export function demoSnapshot(id: string, character: CharacterId = "atuan") {
@@ -27,6 +27,11 @@ export function demoSnapshot(id: string, character: CharacterId = "atuan") {
   }
   state = reduce(state, { type: "deliver", project: "reed" });
   const end = id === "ending" || id === "region-governance" ? 13 : Number(id.replace("chapter-", ""));
+  // The demo/exploration shelf is isolated from formal progress, but its snapshots
+  // still satisfy the same sequential map contract so every chapter can be opened.
+  for (let chapter = 0; chapter <= Math.min(6, end); chapter++) {
+    for (let step = 0; step < 3; step++) state = reduce(state, { type: "foundation-step", chapter, step });
+  }
   for (let chapter = 7; chapter < end; chapter++) {
     state = reduce(state, { type: "contribution-enter", chapter });
     for (const event of chapterEvents[chapter]) {

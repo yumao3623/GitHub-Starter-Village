@@ -8,6 +8,7 @@ import { achievedObjectives } from "@/core/game/objectives";
 import { Button } from "@/components/ui/button";
 import { CharacterArt } from "./character-art";
 import { DialoguePanel } from "./dialogue-panel";
+import { chapterSceneByChapter } from "@/content/scenarios/chapter-scenes";
 
 export function AppraisalMarket({ state, dispatch, openBook }: { state: AdventureState; dispatch: React.Dispatch<AdventureAction>; openBook: (termId?: string) => void }) {
   const projects = getProjects(state.variant);
@@ -16,7 +17,8 @@ export function AppraisalMarket({ state, dispatch, openBook }: { state: Adventur
   const dossier = state.dossiers[project.id];
   const inspected = state.inspected.includes(fact.id);
   const classified = projects.filter(item => state.dossiers[item.id].verdict).length;
-  return <section className="market-layout" aria-labelledby="market-title">
+  const scene = chapterSceneByChapter.get(5)!;
+  return <section className="market-layout" data-parent-map-region={scene.parentMapRegionId} aria-labelledby="market-title">
     <div className="market-stage">
       <Image src="/world/appraisal-market-v1.png" alt="青砚坐在三间卷轴摊位之间，等待少侠查验项目" className="market-art" fill sizes="65vw" priority unoptimized />
       <div className="market-heading"><p>夜行图的第一份委托</p><h1 id="market-title">{appraisalStory.title}</h1><span>{appraisalStory.subtitle}</span></div>
