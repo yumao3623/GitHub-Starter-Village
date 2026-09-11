@@ -47,5 +47,6 @@
 - 同一发布包的本地产物检查：`codesign --verify --deep --strict` 通过；`codesign -dv` 为 `Signature=adhoc`、`TeamIdentifier=not set`；沙箱外 `spctl --assess --type execute -vv` 返回 `rejected`（退出码 3）。当前可访问钥匙串返回 `0 valid identities found`；未进行 Apple 公证。
 - 已修正文档和未来打包的首次打开说明，采用 Apple 官方“系统设置 → 隐私与安全性 → 仍要打开”流程。文档修正不会改变已上传包的签名或公证状态，也不是启动成功证据。
 - 关闭条件：Developer ID 正式签名 → Apple 公证 → 附加公证票据 → 生成新的最终 ZIP/哈希 → 从 GitHub 下载并正常启动 → 验证引导、选角、章节、存档重启。人工放行后的个人试用另行记录，不能替代正常分发验收。目前未取得放行后启动成功的证据。
+- `v0.1.2` 方案：在没有会员的阶段保留 ad-hoc 包，并明确一次性的系统设置放行步骤；这能让愿意信任项目来源的用户继续试用，但仍标记为“首次需手动放行”，不能写成下载后无提示直开。未来取得 Developer ID 后再替换同一流程中的签名/公证门禁。
 
 维护者代理在本机验证了入口、角色、地图、逐章操作、错误恢复和宝典。自动化脚本是 `tests/e2e/journey.spec.ts` 与 `scripts/verify-journey-desktop.ts`，输出位于 `artifacts/journey/`、`artifacts/journey-desktop/`。具体版本和结果见 [`JOURNEY_IMPLEMENTATION_2026-09-11.md`](../product/JOURNEY_IMPLEMENTATION_2026-09-11.md) 及 JSON；这些工程证据不替代 P01–P03 真实参与者记录。

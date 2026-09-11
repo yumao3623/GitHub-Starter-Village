@@ -11,11 +11,11 @@
 <!-- BEGIN GENERATED DOWNLOADS -->
 ## 下载桌面应用
 
-- [下载 macOS · Apple 芯片](https://github.com/yumao3623/GitHub-Starter-Village/releases/download/v0.1.1/GitHubStarterVillage-0.1.0-darwin-arm64.zip)；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
+- [下载 macOS · Apple 芯片](https://github.com/yumao3623/GitHub-Starter-Village/releases/download/v0.1.2/GitHubStarterVillage-0.1.0-darwin-arm64.zip)；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
 - Windows · x64：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-win32-x64.zip`
 - macOS · Intel（实验构建）：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-x64.zip`
 
-[版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.1)
+[版本说明与 SHA-256 校验值](https://github.com/yumao3623/GitHub-Starter-Village/releases/tag/v0.1.2)
 
 成品包自带运行环境，不需要安装 Node.js、npm 或 Git。下载后完整解压，再打开应用（保留 Windows 解压文件夹内的运行时文件）。
 
