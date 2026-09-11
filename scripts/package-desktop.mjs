@@ -47,7 +47,14 @@ await cp(path.join(root, "THIRD_PARTY_NOTICES.md"), path.join(folder, "THIRD_PAR
 await cp(path.join(root, "LICENSE"), path.join(folder, "PROJECT_LICENSE.txt"));
 await cp(path.join(root, "docs/assets"), path.join(folder, "asset-notices"), { recursive: true });
 await cp(path.join(stage, "dependency-licenses"), path.join(folder, "dependency-licenses"), { recursive: true });
-await writeFile(path.join(folder, "START_HERE.txt"), "内部验收候选包，未签名/公证，未公开发布。\n解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node/Git。若系统安全检查阻止打开，请停止并联系维护者，不要关闭保护。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n");
+await writeFile(path.join(folder, "START_HERE.txt"), "这是 GitHub 新手村桌面预览版。\n解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node/Git。macOS 首次打开若出现安全提示，请在 Finder 中右键应用选择“打开”，确认来源后再启动。\n本版本使用本机临时签名，尚未 Apple 公证；请只从项目 GitHub Release 下载并核对 SHA-256。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n");
+if (target === "darwin") {
+  // Electron's packager leaves linker signatures on nested binaries. Any files
+  // copied above change the final bundle, so re-sign the complete app before
+  // archiving; otherwise Gatekeeper reports the downloaded app as damaged.
+  execFileSync("codesign", ["--deep", "--force", "--verbose", "--sign", "-", path.join(folder, `${config.executableName}.app`)], { stdio: "inherit" });
+  execFileSync("codesign", ["--verify", "--deep", "--strict", path.join(folder, `${config.executableName}.app`)], { stdio: "inherit" });
+}
 const filename = artifactName(config.executableName, pkg.version, target, architecture);
 const archive = path.join(output, filename);
 if (process.platform === "darwin" && target === "darwin") execFileSync("ditto", ["-c", "-k", "--sequesterRsrc", "--keepParent", folder, archive]);
@@ -57,7 +64,7 @@ const sha = await sha256(archive);
 const asar = path.join(folder, target === "darwin" ? `${config.executableName}.app/Contents/Resources/app.asar` : "resources/app.asar");
 const manifest = { schemaVersion: 1, filename, bytes: (await stat(archive)).size, sha256: sha, appAsarSha256: await sha256(asar), platform: target, arch: architecture,
   version: pkg.version, electron: pkg.devDependencies.electron, builtAt: new Date().toISOString(), sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
-  sourceDirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()), sourceDigest:buildInfo.sourceDigest, signing: "not-performed", notarization: "not-performed", systemAcceptance: "pending", published: false };
+  sourceDirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()), sourceDigest:buildInfo.sourceDigest, signing: target === "darwin" ? "adhoc" : "not-performed", notarization: "not-performed", systemAcceptance: "pending", published: false };
 const manifestPath = path.join(output, "artifact.json");
 await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 await writeFile(path.join(output, "SHA256SUMS.txt"), `${sha}  ${filename}\n`);
