@@ -4,6 +4,7 @@ import type {
   VocabularyKind,
 } from "@/content/schemas/vocabulary";
 import { officialSources, type OfficialSourceKey } from "@/content/sources/official";
+import { reviewContributionTerm } from "./contribution-review";
 
 type TermSeed = {
   id: string;
@@ -158,7 +159,7 @@ const seeds: TermSeed[] = [
   { id: "ssh", english: "SSH", chinese: "安全外壳协议", meaning: "可使用密钥对访问 GitHub 远程仓库的安全协议，需要额外配置。", use: "通过 SSH 密钥认证访问远程仓库", kind: "security", priority: "P2", lessons: ["chapter-2"], source: "remote", confused: ["https"] },
 ];
 
-export const vocabulary = seeds.map(makeTerm);
+export const vocabulary = seeds.map(makeTerm).map(reviewContributionTerm);
 export const vocabularyById = new Map(vocabulary.map((term) => [term.id, term]));
 export const p0TermIds = vocabulary.filter((term) => term.priority === "P0").map((term) => term.id);
 export const p1TermIds = vocabulary.filter((term) => term.priority === "P1").map((term) => term.id);

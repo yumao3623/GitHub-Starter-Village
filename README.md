@@ -2,13 +2,17 @@
 
 > 从登录、Fork、Clone 到提交第一个 Pull Request，用一场完整的新手村冒险学会 GitHub。
 
-## 武侠改版 · 阶段 A
+## 武侠改版 · 阶段 C
 
-现已提供本地样板：三位角色、局部迷雾地图、一关完整的“集市鉴宝”和独立本机存档。启动开发版后访问 **http://localhost:3000/adventure**。
+现已提供三位一致角色、四区域江湖地图、集市鉴宝、第 7—12 章连续贡献链与导览/安全/关注/治理支线。操作包括填写 Issue、编辑文件、暂存提交、配置 PR、处理审阅、排查检查与发布；本机自动存档。启动开发版后访问 **http://localhost:3000/adventure**。
 
 **桌面成品尚未公开发布，暂时没有 GitHub 下载按钮。** 当前是本地打包验证阶段，不是十四章桌面正式版。不要把 `Code → Download ZIP` 或 Release 的 `Source code (zip)` 当作可双击的应用。
 
 [阶段 A 的本地体验、打包和限制说明 →](docs/setup/DESKTOP_PREVIEW.md)
+
+[阶段 C 实施与验收记录 →](docs/product/PHASE_C_PROGRESS.md) · [出师实战：只在自己的 Fork 创建 PR →](docs/setup/FIELD_PRACTICE.md)
+
+桌面包只包含应用，不会替你 Fork/Clone 源码。真实实践需另外按照下方指南取得自己的源码仓库。
 
 ## 第一次使用 GitHub？
 

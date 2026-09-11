@@ -2,6 +2,9 @@ import { writeFileSync } from "node:fs";
 import { missions } from "../src/content/missions/zh-CN";
 import { graduationQuiz } from "../src/content/quizzes/zh-CN/graduation";
 import { vocabulary } from "../src/content/vocabulary/zh-CN";
+import { contributionMissions } from "../src/content/minigames/contribution-lessons";
+import { contributionGuidanceIds } from "../src/content/vocabulary/zh-CN/contribution-review";
+import { regionLessons } from "../src/content/minigames/region-lessons";
 
 const mainline = new Set(missions.flatMap((item) => item.termIds));
 const interactive = new Set(missions.flatMap((item) => item.tasks.flatMap((task) => task.termIds)));
@@ -17,7 +20,7 @@ const rows = (["P0", "P1", "P2"] as const).map((priority) => {
 
 const report = `# 课程覆盖报告
 
-> 由 \`npm run content:coverage\` 生成。生成日期：2026-09-10。
+> 由 \`npm run content:coverage\` 生成。内容版本日期：2026-09-11。
 
 | 权重 | 术语总数 | 主线覆盖 | 主线覆盖率 | 互动覆盖 | 结业测试覆盖 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -38,6 +41,15 @@ ${vocabulary.filter((item) => item.priority !== "P2" && !mainline.has(item.id)).
 ## 解释
 
 “主线覆盖”表示术语出现在章节的明确学习范围中；“互动覆盖”表示术语至少由一道可操作的场景题覆盖；“结业测试覆盖”只对 P0 强制。P2 只要求进入可搜索词典，不阻塞毕业。
+
+## 武侠阶段 C：单独统计，不混算掌握率
+
+- 连续操作场景：${contributionMissions.map(item => item.chapter).join("、")}。
+- 场景明确引用词条：${new Set(contributionMissions.flatMap(item=>item.termIds)).size} 个。
+- 逐条改写操作说明与误区：${contributionGuidanceIds.length} 个词条，全部具有官方来源。
+- 区域支线：${Object.values(regionLessons).map(item=>item.title).join("、")}。
+- 上方旧版 14 章结构覆盖率不代表武侠版 P0 独立掌握率。新小游戏记录操作结果，不自动给旧版结业题加分、不授予真实 GitHub 认证。
+- UI 对照与模拟边界见 [阶段 C 教学审读](PHASE_C_REVIEW.md)，真正通关证据见 [阶段 C 验收](../product/PHASE_C_PROGRESS.md)。
 `;
 
 writeFileSync("docs/curriculum/COVERAGE_REPORT.md", report);

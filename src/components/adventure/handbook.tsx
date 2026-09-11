@@ -1,11 +1,13 @@
 import { useRef, useEffect, useState } from "react";
 import { X, ArrowSquareOut } from "@phosphor-icons/react";
 import { vocabulary } from "@/content/vocabulary/zh-CN";
+import { contributionMissions } from "@/content/minigames/contribution-lessons";
 import { learningEvidence } from "@/core/mastery/adventure-evidence";
 import type { AdventureState, AdventureAction } from "@/core/game/adventure";
 import { Button } from "@/components/ui/button";
 
 const topicNames: Record<string, string> = { concept: "技术概念", navigation: "页面导航", action: "操作", status: "状态", permission: "权限", security: "安全", "git-command": "Git 命令", file: "文件", community: "社区" };
+const chainTerms = new Set(contributionMissions.flatMap(lesson=>lesson.termIds));
 export function Handbook({ termId, close, state, dispatch }: { termId?: string; close: () => void; state: AdventureState; dispatch: React.Dispatch<AdventureAction> }) {
   const [search, setSearch] = useState(termId ? vocabulary.find(term => term.id === termId)?.english ?? "" : "");
   const [filter, setFilter] = useState("all");
@@ -17,13 +19,13 @@ export function Handbook({ termId, close, state, dispatch }: { termId?: string; 
   const terms = vocabulary.filter(term => {
     const evidence = learningEvidence(state, term.id);
     return `${term.english} ${term.chinese}`.toLowerCase().includes(search.trim().toLowerCase()) && (topic === "all" || term.kind === topic) &&
-      (filter === "all" || (filter === "scene" && evidence.supported) || (filter === "bookmarks" && state.journey.bookmarks.includes(term.id)) || (filter === "review" && evidence.practiced.length > 0 && evidence.assessed.length === 0));
+      (filter === "all" || (filter === "chain" && chainTerms.has(term.id)) || (filter === "scene" && evidence.supported) || (filter === "bookmarks" && state.journey.bookmarks.includes(term.id)) || (filter === "review" && evidence.practiced.length > 0 && evidence.assessed.length === 0));
   });
   return <dialog ref={dialog} className="handbook" aria-labelledby="handbook-title" onCancel={event => { event.preventDefault(); dismiss(); }}>
     <div className="handbook-header"><div><small>随身查阅，不限进度</small><h2 id="handbook-title">武林宝典</h2></div><Button variant="ghost" size="icon" onClick={dismiss} aria-label="收起武林宝典"><X size={22} /></Button></div>
     <label className="book-search">查找英文或中文<input ref={input} value={search} onChange={event => setSearch(event.target.value)} placeholder="例如 License、许可证" /></label>
-    <div className="book-filters"><label>范围<select aria-label="范围" value={filter} onChange={event => setFilter(event.target.value)}><option value="all">全部术语</option><option value="scene">鉴宝相关</option><option value="bookmarks">我的书签</option><option value="review">待独立评估</option></select></label><label>主题<select aria-label="主题" value={topic} onChange={event => setTopic(event.target.value)}><option value="all">全部类型</option>{[...new Set(vocabulary.map(term => term.kind))].map(kind => <option key={kind} value={kind}>{topicNames[kind]}</option>)}</select></label></div>
-    <p className="book-note">见过 ≠ 练过 ≠ 评估通过。仅鉴宝目标有操作证据；其他课程未接入。不代表真实 GitHub 验证。评估中查宝典，本轮记辅助练习。</p>
+    <div className="book-filters"><label>范围<select aria-label="范围" value={filter} onChange={event => setFilter(event.target.value)}><option value="all">全部术语</option><option value="scene">鉴宝相关</option><option value="chain">贡献链相关</option><option value="bookmarks">我的书签</option><option value="review">待独立评估</option></select></label><label>主题<select aria-label="主题" value={topic} onChange={event => setTopic(event.target.value)}><option value="all">全部类型</option>{[...new Set(vocabulary.map(term => term.kind))].map(kind => <option key={kind} value={kind}>{topicNames[kind]}</option>)}</select></label></div>
+    <p className="book-note">见过 ≠ 练过 ≠ 评估通过。鉴宝有独立迁移评估；贡献链记录操作但不换算评估成绩。不代表真实 GitHub 验证。评估中查宝典，本轮记辅助练习。</p>
     <div className="book-results">{terms.length ? terms.map(term => {
       const evidence = learningEvidence(state, term.id);
       return <article key={term.id}><h3>{term.english}<span>{term.chinese}</span></h3><p>{term.beginnerMeaning}</p>

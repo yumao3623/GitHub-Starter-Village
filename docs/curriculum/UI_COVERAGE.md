@@ -19,3 +19,5 @@
 - 社区：CONTRIBUTING、LICENSE、CODE_OF_CONDUCT、SECURITY、Discussions、Wiki 与角色。
 
 GitHub 的按钮位置和措辞会变化。课程依赖英文标签与任务目标，而不依赖像素坐标；修改 UI 文案时必须同步更新词典和核验日期。
+
+2026-09-11：武侠阶段 C 的实际操作台、精确 UI 文案、中文解释及真实/模拟边界已单独列于 [PHASE_C_REVIEW.md](PHASE_C_REVIEW.md)。这包括 Submit new issue、Ready for review、base/head、检查重跑、发行与安全投递，不将旧版结构覆盖率当作新游戏掌握率。

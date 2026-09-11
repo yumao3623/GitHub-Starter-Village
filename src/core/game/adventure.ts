@@ -6,15 +6,21 @@ import { dialogueById } from "@/content/story";
 import { vocabulary } from "@/content/vocabulary/zh-CN";
 import { appraisalIntentSchema } from "@/content/minigames/objectives";
 import { getProjects } from "@/content/minigames/appraisal";
+import { applyChainEvent, chainCompleted, chainEventSchema, chainSaveSchema, eventChapter, freshChain, replayChain, validChain, type ChainEvent } from "./contribution";
+import { applyRegion, freshRegions, regionSchema, regionDone, validRegions, type RegionEvent } from "./regions";
+import { regionLessons, type RegionId } from "@/content/minigames/region-lessons";
 
 const runSchema = z.object({ mode: z.enum(["practice", "assessment"]), aided: z.boolean(), baselineVariant: z.number().int().min(0).max(1).nullable() });
 const archiveSchema = z.object({ key: z.string(), run: runSchema, origin: z.enum(["phase-a", "phase-b"]), snapshot: legacySchema });
 const journeySchema = z.object({
-  lastNode: z.enum(["inn", "market", "pavilion"]),
+  lastNode: z.string(),
   encountered: z.array(z.string()).max(500), bookmarks: z.array(z.string()).max(500),
   dialogues: z.record(z.string(), z.object({ index: z.number().int().nonnegative(), dismissed: z.boolean() })),
   run: runSchema, archives: z.array(archiveSchema).max(4),
   migration: z.enum(["fresh", "phase-a"]),
+  contribution: z.object({ currentChapter: z.number().int().min(7).max(12), completedChapters: z.array(z.number().int().min(7).max(12)).max(6), stepIndex: z.number().int().min(0).max(2), attempts: z.record(z.string(), z.number().int().nonnegative()), lastAction: z.string().nullable() }).default({ currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null }),
+  simulation: chainSaveSchema.default(freshChain),
+  regions: regionSchema.default(freshRegions),
 });
 export const adventureSchema = legacySchema.extend({ version: z.literal(2), journey: journeySchema });
 export type AdventureSave = z.infer<typeof adventureSchema>;
@@ -25,13 +31,17 @@ export type AdventureState = AdventureSave & {
 const freshJourney = (): AdventureSave["journey"] => ({
   lastNode: "inn", encountered: [], bookmarks: [], dialogues: {},
   run: { mode: "practice", aided: false, baselineVariant: null }, archives: [], migration: "fresh",
+  contribution: { currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null },
+  simulation: freshChain(),
+  regions: freshRegions(),
 });
 export const toLegacy = (state: AdventureSave): LegacySave => legacySchema.parse({ ...state, version: 1 });
 export function initialAdventure(): AdventureState {
   return { ...legacyInitial(), version: 2, journey: freshJourney(), sessionMode: "mainline" };
 }
 export function completedGoals(state: AdventureSave): string[] {
-  return [...new Set([...achievedObjectives(toLegacy(state)), ...state.journey.archives.flatMap(record => achievedObjectives(record.snapshot))])];
+  const model = replayChain(state.journey.simulation.events);
+  return [...new Set([...achievedObjectives(toLegacy(state)), ...state.journey.archives.flatMap(record => achievedObjectives(record.snapshot)), ...(model ? chainCompleted(model).map(chapter => `chain-${chapter}`) : []), ...Object.keys(regionLessons).filter(id=>regionDone(state.journey.regions,id as RegionId)).map(id=>`region-${id}`)])];
 }
 export function hasCompletedMarket(state: AdventureSave) { return completedGoals(state).includes("market-delivered"); }
 
@@ -49,6 +59,8 @@ export function parseAdventure(input: unknown): AdventureSave | null {
   const parsed = adventureSchema.safeParse(input);
   if (!parsed.success) return null;
   const save = parsed.data;
+  if (!validChain(save.journey.simulation) || !validRegions(save.journey.regions)) return null;
+  if (save.journey.simulation.active && (save.view !== "pavilion" || !save.character || !hasCompletedMarket(save))) return null;
   if (!parseLegacy({ ...save, version: 1, view: save.view === "pavilion" ? "map" : save.view })) return null;
   const unique = (items: string[]) => new Set(items).size === items.length;
   if (!unique(save.journey.encountered) || !unique(save.journey.bookmarks)) return null;
@@ -78,9 +90,11 @@ export type AdventureAction = Exclude<LegacyAction, { type: "hydrate" }> |
   { type: "travel"; nodeId: string } |
   { type: "dialogue"; id: string; operation: "next" | "previous" | "dismiss" | "replay" } |
   { type: "encounter" | "bookmark"; termId: string } |
-  { type: "request-hint" } | { type: "start-assessment" };
+  { type: "request-hint" } | { type: "start-assessment" } |
+  { type: "contribution-enter"; chapter: number } | { type: "chain-event"; event: ChainEvent } |
+  { type: "chain-draft"; key: string; value: string } | { type: "chain-restart" } | { type: "region-event"; event:RegionEvent };
 
-function message(state: AdventureState, feedback: string): AdventureState { return { ...state, feedback, feedbackKind: "info" }; }
+function message(state: AdventureState, feedback: string, feedbackKind: AdventureState["feedbackKind"] = "info"): AdventureState { return { ...state, feedback, feedbackKind }; }
 export function adventureReducer(state: AdventureState, action: AdventureAction): AdventureState {
   if (action.type === "hydrate") {
     const save = action.save ? parseAdventure(action.save) : null;
@@ -91,9 +105,36 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
   if (!state.ready) return state;
   if (action.type === "reset") return { ...initialAdventure(), ready: true, sessionMode: state.sessionMode };
   if (action.type === "storage-error") return { ...state, storageIssue: action.message };
+  if (action.type === "region-event") {
+    if (!state.character || state.view!=="pavilion" || state.journey.lastNode!==`region-${action.event.region}` || !canEnterNode(state.journey.lastNode,completedGoals(state))) return message(state,"先进入已解锁的地点。","error");
+    const result=applyRegion(state.journey.regions,action.event);
+    return {...state,journey:{...state.journey,regions:result.state},feedback:result.message,feedbackKind:result.kind};
+  }
+  if (action.type === "contribution-enter") {
+    const chapter = action.chapter;
+    if (!state.character || !canEnterNode(`chapter-${chapter}`, completedGoals(state))) return message(state, "前方迷雾未散：先完成鉴宝与上一处协作委托。", "error");
+    return { ...state, view: "pavilion", journey: { ...state.journey, lastNode: `chapter-${chapter}`, simulation: { ...state.journey.simulation, active: true, chapter } }, feedback: `已进入第 ${chapter} 章。上次编辑和操作记录已恢复。`, feedbackKind: "info" };
+  }
+  if (action.type === "chain-draft" || action.type === "chain-event" || action.type === "chain-restart") {
+    const sim = state.journey.simulation;
+    if (!state.character || !sim.active || state.view !== "pavilion" || !hasCompletedMarket(state)) return message(state, "先从地图进入已解锁的场景。", "error");
+    if (action.type === "chain-draft") {
+      if (!/^[a-z-]{1,30}$/.test(action.key) || action.value.length > 3000) return state;
+      return { ...state, journey: { ...state.journey, simulation: { ...sim, drafts: { ...sim.drafts, [action.key]: action.value } } } };
+    }
+    if (action.type === "chain-restart") return { ...state, view: "map", journey: { ...state.journey, lastNode: "pavilion", simulation: { ...freshChain(), archives: [...sim.archives, sim.events].slice(-3) } }, feedback: "已开启新一轮贡献链。上一轮操作另存为历史，鉴宝成绩不变。", feedbackKind: "info" };
+    if (!chainEventSchema.safeParse(action.event).success) return message(state, "操作数据无法识别。", "error");
+    const model = replayChain(sim.events)!;
+    if (eventChapter(model, action.event.op) !== sim.chapter) return message(state, "此操作不属于当前场景，请通过地图进入对应地点。", "error");
+    const result = applyChainEvent(model, action.event);
+    if (result.changed && sim.events.length >= 500) return message(state, "本轮记录已满，请导出后重新历练。", "error");
+    return { ...state, journey: { ...state.journey, simulation: { ...sim, events: result.changed ? [...sim.events, action.event] : sim.events, mistakes: sim.mistakes + Number(result.kind === "error") } }, feedback: result.message, feedbackKind: result.kind };
+  }
   if (action.type === "travel") {
     const node = worldNodes.find(item => item.id === action.nodeId);
     if (!node || (!canEnterNode(node.id, completedGoals(state)) && state.sessionMode !== "explore")) return message(state, "迷雾未散：完成三卷鉴定并交付推荐，才能进入该地点。");
+    if (node.chapter) return adventureReducer(state, { type: "contribution-enter", chapter: node.chapter });
+    if (node.region) return {...state,view:"pavilion",journey:{...state.journey,lastNode:node.id,simulation:{...state.journey.simulation,active:false}},feedback:regionLessons[node.region].story,feedbackKind:"info"};
     return adventureReducer(state, { type: "navigate", view: node.view });
   }
   if (action.type === "navigate") {
@@ -101,7 +142,7 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
     const node = worldNodes.find(item => item.view === action.view);
     if (node && !canEnterNode(node.id, completedGoals(state)) && state.sessionMode !== "explore") return message(state, "迷雾未散：完成三卷鉴定并交付推荐，才能解锁飞鸽台。");
     if (action.view === "ending" && !state.completed) return message(state, "当前一轮尚未交付，不能进入结算。");
-    return { ...state, view: action.view, selectedFact: null, journey: { ...state.journey, lastNode: (node?.id ?? state.journey.lastNode) as AdventureSave["journey"]["lastNode"] }, feedback: "沿路标继续历练。", feedbackKind: "info" };
+    return { ...state, view: action.view, selectedFact: null, journey: { ...state.journey, simulation: { ...state.journey.simulation, active: false }, lastNode: node?.id ?? state.journey.lastNode }, feedback: "沿路标继续历练。", feedbackKind: "info" };
   }
   if (action.type === "dialogue") {
     const dialogue = dialogueById(action.id);
@@ -128,7 +169,7 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
     const variant = (action.type === "start-assessment" ? baseline : state.variant) === 0 ? 1 : 0;
     return { ...initialAdventure(), ready: true, character: state.character, view: "market", variant, reducedMotion: state.reducedMotion,
       sessionMode: state.sessionMode, storageIssue: state.storageIssue,
-      journey: { ...state.journey, lastNode: "market", run: { mode: action.type === "start-assessment" ? "assessment" : "practice", aided: false, baselineVariant: action.type === "start-assessment" ? baseline! : null } },
+      journey: { ...state.journey, simulation: { ...state.journey.simulation, active: false }, lastNode: "market", run: { mode: action.type === "start-assessment" ? "assessment" : "practice", aided: false, baselineVariant: action.type === "start-assessment" ? baseline! : null } },
       feedback: action.type === "start-assessment" ? "迁移评估：项目条件发生变化。可查宝典，但查阅后本轮只记辅助练习。" : "新一轮练习已开始。历史完成、解锁和评估保留。" };
   }
   const isIntent = ["inspect", "collect", "attach", "verdict", "deliver"].includes(action.type);

@@ -4,16 +4,18 @@ import { mkdtemp, mkdir, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import assert from "node:assert/strict";
+import { playChapter, playRegions } from "../tests/helpers/contribution-flow.mjs";
 
 const require = createRequire(import.meta.url);
 const appFlag = process.argv.indexOf("--app");
 if (appFlag !== -1 && !process.argv[appFlag + 1]) throw new Error("--app requires the packaged executable path");
 const packagedExecutable = appFlag !== -1 ? path.resolve(process.argv[appFlag + 1]) : process.env.GSV_DESKTOP_EXECUTABLE;
 const executablePath = packagedExecutable || require("electron");
+const verifyChain = process.argv.includes("--chain");
 const userData = await mkdtemp(path.join(tmpdir(), "gsv-electron-test-"));
 const screenshots = path.resolve(process.env.GSV_VERIFICATION_DIR || "artifacts/phase-a");
 await mkdir(screenshots, { recursive: true });
-const reportPath = path.join(screenshots, packagedExecutable ? "desktop-packaged-verification.json" : "desktop-verification.json");
+const reportPath = path.join(screenshots, verifyChain ? "desktop-phase-c-verification.json" : packagedExecutable ? "desktop-packaged-verification.json" : "desktop-verification.json");
 const options = { executablePath, args: packagedExecutable ? [] : [path.resolve("desktop/main.mjs")],
   // A packaged launch also runs outside the checkout: no relative fallback to src/ or out/.
   cwd: packagedExecutable ? userData : process.cwd(),
@@ -99,12 +101,40 @@ try {
   await restored.getByRole("link", { name: "武侠样板", exact: true }).click();
   await restored.getByRole("heading", { name: "眼力初成，迷雾已散。" }).waitFor();
   assert.ok(flightResponses.length > 0, "Static client navigation must load local RSC payloads");
+  if (verifyChain) {
+    let chainPage = restored;
+    await chainPage.getByRole("button", { name: "查看解锁地图" }).click();
+    await chainPage.locator('[data-node-id="chapter-7"]').click();
+    for (let chapter = 7; chapter <= 12; chapter++) {
+      await playChapter(chainPage, chapter);
+      await chainPage.screenshot({ path: path.join(screenshots, `desktop-chapter-${chapter}.png`), fullPage: true });
+      if (chapter === 9) {
+        await app.close(); app = await electron.launch(options);
+        chainPage = await app.firstWindow(); observe(chainPage); await app.context().setOffline(true);
+        await chainPage.locator('.chain-success').filter({ hasText: '第 9 章交付完成' }).waitFor();
+      }
+      if (chapter < 12) await chainPage.getByRole("button", { name: `前往第 ${chapter + 1} 章`, exact: true }).click();
+    }
+    await playRegions(chainPage);
+    await chainPage.getByRole("button", { name:"返回江湖地图", exact:true }).click();
+    await chainPage.screenshot({ path:path.join(screenshots,"desktop-full-map.png"),fullPage:true });
+    await chainPage.locator('[data-node-id="chapter-12"]').click();
+    await app.close(); app = await electron.launch(options);
+    chainPage = await app.firstWindow(); observe(chainPage); await app.context().setOffline(true);
+    await chainPage.locator('.chain-success').filter({ hasText: '第 12 章交付完成' }).waitFor();
+    await chainPage.getByRole("link", { name: "前往自己的 Fork 完成真实实践 →" }).click();
+    await chainPage.getByRole("heading", { name: "出师实战，只在自己的 Fork" }).waitFor();
+    await chainPage.getByRole("checkbox").first().check(); await chainPage.reload();
+    assert.equal(await chainPage.getByRole("checkbox").first().isChecked(), true);
+    await chainPage.screenshot({ path: path.join(screenshots, 'desktop-field-practice.png'), fullPage: true });
+  }
   assert.deepEqual(badResponses, []);
   assert.deepEqual(errors, []);
   assert.deepEqual(consoleErrors, []);
   assert.deepEqual(failedRequests, []);
   const report = { passed: true, platform: process.platform, arch: process.arch, packaged: Boolean(packagedExecutable), executablePath, privateProtocol: true,
     rendererIsolated: true, offlineTaskComplete: true, restartRestored: true, staticRoutes: true, nodeAbsentFromPath: true,
+    contributionChapters: verifyChain ? [7,8,9,10,11,12] : [], contributionRestartRestored: verifyChain, fieldPracticeSelfCheck: verifyChain,
     errors, consoleErrors, failedRequests, badResponses, completedHeadCancellations, flightResponseCount: flightResponses.length, userData, verifiedAt: new Date().toISOString(), note: "本机验证，不等于干净系统安装、签名公证或 Windows 实机验证。已收到 200 响应的 HEAD 取消单独记录，不计作资源加载失败。" };
   await writeFile(reportPath, JSON.stringify(report, null, 2));
   console.log(JSON.stringify(report, null, 2));

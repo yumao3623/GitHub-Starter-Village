@@ -1,0 +1,22 @@
+"use client";
+import { useState } from "react";
+import { regionLessons, type RegionId } from "@/content/minigames/region-lessons";
+import { regionDone, type RegionEvent } from "@/core/game/regions";
+import type { AdventureState, AdventureAction } from "@/core/game/adventure";
+import { CharacterArt } from "./character-art";
+import { Button } from "@/components/ui/button";
+export function RegionScene({id,state,dispatch}:{id:RegionId;state:AdventureState;dispatch:React.Dispatch<AdventureAction>}) {
+  const lesson=regionLessons[id]; const progress=state.journey.regions;
+  const [selected, select]=useState(""); const [reset, confirmReset]=useState(false);
+  const act=(op:RegionEvent["op"],key="",value="")=>dispatch({type:"region-event",event:{region:id,op,key,value}});
+  const done=regionDone(progress,id);
+  return <section className="chain-scene" data-region={id}><header className="chain-header"><div><span className="seal-small">{lesson.chapter} · 区域支线</span><h1>{lesson.title}</h1><p>{lesson.story}</p></div><Button variant="secondary" onClick={()=>dispatch({type:"navigate",view:"map"})}>返回江湖地图</Button></header><div className="chain-layout"><aside className="chain-story"><div className="region-panorama" aria-hidden/>{state.character&&<CharacterArt id={state.character} className="chain-hero"/>}<div className="story-scroll"><strong>青砚叮嘱</strong><p>{lesson.explanation}</p><small>原创教学模拟，不操作真实 GitHub。</small></div></aside><div className="chain-workbench">
+    <p className={`chain-feedback ${state.feedbackKind}`} role="status">{state.feedback}</p>
+    {id==="safety"&&<div className="domain-gates"><h2>先检查这扇门通往哪里</h2>{["https://github.com/login","https://github.com.example.org/login"].map(url=><Button key={url} variant="secondary" onClick={()=>act("domain","",url)}>{url}</Button>)}{progress.domain&&<p>已标记官方域名；没有打开登录或收集凭据。</p>}</div>}
+    {"cards" in lesson&&<><h2>物品架 · 先选卡片，再放入目标</h2><div className="region-cards">{lesson.cards.map(card=><Button aria-pressed={selected===card} variant={selected===card?"default":"secondary"} key={card} onClick={()=>select(card)}>{card}{progress.placements[`${id}:${card}`]?" · 已归位":""}</Button>)}</div><div className="region-targets">{lesson.targets.map(target=><article key={target}><h3>{target}</h3><Button variant="secondary" onClick={()=>act("place",selected,target)}>放入{target}</Button><ul>{Object.entries(progress.placements).filter(([key,value])=>key.startsWith(`${id}:`)&&value===target).map(([key])=><li key={key}>{key.split(":").slice(1).join(":")}</li>)}</ul></article>)}</div></>}
+    {id==="follow"&&<><h2>模拟偏好设置</h2><p>这是虚构委托。真实 Star 和 Follow 完全可选，游戏不会替你点击，也不是毕业条件。</p><label><input type="checkbox" checked={progress.subscriptions.star} onChange={e=>act("subscribe","star",String(e.target.checked))}/>Star · 收藏这个虚构项目</label><label><input type="checkbox" checked={progress.subscriptions.follow} onChange={e=>act("subscribe","follow",String(e.target.checked))}/>Follow · 关注虚构作者</label><label>Watch · 仓库订阅<select value={progress.subscriptions.watch} onChange={e=>act("subscribe","watch",e.target.value)}><option value="none">不订阅</option><option value="releases">Custom · Releases</option><option value="all">All activity</option></select></label><div className="postal-stations">{[["Release v1.0.1",progress.subscriptions.watch!=="none"],["Issue #13",progress.subscriptions.watch==="all"],["作者动态",progress.subscriptions.follow]].map(([text,inbox])=><article className="postal-station" key={String(text)}><h3>{text}</h3><p>{inbox?"会进入对应订阅流":"不由此设置送达"}</p></article>)}</div><Button onClick={()=>act("deliver")}>投递本批模拟信件</Button></>}
+    {id==="governance"&&<section className="notice-board"><h2>一份尚未公开的安全漏洞报告</h2><p>只选择报告渠道。不要填写真实漏洞或敏感信息。</p><Button variant="secondary" onClick={()=>act("report","","public")}>送往公开 Issue</Button><Button onClick={()=>act("report","","security")}>按 SECURITY 私密报告</Button></section>}
+    {done&&<section className="chain-success"><strong>{lesson.title} · 历练完成</strong><p>可以重复检查，或返回地图。本关结果是模拟操作记录。</p></section>}
+    <details className="chain-notes"><summary>本关依据与现实使用边界</summary><p>{lesson.explanation}</p><a href={lesson.source} target="_blank" rel="noreferrer">GitHub Docs · 官方依据（2026-09-11）</a></details><Button variant="ghost" onClick={()=>confirmReset(true)}>重布本地点</Button>{reset&&<div><p>只清空当前区域记录，不影响贡献链与鉴宝。</p><Button onClick={()=>{act("reset");select("");confirmReset(false);}}>确认重布</Button><Button variant="secondary" onClick={()=>confirmReset(false)}>取消</Button></div>}
+  </div></div></section>;
+}

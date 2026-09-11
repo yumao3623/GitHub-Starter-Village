@@ -15,6 +15,9 @@ import { AppraisalMarket } from "./appraisal-market";
 import { WorldMap } from "./world-map";
 import { Handbook } from "./handbook";
 import { DialoguePanel } from "./dialogue-panel";
+import { ContributionChain } from "./contribution-chain";
+import { RegionScene } from "./region-scene";
+import { worldNodes } from "@/content/world";
 
 function downloadText(text: string, filename: string) {
   const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
@@ -43,7 +46,7 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
     try { saveAdventure(localStorage, state); }
     catch { dispatch({ type: "storage-error", message: "存档写入失败。请先导出当前进度；清理空间后重新打开。" }); }
   }, [state, demo]);
-  useEffect(() => { if (state.ready) heading.current?.focus(); }, [state.view, state.ready]);
+  useEffect(() => { if (state.ready) heading.current?.focus(); }, [state.view, state.ready, state.journey.simulation.chapter, state.journey.lastNode]);
 
   useEffect(() => {
     if (demo) return;
@@ -74,13 +77,14 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
         backupAdventure(localStorage, "reset");
         saveAdventure(localStorage, initialAdventure());
       }
-      dispatch({ type: "reset" }); setResetPending(false); setNotice("阶段 B 记录已重置。阶段 A 原记录与旧课程记录未改动，重置前记录已另存备份。");
+      dispatch({ type: "reset" }); setResetPending(false); setNotice("本机江湖历练记录已重置。阶段 A 原记录与旧课程记录未改动，重置前记录已另存备份。");
     } catch { setNotice("无法备份存档，因此没有执行重置。请先导出原记录。"); }
   }
   const character = characters.find(item => item.id === state.character);
+  const region = worldNodes.find(node => node.id === state.journey.lastNode)?.region;
   if (exploring) return <AdventureGame demo exploration onExit={() => setExploring(false)} />;
   return <div className="adventure" data-reduced-motion={state.reducedMotion}>
-    <header className="adventure-header"><Link href="/" className="adventure-brand"><span className="brand-seal">侠</span><span>{brandConfig.chineseName}<small>江湖历练 · 阶段 B{exploration ? " / 自由探索" : demo ? " / 演示模式" : ""}</small></span></Link>
+    <header className="adventure-header"><Link href="/" className="adventure-brand"><span className="brand-seal">侠</span><span>{brandConfig.chineseName}<small>江湖历练 · 阶段 C{exploration ? " / 自由探索" : demo ? " / 演示模式" : ""}</small></span></Link>
       <nav aria-label="江湖导航"><Button variant="ghost" onClick={() => dispatch({ type: "navigate", view: "map" })}><MapTrifold size={20} />江湖地图</Button><Button variant="ghost" onClick={() => openBook()}><BookOpen size={20} />武林宝典</Button><Button variant="ghost" aria-expanded={settings} onClick={() => setSettings(!settings)}><Backpack size={20} />行囊</Button></nav>
       <span className="save-status">{demo ? "固定样板 · 不读写存档" : state.storageIssue ? "临时体验 · 保存异常" : state.ready ? "进度自动保存在本机" : "正在读取行囊"}</span>
     </header>
@@ -93,15 +97,15 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
       {!demo && <Button variant="secondary" onClick={() => { try { const raw = readOriginalAdventure(localStorage); if (raw) downloadText(raw, "village-original.json"); else setNotice("本机还没有原始存档。"); } catch { setNotice("无法读取原始存档。"); } }}>导出原始存档</Button>}
       {!demo && <><Button variant="secondary" onClick={() => fileInput.current?.click()}>导入进度</Button><input ref={fileInput} type="file" accept=".json,application/json" aria-label="选择存档文件" className="sr-only" onChange={event => { void importSave(event.target.files?.[0]); event.target.value = ""; }} /></>}
       <Button variant="secondary" onClick={() => setResetPending(true)}><ArrowCounterClockwise size={18} />重置样板</Button>
-      {resetPending && <div className="reset-confirm" role="group" aria-label="确认重置"><p>只重置阶段 B。重置前保留独立备份，阶段 A 原记录不变。</p><Button variant="danger" onClick={reset}>确认重置</Button><Button variant="secondary" onClick={() => setResetPending(false)}>取消</Button></div>}
-      <p role="status">{notice || "本阶段仅验证鉴宝目标，不授予主线毕业，不改变旧版 P0 掌握率。"}</p>
+      {resetPending && <div className="reset-confirm" role="group" aria-label="确认重置"><p>重置本机江湖历练（含阶段 C）。重置前保留独立备份，阶段 A 原记录不变。</p><Button variant="danger" onClick={reset}>确认重置</Button><Button variant="secondary" onClick={() => setResetPending(false)}>取消</Button></div>}
+      <p role="status">{notice || "鉴宝与贡献链结果是模拟记录，不授予 GitHub 认证，不改变旧版 P0 掌握率。"}</p>
       {!demo && <><Button variant="secondary" onClick={() => setExploring(true)}>进入自由探索</Button><Button variant="secondary" onClick={() => { try { const raw = localStorage.getItem(PHASE_A_STORAGE_KEY); if (raw) downloadText(raw, "village-phase-a-preserved.json"); else setNotice("没有检测到阶段 A 原存档。"); } catch { setNotice("无法读取阶段 A 原存档。"); } }}>导出保留的阶段 A 记录</Button></>}
     </section>}
     {!state.ready ? <div className="adventure-loading">正在展开江湖画卷…</div> : state.view === "choose" ? <section className="character-selection" aria-labelledby="choose-title">
       <Image src="/world/river-valley-v1.png" alt="" fill sizes="100vw" className="selection-backdrop" unoptimized priority />
-      <div className="selection-copy"><span className="seal-small">初入江湖</span><h1 id="choose-title">选一位少侠，<br />共赴新手村。</h1><p>一卷夜行图，一场鉴宝委托。<br />从看懂项目开始，练就协作的本领。</p><div className="selected-character"><strong>{character?.name ?? "谁与你同行？"}</strong><p>{character?.description ?? "三个角色，同样的课程与难度。"}</p></div><Button size="lg" disabled={!state.character} onClick={() => dispatch({ type: "navigate", view: "map" })}>踏入江湖 <ArrowRight size={20} /></Button><small className="prototype-note">本次体验一关完整鉴宝，不是十四章成品。</small></div>
+      <div className="selection-copy"><span className="seal-small">初入江湖</span><h1 id="choose-title">选一位少侠，<br />共赴新手村。</h1><p>一卷夜行图，一场鉴宝委托。<br />从看懂项目开始，练就协作的本领。</p><div className="selected-character"><strong>{character?.name ?? "谁与你同行？"}</strong><p>{character?.description ?? "三个角色，同样的课程与难度。"}</p></div><Button size="lg" disabled={!state.character} onClick={() => dispatch({ type: "navigate", view: "map" })}>踏入江湖 <ArrowRight size={20} /></Button><small className="prototype-note">鉴宝、六章贡献链与四处区域支线；真实操作仍需回到自己的 Fork。</small></div>
       <div className="character-options" role="group" aria-label="选择主角">{characters.map(item => <Button key={item.id} variant="ghost" className={`character-option ${state.character === item.id ? "chosen" : ""}`} aria-label={`选择${item.role}${item.name}`} aria-pressed={state.character === item.id} onClick={() => dispatch({ type: "character", id: item.id })}><CharacterArt id={item.id} /><span className="character-name">{item.name}<small>{item.role}</small></span>{state.character === item.id && <CheckCircle className="character-check" size={24} weight="fill" />}</Button>)}</div>
-    </section> : state.view === "map" ? <WorldMap state={state} dispatch={dispatch} /> : state.view === "market" ? <AppraisalMarket state={state} dispatch={dispatch} openBook={openBook} /> : <section className="adventure-ending">
+    </section> : state.view === "map" ? <WorldMap state={state} dispatch={dispatch} /> : state.view === "market" ? <AppraisalMarket state={state} dispatch={dispatch} openBook={openBook} /> : state.view === "pavilion" && region ? <RegionScene key={region} id={region} state={state} dispatch={dispatch} /> : state.view === "pavilion" && state.journey.simulation.active ? <ContributionChain state={state} dispatch={dispatch} openBook={openBook} /> : <section className="adventure-ending">
       <Image src="/world/river-valley-v1.png" alt="" fill sizes="100vw" unoptimized className="ending-backdrop" />
       {state.character && <CharacterArt id={state.character} className="ending-character" pose="celebrating" />}
       <div className="ending-copy"><span className="seal-small">{state.view === "ending" ? "鉴定有据" : "飞鸽台"}</span><h1>{state.view === "ending" ? "眼力初成，迷雾已散。" : "下一封信，写给江湖。"}</h1><p>{state.view === "ending" ? `你已完成三卷鉴定，为夜行图选中了「${getProjects(state.variant).find(item => item.verdict === "suitable")?.name}」。` : appraisalStory.next}</p>{state.view === "pavilion" && <DialoguePanel id="pavilion-letter" state={state} dispatch={dispatch} />}<p>这次练习：核对运行环境、辨认使用许可、判断维护线索。<br />这是模拟关卡完成，不是 GitHub 实操验证或主线毕业。</p><div className="ending-actions"><Button onClick={() => dispatch({ type: "navigate", view: "map" })}>查看解锁地图 <MapTrifold size={20} /></Button><Button variant="secondary" onClick={() => dispatch({ type: "new-round" })}>换一组条件再练</Button><Button variant="secondary" onClick={() => dispatch({ type: "start-assessment" })}>开始迁移评估</Button></div><Link href="/start/">准备好真实实践？查看 Fork / Clone 指南 →</Link></div>

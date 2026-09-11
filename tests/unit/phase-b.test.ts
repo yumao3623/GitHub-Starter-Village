@@ -30,7 +30,7 @@ describe("phase B world, actions, dialogue and evidence", () => {
     expect(canEnterNode("missing", [])).toBe(false);
   });
   it("detects graph cycles, missing dependencies and unknown goal references", () => {
-    expect(validateWorld(worldNodes, ["market-delivered"])).toEqual([]);
+    expect(validateWorld(worldNodes, ["market-delivered", ...[7,8,9,10,11,12].map(chapter => `chain-${chapter}`)])).toEqual([]);
     expect(validateWorld([{ ...worldNodes[0], dependsOn: ["inn"] }], [])).not.toEqual([]);
     expect(validateWorld([{ ...worldNodes[0], dependsOn: ["missing"] }], [])).not.toEqual([]);
     expect(validateWorld(worldNodes, [])).not.toEqual([]);

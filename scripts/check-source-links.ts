@@ -1,7 +1,10 @@
 import { vocabulary } from "../src/content/vocabulary/zh-CN";
+import { contributionMissions } from "../src/content/minigames/contribution-lessons";
+import { regionLessons } from "../src/content/minigames/region-lessons";
+import { practiceSources } from "../src/content/scenarios/field-practice";
 
 const allowedHosts = new Set(["docs.github.com", "git-scm.com", "nodejs.org", "docs.npmjs.com"]);
-const urls = [...new Set(vocabulary.map((item) => item.sourceUrl))];
+const urls = [...new Set([...vocabulary.map((item) => item.sourceUrl), ...contributionMissions.map(item=>item.sourceUrl), ...Object.values(regionLessons).map(item=>item.source), ...practiceSources.map(item=>item[1])])];
 const errors: string[] = [];
 
 for (const url of urls) {
@@ -11,6 +14,7 @@ for (const url of urls) {
     try {
       const response = await fetch(url, { redirect: "follow", signal: AbortSignal.timeout(15_000) });
       if (!response.ok) errors.push(`${url}: HTTP ${response.status}`);
+      if (!allowedHosts.has(new URL(response.url).hostname)) errors.push(`${url}: 重定向离开官方域名`);
     } catch (error) {
       errors.push(`${url}: ${error instanceof Error ? error.message : "连接失败"}`);
     }
