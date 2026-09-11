@@ -2,15 +2,27 @@
 
 > 从登录、Fork、Clone 到提交第一个 Pull Request，用一场完整的新手村冒险学会 GitHub。
 
-## 武侠改版 · 阶段 C
+## 武侠改版 · 阶段 D 内部候选
 
 现已提供三位一致角色、四区域江湖地图、集市鉴宝、第 7—12 章连续贡献链与导览/安全/关注/治理支线。操作包括填写 Issue、编辑文件、暂存提交、配置 PR、处理审阅、排查检查与发布；本机自动存档。启动开发版后访问 **http://localhost:3000/adventure**。
 
-**桌面成品尚未公开发布，暂时没有 GitHub 下载按钮。** 当前是本地打包验证阶段，不是十四章桌面正式版。不要把 `Code → Download ZIP` 或 Release 的 `Source code (zip)` 当作可双击的应用。
+<!-- BEGIN GENERATED DOWNLOADS -->
+## 下载桌面应用
+
+- macOS · Apple 芯片：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-arm64.zip`
+- Windows · x64：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-win32-x64.zip`
+- macOS · Intel（实验构建）：**暂未开放公开下载**；文件名：`GitHubStarterVillage-0.1.0-darwin-x64.zip`
+
+目前只有内部验收候选包：未完成签名/公证及跨系统验收，未上传 Release。请勿把源码 ZIP 当作应用。
+
+成品包自带运行环境，不需要安装 Node.js、npm 或 Git。公开后：按电脑类型下载 → 解压 → Mac 打开 .app，Windows 打开解压文件夹内的 .exe（保留同目录文件）。第一次打开若被系统阻止，请停止并联系维护者，不要关闭系统安全保护。
+
+[下载位置、解压和校验图解](docs/setup/DOWNLOAD_APP.md) · [源码运行指南](docs/setup/DESKTOP_PREVIEW.md)
+<!-- END GENERATED DOWNLOADS -->
 
 [阶段 A 的本地体验、打包和限制说明 →](docs/setup/DESKTOP_PREVIEW.md)
 
-[阶段 C 实施与验收记录 →](docs/product/PHASE_C_PROGRESS.md) · [出师实战：只在自己的 Fork 创建 PR →](docs/setup/FIELD_PRACTICE.md)
+[阶段 D 实施与验收记录 →](docs/product/PHASE_D_PROGRESS.md) · [出师实战：只在自己的 Fork 创建 PR →](docs/setup/FIELD_PRACTICE.md)
 
 桌面包只包含应用，不会替你 Fork/Clone 源码。真实实践需另外按照下方指南取得自己的源码仓库。
 
@@ -141,7 +153,7 @@ npm run build
 
 ## 品牌与赞助配置
 
-品牌名称、仓库地址和网站地址集中在 `src/config/brand.ts`。正式发布前请替换其中的 `OWNER` 与 `example.com`。
+品牌名称、仓库地址和网站地址集中在 `src/config/brand.json`（`brand.ts` 是类型化入口）；平台发布状态在 `src/config/distribution.json`，桌面标识在 `src/config/desktop.json`。正式发布前替换 `OWNER` 与 `example.com`，完成签名/系统验收。用 `npm run desktop:release-check -- --print-readme` 生成下载标记区，再运行 `npm run desktop:release-check` 检查同步；没有真实 Release 时不要启用下载链接。
 
 赞助默认关闭。只有在维护者提供真实二维码后，才把图片放入 `public/sponsor/` 并更新 `src/config/sponsor.ts`。个人收款二维码可能暴露真实姓名，启用前请确认隐私风险。本仓库不会生成虚假二维码或验证支付。
 

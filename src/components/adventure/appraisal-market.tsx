@@ -27,7 +27,7 @@ export function AppraisalMarket({ state, dispatch, openBook }: { state: Adventur
           {state.dossiers[item.id].verdict && <CheckCircle className="scroll-stamp" size={22} aria-hidden />}
         </Button>)}
       </div>
-      {state.character && <CharacterArt id={state.character} className="market-player" />}
+      {state.character && <CharacterArt id={state.character} className="market-player" pose="inspecting" />}
       <div className="npc-dialogue"><DialoguePanel id="market-commission" state={state} dispatch={dispatch} /></div>
       <div className="commission"><strong>委托条件</strong><p>{appraisalStory.brief}</p><span>{classified} / 3 卷鉴定完成</span></div>
     </div>

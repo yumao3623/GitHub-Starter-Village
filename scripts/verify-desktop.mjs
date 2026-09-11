@@ -1,7 +1,7 @@
 import { _electron as electron } from "playwright";
 import { createRequire } from "node:module";
-import { mkdtemp, mkdir, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
+import { mkdtemp, mkdir, writeFile, readFile } from "node:fs/promises";
+import { tmpdir, release, cpus, totalmem } from "node:os";
 import path from "node:path";
 import assert from "node:assert/strict";
 import { playChapter, playRegions } from "../tests/helpers/contribution-flow.mjs";
@@ -12,14 +12,18 @@ if (appFlag !== -1 && !process.argv[appFlag + 1]) throw new Error("--app require
 const packagedExecutable = appFlag !== -1 ? path.resolve(process.argv[appFlag + 1]) : process.env.GSV_DESKTOP_EXECUTABLE;
 const executablePath = packagedExecutable || require("electron");
 const verifyChain = process.argv.includes("--chain");
+const phaseD = process.argv.includes("--phase-d");
+const startedAt = performance.now();
 const userData = await mkdtemp(path.join(tmpdir(), "gsv-electron-test-"));
-const screenshots = path.resolve(process.env.GSV_VERIFICATION_DIR || "artifacts/phase-a");
+const screenshots = path.resolve(process.env.GSV_VERIFICATION_DIR || (phaseD ? "artifacts/phase-d" : "artifacts/phase-a"));
 await mkdir(screenshots, { recursive: true });
-const reportPath = path.join(screenshots, verifyChain ? "desktop-phase-c-verification.json" : packagedExecutable ? "desktop-packaged-verification.json" : "desktop-verification.json");
+const reportPath = path.join(screenshots, phaseD ? "desktop-phase-d-verification.json" : verifyChain ? "desktop-phase-c-verification.json" : packagedExecutable ? "desktop-packaged-verification.json" : "desktop-verification.json");
 const options = { executablePath, args: packagedExecutable ? [] : [path.resolve("desktop/main.mjs")],
   // A packaged launch also runs outside the checkout: no relative fallback to src/ or out/.
   cwd: packagedExecutable ? userData : process.cwd(),
-  env: { ...process.env, NODE_ENV: "test", GSV_TEST_USER_DATA: userData, PATH: "/usr/bin:/bin" }, timeout: 30000 };
+  env: { ...process.env, NODE_ENV: "test", GSV_TEST_USER_DATA: userData, PATH: process.platform === "win32" ? `${process.env.SystemRoot}\\System32;${process.env.SystemRoot}` : "/usr/bin:/bin" }, timeout: 30000 };
+let startupMs = 0;
+const shareExports = [];
 let app;
 const errors = [];
 const consoleErrors = [];
@@ -50,6 +54,7 @@ try {
   const page = await app.firstWindow();
   observe(page);
   await page.getByRole("button", { name: "选择女侠客沈知微" }).waitFor();
+  startupMs = Math.round(performance.now() - startedAt);
   assert.equal(await page.evaluate(() => location.protocol), "village:");
   assert.equal(await page.evaluate(() => typeof window.require), "undefined");
   const preferences = await app.evaluate(({ BrowserWindow }) => {
@@ -128,11 +133,50 @@ try {
     assert.equal(await chainPage.getByRole("checkbox").first().isChecked(), true);
     await chainPage.screenshot({ path: path.join(screenshots, 'desktop-field-practice.png'), fullPage: true });
   }
+  if (phaseD) {
+    const current = await app.firstWindow();
+    await current.goto("village://app/adventure/");
+    await current.getByRole("button", { name: "江湖留影", exact: true }).click();
+    const card = current.getByRole("region", { name: "江湖留影分享卡" }).first();
+    for (const [label, width, height] of [["1080×1920 竖版",1080,1920],["1200×630 横版",1200,630]]) {
+      await card.getByRole("button", { name: label }).click();
+      const saved = path.join(screenshots, `desktop-share-${width}.png`);
+      await app.evaluate(({ session }, destination) => {
+        globalThis.__gsvDownloadResult = null;
+        session.defaultSession.once("will-download", (_event, item) => {
+          item.setSavePath(destination);
+          item.once("done", (_event, state) => { globalThis.__gsvDownloadResult = { state, receivedBytes:item.getReceivedBytes(), path:item.getSavePath() }; });
+        });
+      }, saved);
+      await card.getByRole("button", { name: "下载江湖分享卡" }).click();
+      let result;
+      for (let attempt=0;attempt<100;attempt++) {
+        result = await app.evaluate(() => globalThis.__gsvDownloadResult);
+        if (result) break;
+        await new Promise(resolve=>setTimeout(resolve,100));
+      }
+      assert.equal(result?.state,"completed","Electron native download must finish");
+      assert.equal(result.path,saved);
+      const png = await readFile(saved); assert.equal(png.readUInt32BE(16),width); assert.equal(png.readUInt32BE(20),height);
+      shareExports.push({ width,height });
+    }
+    const before = await current.evaluate(() => localStorage.getItem("gsv:adventure:v2"));
+    await current.goto("village://app/adventure-demo/");
+    await current.getByLabel("演示场景", { exact:true }).selectOption("chapter-9");
+    await current.locator('[data-chapter="9"]').waitFor();
+    await current.getByLabel("演示场景", { exact:true }).selectOption("ending");
+    assert.ok((await current.getByRole("region", {name:"江湖留影分享卡"}).first().innerText()).includes("6 / 6"));
+    await current.getByRole("button", { name:"一键重置演示" }).click();
+    assert.equal(await current.getByRole("button", { name:"踏入江湖" }).isDisabled(),true);
+    assert.equal(await current.evaluate(() => localStorage.getItem("gsv:adventure:v2")),before);
+    await current.screenshot({path:path.join(screenshots,"desktop-demo.png"),fullPage:true});
+  }
   assert.deepEqual(badResponses, []);
   assert.deepEqual(errors, []);
   assert.deepEqual(consoleErrors, []);
   assert.deepEqual(failedRequests, []);
-  const report = { passed: true, platform: process.platform, arch: process.arch, packaged: Boolean(packagedExecutable), executablePath, privateProtocol: true,
+  const memorySample = await app.evaluate(({ app }) => app.getAppMetrics().map(item => ({type:item.type, workingSetKB:item.memory.workingSetSize, peakWorkingSetKB:item.memory.peakWorkingSetSize})));
+  const report = { passed: true, platform: process.platform, arch: process.arch, osRelease:release(), cpu:cpus()[0]?.model, totalMemoryBytes:totalmem(), startupMs, memorySample, shareExports, demoIsolated:phaseD, packaged: Boolean(packagedExecutable), executablePath, privateProtocol: true,
     rendererIsolated: true, offlineTaskComplete: true, restartRestored: true, staticRoutes: true, nodeAbsentFromPath: true,
     contributionChapters: verifyChain ? [7,8,9,10,11,12] : [], contributionRestartRestored: verifyChain, fieldPracticeSelfCheck: verifyChain,
     errors, consoleErrors, failedRequests, badResponses, completedHeadCancellations, flightResponseCount: flightResponses.length, userData, verifiedAt: new Date().toISOString(), note: "本机验证，不等于干净系统安装、签名公证或 Windows 实机验证。已收到 200 响应的 HEAD 取消单独记录，不计作资源加载失败。" };

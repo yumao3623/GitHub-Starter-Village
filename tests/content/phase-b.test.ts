@@ -13,7 +13,8 @@ describe("phase B content contracts", () => {
     }
   });
   it("uses a declared same-character fallback, not fabricated animation frames", () => {
-    expect(resolveCharacterAsset("atuan", "walking")).toMatchObject({ characterId: "atuan", renderedPose: "standing", fallback: true });
+    expect(resolveCharacterAsset("atuan", "portrait")).toMatchObject({ characterId: "atuan", renderedPose: "standing", fallback: true });
+    expect(resolveCharacterAsset("atuan", "inspecting")).toMatchObject({ characterId: "atuan", renderedPose: "inspecting", fallback: false });
     expect(characterAssetSchema.safeParse({ ...characterAssets[0], crop: { x: 1500, y: 0, width: 500, height: 1024 } }).success).toBe(false);
   });
 });

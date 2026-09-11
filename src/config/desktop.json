@@ -2,6 +2,7 @@
   "appId": "org.startervillage.learning",
   "executableName": "GitHubStarterVillage",
   "displayName": "GitHub 新手村",
+  "publisherLabel": "GitHub Starter Village contributors",
   "entryPath": "/adventure/",
   "scheme": "village",
   "host": "app",

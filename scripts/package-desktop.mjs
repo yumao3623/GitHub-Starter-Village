@@ -1,27 +1,65 @@
 import { packager } from "@electron/packager";
-import { cp, mkdir, mkdtemp, readFile, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readFile, writeFile, stat, readdir } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import config from "../src/config/desktop.json" with { type: "json" };
+import distribution from "../src/config/distribution.json" with { type: "json" };
+import { artifactName, sha256, verifyArtifact } from "./lib/distribution.mjs";
+import { buildInputDigest } from "./lib/build-inputs.mjs";
 
 const target = process.argv[2] ?? process.platform;
-if (!["darwin", "win32"].includes(target)) throw new Error("阶段 A 只配置 darwin 或 win32 打包。");
-const architecture = target === "win32" ? "x64" : "arm64";
+const architecture = process.argv[3] ?? (target === "win32" ? "x64" : process.arch);
+if (!distribution.targets.some(t => t.platform === target && t.arch === architecture)) throw new Error("目标平台未配置；支持 darwin arm64 / darwin x64 / win32 x64。");
+if (target === "darwin" && process.platform !== "darwin") throw new Error("Mac 应用须在 macOS 打包以保留权限与符号链接。");
 const root = process.cwd();
+const buildInfo = JSON.parse(await readFile(path.join(root,"out/build-info.json"),"utf8").catch(()=>{ throw new Error("请先运行 npm run desktop:build，生成构建指纹。"); }));
+if (buildInfo.sourceDigest !== await buildInputDigest(root)) throw new Error("源码已变化，静态导出过期。请先运行 npm run desktop:build。");
 const stage = await mkdtemp(path.join(tmpdir(), "gsv-desktop-stage-"));
 const pkg = JSON.parse(await readFile(path.join(root, "package.json"), "utf8"));
 const checksums = JSON.parse(await readFile(path.join(root, "node_modules/electron/checksums.json"), "utf8"));
 await mkdir(path.join(stage, "src/config"), { recursive: true });
-await cp(path.join(root, "out"), path.join(stage, "out"), { recursive: true });
+// Preserve the historical source asset in Git, but do not distribute an unused
+// legacy illustration without a complete provenance record.
+await cp(path.join(root, "out"), path.join(stage, "out"), { recursive: true, filter: source => !source.endsWith("starter-village-map.png") });
 await cp(path.join(root, "desktop"), path.join(stage, "desktop"), { recursive: true });
 await cp(path.join(root, "src/config/desktop.json"), path.join(stage, "src/config/desktop.json"));
 await cp(path.join(root, "LICENSE"), path.join(stage, "LICENSE"));
 await cp(path.join(root, "docs/assets"), path.join(stage, "asset-notices"), { recursive: true });
+await cp(path.join(root, "THIRD_PARTY_NOTICES.md"), path.join(stage, "THIRD_PARTY_NOTICES.md"));
+const licenseRoot = path.join(root, "node_modules");
+for (const entry of await readdir(licenseRoot, { recursive: true, withFileTypes: true })) {
+  if (!entry.isFile() || !/^(licen[cs]e|copying|notice)([.\-_]|$)/i.test(entry.name)) continue;
+  const source = path.join(entry.parentPath, entry.name);
+  const destination = path.join(stage, "dependency-licenses", path.relative(licenseRoot, source));
+  await mkdir(path.dirname(destination), { recursive: true }); await cp(source, destination);
+}
 await writeFile(path.join(stage, "package.json"), JSON.stringify({ name: pkg.name, version: pkg.version, description: pkg.description, main: "desktop/main.mjs", type: "module", license: "MIT" }, null, 2));
 const output = path.join(root, "artifacts/desktop", `${target}-${architecture}-${Date.now()}`);
 const packages = await packager({ dir: stage, out: output, platform: target, arch: architecture, name: config.executableName,
   appBundleId: config.appId, appVersion: pkg.version, electronVersion: pkg.devDependencies.electron, asar: true,
   download: { cacheRoot: path.join(root, "artifacts/electron-cache"), checksums },
   prune: false, overwrite: false, ...(target === "darwin" ? { darwinDarkModeSupport: false } : {}),
+  ...(target === "win32" ? { win32metadata: { CompanyName: config.publisherLabel } } : {}),
 });
-console.log(JSON.stringify({ packages, stage, signed: false, published: false }, null, 2));
+const folder = packages[0];
+await cp(path.join(root, "THIRD_PARTY_NOTICES.md"), path.join(folder, "THIRD_PARTY_NOTICES.md"));
+await cp(path.join(root, "LICENSE"), path.join(folder, "PROJECT_LICENSE.txt"));
+await cp(path.join(root, "docs/assets"), path.join(folder, "asset-notices"), { recursive: true });
+await cp(path.join(stage, "dependency-licenses"), path.join(folder, "dependency-licenses"), { recursive: true });
+await writeFile(path.join(folder, "START_HERE.txt"), "内部验收候选包，未签名/公证，未公开发布。\n解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node/Git。若系统安全检查阻止打开，请停止并联系维护者，不要关闭保护。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n");
+const filename = artifactName(config.executableName, pkg.version, target, architecture);
+const archive = path.join(output, filename);
+if (process.platform === "darwin" && target === "darwin") execFileSync("ditto", ["-c", "-k", "--sequesterRsrc", "--keepParent", folder, archive]);
+else if (process.platform === "win32") execFileSync("powershell.exe", ["-NoProfile", "-NonInteractive", "-Command", "Compress-Archive -LiteralPath $env:GSV_ARCHIVE_INPUT -DestinationPath $env:GSV_ARCHIVE_OUTPUT"], { env: { ...process.env, GSV_ARCHIVE_INPUT: folder, GSV_ARCHIVE_OUTPUT: archive } });
+else execFileSync("zip", ["-q", "-r", archive, path.basename(folder)], { cwd: output });
+const sha = await sha256(archive);
+const asar = path.join(folder, target === "darwin" ? `${config.executableName}.app/Contents/Resources/app.asar` : "resources/app.asar");
+const manifest = { schemaVersion: 1, filename, bytes: (await stat(archive)).size, sha256: sha, appAsarSha256: await sha256(asar), platform: target, arch: architecture,
+  version: pkg.version, electron: pkg.devDependencies.electron, builtAt: new Date().toISOString(), sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+  sourceDirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()), sourceDigest:buildInfo.sourceDigest, signing: "not-performed", notarization: "not-performed", systemAcceptance: "pending", published: false };
+const manifestPath = path.join(output, "artifact.json");
+await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
+await writeFile(path.join(output, "SHA256SUMS.txt"), `${sha}  ${filename}\n`);
+await verifyArtifact(manifestPath);
+console.log(JSON.stringify({ packages, archive, manifestPath, bytes: manifest.bytes, sha256: sha, signed: false, published: false }, null, 2));

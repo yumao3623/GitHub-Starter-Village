@@ -1,0 +1,95 @@
+{
+  "phase": "D",
+  "verifiedAt": "2026-09-11T02:02:33.007Z",
+  "publicReleaseReady": false,
+  "baselineCommit": "a19516f087e9699353430841d9bfedd8d95a48a3",
+  "sourceDirtyAtBuild": true,
+  "sourceDigest": "c3012d165f7ade2dbbc4d01c1606092f980f9ef67c8f208449306f176dbe777a",
+  "unitTests": 53,
+  "desktopUnitTests": 6,
+  "e2eTests": 17,
+  "repeatedE2eTests": 21,
+  "mac": {
+    "passed": true,
+    "arch": "arm64",
+    "osKernel": "25.6.0",
+    "cpu": "Apple M5 Pro",
+    "totalMemoryBytes": 25769803776,
+    "startupMs": 1725,
+    "memorySample": [
+      {
+        "type": "Browser",
+        "workingSetKB": 247472,
+        "peakWorkingSetKB": 288176
+      },
+      {
+        "type": "GPU",
+        "workingSetKB": 275872,
+        "peakWorkingSetKB": 297328
+      },
+      {
+        "type": "Utility",
+        "workingSetKB": 49088,
+        "peakWorkingSetKB": 49088
+      },
+      {
+        "type": "Tab",
+        "workingSetKB": 351984,
+        "peakWorkingSetKB": 351984
+      }
+    ],
+    "shareExports": [
+      {
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "width": 1200,
+        "height": 630
+      }
+    ],
+    "demoIsolated": true,
+    "offlineTaskComplete": true,
+    "restartRestored": true,
+    "contributionChapters": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fieldPracticeSelfCheck": true,
+    "errors": [],
+    "consoleErrors": [],
+    "failedRequests": [],
+    "badResponses": [],
+    "answeredHeadCancellations": 43,
+    "flightResponses": 105
+  },
+  "artifacts": [
+    {
+      "filename": "GitHubStarterVillage-0.1.0-darwin-arm64.zip",
+      "platform": "darwin",
+      "arch": "arm64",
+      "bytes": 152897538,
+      "sha256": "257ab3fb4bd42f48d9164b571eb568b6ff269e612de763181a457f41ba9347e3",
+      "appAsarSha256": "f624b6aad1aafba96531e5dd7681df0224927c2b30685b28a40df64523aaa14e",
+      "sourceDigest": "c3012d165f7ade2dbbc4d01c1606092f980f9ef67c8f208449306f176dbe777a",
+      "signing": "not-performed",
+      "notarization": "not-performed"
+    },
+    {
+      "filename": "GitHubStarterVillage-0.1.0-win32-x64.zip",
+      "platform": "win32",
+      "arch": "x64",
+      "bytes": 181536041,
+      "sha256": "f2595a55063aea62b3e99c21c2412c378e541e3b66b35580ca4940918e52f52d",
+      "appAsarSha256": "f624b6aad1aafba96531e5dd7681df0224927c2b30685b28a40df64523aaa14e",
+      "sourceDigest": "c3012d165f7ade2dbbc4d01c1606092f980f9ef67c8f208449306f176dbe777a",
+      "signing": "not-performed",
+      "notarization": "not-performed"
+    }
+  ],
+  "note": "Mac developer-machine verification only; Windows cross-package/hash only; no clean OS, signing, notarization or publishing acceptance."
+}

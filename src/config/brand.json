@@ -1,0 +1,10 @@
+{
+  "chineseName": "GitHub 新手村",
+  "englishName": "GitHub Starter Village",
+  "repositoryName": "github-starter-village",
+  "repositoryUrl": "https://github.com/OWNER/github-starter-village",
+  "websiteUrl": "https://example.com",
+  "tagline": "从登录、Fork、Clone 到提交第一个 Pull Request，用一场完整的新手村冒险学会 GitHub。",
+  "shortPitch": "把项目复制下来，通关一次，你就知道 GitHub 怎么用了。",
+  "disclaimer": "GitHub Starter Village 是一个独立开发的开源学习项目，不是 GitHub 官方产品，与 GitHub, Inc. 无关联、授权或背书。GitHub 及相关商标归其权利人所有。"
+}

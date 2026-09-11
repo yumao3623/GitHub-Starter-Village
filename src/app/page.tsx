@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export default function HomePage() {
   return (
     <>
-      <aside className="border-b bg-surface px-6 py-3 text-center text-sm">武侠改版阶段 A 已可体验：选角色、探索局部地图、完成一关集市鉴宝。<Link href="/adventure" className="ml-3 font-semibold text-primary underline">进入武侠样板 →</Link></aside>
+      <aside className="border-b bg-surface px-6 py-3 text-center text-sm">武侠历练 · 阶段 D 内部候选：鉴宝、六章贡献链、区域支线与本地留影。尚未开放公开桌面下载。<Link href="/adventure" className="ml-3 font-semibold text-primary underline">进入武侠样板 →</Link></aside>
       <section className="topographic overflow-hidden border-b">
         <div className="mx-auto grid min-h-[calc(100dvh-4rem)] max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:py-16">
           <div className="relative z-10">
@@ -21,7 +21,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative min-h-[340px] lg:min-h-[580px]">
-            <Image src="/brand/starter-village-map.png" alt="原创的开发者新手村路线图，有村门、岔路牌、工坊、公告板、桥和山顶瞭望塔" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-contain object-center" />
+            <Image src="/world/jianghu-full-v1.png" alt="原创四区域江湖地图，有村落、山川、道路和协作场景" fill priority sizes="(max-width: 1024px) 100vw, 58vw" className="object-contain object-center" />
           </div>
         </div>
       </section>

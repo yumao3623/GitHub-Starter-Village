@@ -175,6 +175,15 @@ dialog.handbook::backdrop { background: #253c3c44; }
 .ending-copy p { font-size: 15px; line-height: 2; color: var(--ink-soft); margin-bottom: 17px; }
 .ending-actions { display: flex; gap: 12px; margin: 25px 0; }
 .ending-copy a { color: var(--jade); font-size: 13px; }
+.adventure-share-card { margin-top: 28px; padding: 18px; border: 1px solid var(--line); background: #f8f3e6d9; }
+.adventure-share-card h2 { font-family: "Songti SC",serif; font-size: 23px; }
+.adventure-share-card p { margin: 6px 0 13px; font-size: 12px; }
+.adventure-share-card strong,.adventure-share-card span { display: block; color: var(--seal); }
+.adventure-share-card span { margin: 8px 0 16px; color: var(--ink-soft); font-size: 12px; }
+.adventure-share-card button { width: 100%; }
+.ending-share { position: relative; width: min(360px, 100%); }
+.ending-share > div { background: transparent; border: 0; padding: 0; }
+.ending-share canvas { display: none; }
 @keyframes seal-in { from { opacity: 0; transform: scale(1.07) rotate(-2deg); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: no-preference) {
   .evidence-reading { animation: reveal-paper .2s ease-out; }
@@ -203,5 +212,20 @@ dialog.handbook::backdrop { background: #253c3c44; }
   .adventure .map-node { padding: 9px; }.inn-node { left: 5%; }.market-node { left: 35%; }.pavilion-node { left: 63%; top: 33%; }
   .map-quest { left: 10px; right: 10px; padding: 13px; gap: 10px; }.map-quest h2 { font-size: 14px; }.map-quest p { font-size: 11px; }
   .handbook { width: min(100%,440px); }.adventure-ending { padding: 40px 22px; gap: 15px; flex-direction: column; }.ending-character { width: 140px; }.ending-copy h1 { font-size: 30px; }
-  .ending-actions { flex-wrap: wrap; }.adventure-footer { padding: 12px 18px; }.reset-confirm { flex-wrap: wrap; }
+  .ending-actions { flex-wrap: wrap; }.ending-share { width: min(100%, 360px); }.adventure-footer { padding: 12px 18px; }.reset-confirm { flex-wrap: wrap; }
 }
+.demo-controls { display:flex; align-items:center; flex-wrap:wrap; gap:16px; padding:14px 24px; border-bottom:1px solid var(--wuxia-line,#c9bd9f); background:#ece8da; }
+.demo-controls label { display:flex; align-items:center; gap:8px; }
+.demo-controls select { padding:8px; border:1px solid #8a9483; border-radius:4px; background:#fffdf6; }
+.share-formats { display:flex; flex-wrap:wrap; gap:10px; }
+.adventure > .adventure-share-card { margin:24px auto; max-width:900px; padding:24px; }
+.character-art[data-pose="inspecting"], .character-art[data-pose="celebrating"] { border-radius:45% 45% 8px 8px; background:#f5f1e5; }
+.character-art[data-pose="celebrating"] { animation:respectful-bow .6s ease-out 1; }
+@keyframes respectful-bow { 0% { transform:translateY(5px) rotate(-2deg); } 100% { transform:none; } }
+.adventure[data-paused="true"] *, .adventure[data-paused="true"] *::before, .adventure[data-paused="true"] *::after { animation-play-state:paused !important; }
+.adventure[data-reduced-motion="true"] *, .adventure[data-reduced-motion="true"] *::before, .adventure[data-reduced-motion="true"] *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+.adventure[data-recording="true"] { width:760px; min-width:0; margin:auto; }
+.adventure[data-recording="true"] .chain-layout, .adventure[data-recording="true"] .market-layout { grid-template-columns:1fr; }
+.adventure[data-recording="true"] .chain-story { display:none; }
+.adventure[data-recording="true"] .adventure-header { flex-wrap:wrap; }
+@media (prefers-reduced-motion:reduce) { .adventure *, .adventure *::before, .adventure *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }

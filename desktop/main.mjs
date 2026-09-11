@@ -38,6 +38,10 @@ app.whenReady().then(() => {
     ...(process.platform === "darwin" ? [{ role: "appMenu" }] : []),
     { role: "editMenu" }, { label: "视图", submenu: [{ role: "reload" }, { role: "resetZoom" }, { role: "zoomIn" }, { role: "zoomOut" }, { role: "togglefullscreen" }] },
     { label: "窗口", submenu: [{ role: "minimize" }, { role: "close" }] },
+    { label: "演示", submenu: [
+      { label: "录屏演示（不读写正式存档）", click: () => { void mainWindow?.loadURL(`${origin}/adventure-demo/`); } },
+      { label: "返回正式历练", click: () => { void mainWindow?.loadURL(`${origin}${config.entryPath}`); } },
+    ] },
   ]));
   createWindow();
   app.on("activate", () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });

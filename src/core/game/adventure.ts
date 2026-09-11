@@ -13,6 +13,7 @@ import { regionLessons, type RegionId } from "@/content/minigames/region-lessons
 const runSchema = z.object({ mode: z.enum(["practice", "assessment"]), aided: z.boolean(), baselineVariant: z.number().int().min(0).max(1).nullable() });
 const archiveSchema = z.object({ key: z.string(), run: runSchema, origin: z.enum(["phase-a", "phase-b"]), snapshot: legacySchema });
 const journeySchema = z.object({
+  metrics: z.object({ activeMs: z.number().int().min(0).max(315360000000), sound: z.boolean(), firstAssessment: z.record(z.string(), z.boolean()) }).default({ activeMs: 0, sound: false, firstAssessment: {} }),
   lastNode: z.string(),
   encountered: z.array(z.string()).max(500), bookmarks: z.array(z.string()).max(500),
   dialogues: z.record(z.string(), z.object({ index: z.number().int().nonnegative(), dismissed: z.boolean() })),
@@ -29,6 +30,7 @@ export type AdventureState = AdventureSave & {
   sessionMode: "mainline" | "demo" | "explore";
 };
 const freshJourney = (): AdventureSave["journey"] => ({
+  metrics: { activeMs: 0, sound: false, firstAssessment: {} },
   lastNode: "inn", encountered: [], bookmarks: [], dialogues: {},
   run: { mode: "practice", aided: false, baselineVariant: null }, archives: [], migration: "fresh",
   contribution: { currentChapter: 7, completedChapters: [], stepIndex: 0, attempts: {}, lastAction: null },
@@ -86,6 +88,7 @@ export function parseAdventure(input: unknown): AdventureSave | null {
 }
 
 export type AdventureAction = Exclude<LegacyAction, { type: "hydrate" }> |
+  { type: "active-time"; milliseconds: number } | { type: "sound"; enabled: boolean } |
   { type: "hydrate"; save: AdventureSave | null; issue?: string; sessionMode?: AdventureState["sessionMode"] } |
   { type: "travel"; nodeId: string } |
   { type: "dialogue"; id: string; operation: "next" | "previous" | "dismiss" | "replay" } |
@@ -103,6 +106,11 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
       feedback: issue ?? (save?.journey.migration === "phase-a" ? "阶段 A 进度已安全接续；原始存档保留，旧成绩不自动换算为独立评估。" : save ? "已恢复本地历练进度。" : "先选一位同行的少侠。") };
   }
   if (!state.ready) return state;
+  if (action.type === "active-time") {
+    if (state.sessionMode !== "mainline" || !Number.isFinite(action.milliseconds) || action.milliseconds <= 0 || action.milliseconds > 5000) return state;
+    return { ...state, journey: { ...state.journey, metrics: { ...state.journey.metrics, activeMs: Math.min(315360000000, state.journey.metrics.activeMs + Math.round(action.milliseconds)) } } };
+  }
+  if (action.type === "sound") return { ...state, journey: { ...state.journey, metrics: { ...state.journey.metrics, sound: action.enabled } } };
   if (action.type === "reset") return { ...initialAdventure(), ready: true, sessionMode: state.sessionMode };
   if (action.type === "storage-error") return { ...state, storageIssue: action.message };
   if (action.type === "region-event") {
@@ -176,6 +184,10 @@ export function adventureReducer(state: AdventureState, action: AdventureAction)
   if (isIntent && !appraisalIntentSchema.safeParse(action).success) return state;
   const next = legacyReducer({ ...state, version: 1 }, action as LegacyAction);
   let journey = state.journey;
+  if (journey.run.mode === "assessment" && !journey.run.aided && !state.completed && state.view === "market" && ["attach", "verdict", "deliver"].includes(action.type)) {
+    const key = `${state.variant}:${action.type === "deliver" ? "recommendation" : state.activeProject}:${action.type}:${action.type === "attach" ? action.category : "result"}`;
+    if (!(key in journey.metrics.firstAssessment)) journey = { ...journey, metrics: { ...journey.metrics, firstAssessment: { ...journey.metrics.firstAssessment, [key]: next.feedbackKind !== "error" } } };
+  }
   if (action.type === "inspect" && state.view === "market" && !state.completed) {
     const termId = getProjects(state.variant).find(project => project.id === action.project)?.facts.find(fact => fact.tab === action.tab)?.termId;
     journey = { ...journey, lastNode: "market", encountered: termId ? [...new Set([...journey.encountered, termId])] : journey.encountered };

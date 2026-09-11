@@ -1,0 +1,9 @@
+{
+  "status": "unpublished",
+  "releaseTag": null,
+  "targets": [
+    { "platform": "darwin", "arch": "arm64", "label": "macOS · Apple 芯片", "public": false },
+    { "platform": "win32", "arch": "x64", "label": "Windows · x64", "public": false },
+    { "platform": "darwin", "arch": "x64", "label": "macOS · Intel（实验构建）", "public": false }
+  ]
+}

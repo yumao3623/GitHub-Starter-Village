@@ -79,6 +79,8 @@ test("demo never reads or changes learner storage", async ({ page }) => {
 
 test("invalid save stays intact and can be recovered through explicit reset", async ({ page }) => {
   await page.goto("/adventure/");
+  await expect(page.locator(".save-status")).toContainText("进度自动保存在本机");
+  await expect.poll(() => page.evaluate(() => localStorage.getItem("gsv:adventure:v2"))).not.toBeNull();
   await page.evaluate(() => localStorage.setItem("gsv:adventure:v2", "broken"));
   await page.reload(); await expect(page.locator(".storage-warning")).toContainText("存档");
   expect(await page.evaluate(() => localStorage.getItem("gsv:adventure:v2"))).toBe("broken");

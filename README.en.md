@@ -1,5 +1,11 @@
 # GitHub Starter Village
 
+## Desktop candidate (Phase D)
+
+Phase D adds recording presets, local portrait/landscape sharing, original character action vignettes, quiet opt-in sound, and versioned desktop ZIP/checksum generation. Public desktop downloads are **not available yet**: Developer ID/notarization, Windows signing and clean-system acceptance remain release gates. The README does not link to fake release assets. See [Phase D evidence](docs/product/PHASE_D_PROGRESS.md) and [download guide](docs/setup/DOWNLOAD_APP.md).
+
+Names/URLs live in `src/config/brand.json`; platform publication status in `distribution.json`; desktop identity in `desktop.json`. Sponsorship remains disabled. This work does not authorize a GitHub push or Release upload.
+
 A Chinese-first, game-based course that teaches the complete beginner journey from signing in and forking a real repository to opening and merging a first safe pull request.
 
 ## Start here

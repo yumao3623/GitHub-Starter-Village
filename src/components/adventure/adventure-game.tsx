@@ -17,7 +17,11 @@ import { Handbook } from "./handbook";
 import { DialoguePanel } from "./dialogue-panel";
 import { ContributionChain } from "./contribution-chain";
 import { RegionScene } from "./region-scene";
+import { AdventureShareCard } from "@/components/share/adventure-share-card";
 import { worldNodes } from "@/content/world";
+import { demoSnapshot, demoStops } from "@/core/game/demo";
+import { shareSummary } from "@/core/mastery/share-summary";
+import { useAdventurePresence, useFeedbackSound } from "@/hooks/use-adventure-presence";
 
 function downloadText(text: string, filename: string) {
   const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
@@ -32,6 +36,12 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
   const [settings, setSettings] = useState(false);
   const [resetPending, setResetPending] = useState(false);
   const [notice, setNotice] = useState("");
+  const [sharing, setSharing] = useState(false);
+  const [recording, setRecording] = useState(false);
+  const [demoStop, setDemoStop] = useState("choose");
+  const root = useRef<HTMLDivElement>(null);
+  useAdventurePresence(root, state.ready && !demo && !state.storageIssue, dispatch);
+  useFeedbackSound(state.journey.metrics.sound);
   const heading = useRef<HTMLDivElement>(null);
   const bookTrigger = useRef<HTMLElement | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
@@ -77,22 +87,31 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
         backupAdventure(localStorage, "reset");
         saveAdventure(localStorage, initialAdventure());
       }
-      dispatch({ type: "reset" }); setResetPending(false); setNotice("本机江湖历练记录已重置。阶段 A 原记录与旧课程记录未改动，重置前记录已另存备份。");
+      dispatch({ type: "reset" }); setResetPending(false); setNotice(demo ? "演示已复位，正式存档没有改动。" : "本机江湖历练记录已重置。阶段 A 原记录与旧课程记录未改动，重置前记录已另存备份。");
     } catch { setNotice("无法备份存档，因此没有执行重置。请先导出原记录。"); }
   }
   const character = characters.find(item => item.id === state.character);
   const region = worldNodes.find(node => node.id === state.journey.lastNode)?.region;
+  const summary = shareSummary(state);
+  function jumpDemo(id: string) {
+    if (!demo) return;
+    dispatch({ type: "hydrate", save: demoSnapshot(id, state.character ?? "atuan"), sessionMode: exploration ? "explore" : "demo" });
+    setDemoStop(id); setBook(null); setSettings(false); setSharing(id === "ending"); setNotice("");
+  }
   if (exploring) return <AdventureGame demo exploration onExit={() => setExploring(false)} />;
-  return <div className="adventure" data-reduced-motion={state.reducedMotion}>
-    <header className="adventure-header"><Link href="/" className="adventure-brand"><span className="brand-seal">侠</span><span>{brandConfig.chineseName}<small>江湖历练 · 阶段 C{exploration ? " / 自由探索" : demo ? " / 演示模式" : ""}</small></span></Link>
+  return <div ref={root} className="adventure" data-reduced-motion={state.reducedMotion} data-recording={recording}>
+    <header className="adventure-header"><Link href="/" className="adventure-brand"><span className="brand-seal">侠</span><span>{brandConfig.chineseName}<small>江湖历练 · 阶段 D{exploration ? " / 自由探索" : demo ? " / 演示模式" : ""}</small></span></Link>
       <nav aria-label="江湖导航"><Button variant="ghost" onClick={() => dispatch({ type: "navigate", view: "map" })}><MapTrifold size={20} />江湖地图</Button><Button variant="ghost" onClick={() => openBook()}><BookOpen size={20} />武林宝典</Button><Button variant="ghost" aria-expanded={settings} onClick={() => setSettings(!settings)}><Backpack size={20} />行囊</Button></nav>
-      <span className="save-status">{demo ? "固定样板 · 不读写存档" : state.storageIssue ? "临时体验 · 保存异常" : state.ready ? "进度自动保存在本机" : "正在读取行囊"}</span>
+      <Button variant="ghost" aria-expanded={sharing} onClick={() => setSharing(!sharing)}>江湖留影</Button><span className="save-status">{demo ? "固定样板 · 不读写存档" : state.storageIssue ? "临时体验 · 保存异常" : state.ready ? "进度自动保存在本机" : "正在读取行囊"}</span>
     </header>
     {demo && <div className="session-banner">{exploration ? "自由探索：可预览未解锁地点，所有操作均不影响正式进度。" : "演示模式：固定初始数据，不读写学习存档。"}{onExit && <Button variant="secondary" onClick={onExit}>返回正式历练</Button>}</div>}
+    {demo && <section className="demo-controls" aria-label="录屏控制台"><label>场景快跳<select aria-label="演示场景" value={demoStop} onChange={e => jumpDemo(e.target.value)}>{demoStops.map(stop => <option key={stop.id} value={stop.id}>{stop.title}</option>)}</select></label><Button variant="secondary" onClick={() => jumpDemo(demoStop)}>复位当前镜头</Button><Button variant="secondary" onClick={() => jumpDemo("choose")}>一键重置演示</Button><label><input type="checkbox" checked={recording} onChange={e => setRecording(e.target.checked)} /> 竖版录屏构图</label><small>预置操作记录 · 非真实玩家成绩</small></section>}
+    {sharing && <AdventureShareCard demo={demo} character={state.character} {...summary} />}
     {state.journey.run.mode === "assessment" && <p className="session-banner">鉴宝迁移评估 · {state.journey.run.aided ? "已使用宝典，本轮仅记辅助练习" : "独立操作中，可随时查阅宝典转为辅助练习"}</p>}
     <div ref={heading} tabIndex={-1} className="scene-focus" aria-label={state.view === "market" ? "集市鉴宝任务" : "江湖历练场景"} />
     {state.storageIssue && <p className="storage-warning" role="alert">{state.storageIssue}</p>}
     {settings && <section className="adventure-settings" aria-label="行囊与设置"><h2>行囊</h2><label><input type="checkbox" checked={state.reducedMotion} onChange={event => dispatch({ type: "motion", reduced: event.target.checked })} /> 减少动态效果</label>
+      <label><input type="checkbox" checked={state.journey.metrics.sound} onChange={event => dispatch({ type: "sound", enabled: event.target.checked })} /> 轻提示音（默认关闭，无背景音乐）</label>
       {!demo && <Button variant="secondary" onClick={() => downloadText(serializeAdventure(state), "village-v2-save.json")}><DownloadSimple size={18} />导出当前进度</Button>}
       {!demo && <Button variant="secondary" onClick={() => { try { const raw = readOriginalAdventure(localStorage); if (raw) downloadText(raw, "village-original.json"); else setNotice("本机还没有原始存档。"); } catch { setNotice("无法读取原始存档。"); } }}>导出原始存档</Button>}
       {!demo && <><Button variant="secondary" onClick={() => fileInput.current?.click()}>导入进度</Button><input ref={fileInput} type="file" accept=".json,application/json" aria-label="选择存档文件" className="sr-only" onChange={event => { void importSave(event.target.files?.[0]); event.target.value = ""; }} /></>}
@@ -108,7 +127,7 @@ export function AdventureGame({ demo = false, exploration = false, onExit }: { d
     </section> : state.view === "map" ? <WorldMap state={state} dispatch={dispatch} /> : state.view === "market" ? <AppraisalMarket state={state} dispatch={dispatch} openBook={openBook} /> : state.view === "pavilion" && region ? <RegionScene key={region} id={region} state={state} dispatch={dispatch} /> : state.view === "pavilion" && state.journey.simulation.active ? <ContributionChain state={state} dispatch={dispatch} openBook={openBook} /> : <section className="adventure-ending">
       <Image src="/world/river-valley-v1.png" alt="" fill sizes="100vw" unoptimized className="ending-backdrop" />
       {state.character && <CharacterArt id={state.character} className="ending-character" pose="celebrating" />}
-      <div className="ending-copy"><span className="seal-small">{state.view === "ending" ? "鉴定有据" : "飞鸽台"}</span><h1>{state.view === "ending" ? "眼力初成，迷雾已散。" : "下一封信，写给江湖。"}</h1><p>{state.view === "ending" ? `你已完成三卷鉴定，为夜行图选中了「${getProjects(state.variant).find(item => item.verdict === "suitable")?.name}」。` : appraisalStory.next}</p>{state.view === "pavilion" && <DialoguePanel id="pavilion-letter" state={state} dispatch={dispatch} />}<p>这次练习：核对运行环境、辨认使用许可、判断维护线索。<br />这是模拟关卡完成，不是 GitHub 实操验证或主线毕业。</p><div className="ending-actions"><Button onClick={() => dispatch({ type: "navigate", view: "map" })}>查看解锁地图 <MapTrifold size={20} /></Button><Button variant="secondary" onClick={() => dispatch({ type: "new-round" })}>换一组条件再练</Button><Button variant="secondary" onClick={() => dispatch({ type: "start-assessment" })}>开始迁移评估</Button></div><Link href="/start/">准备好真实实践？查看 Fork / Clone 指南 →</Link></div>
+      <div className="ending-copy"><span className="seal-small">{state.view === "ending" ? "鉴定有据" : "飞鸽台"}</span><h1>{state.view === "ending" ? "眼力初成，迷雾已散。" : "下一封信，写给江湖。"}</h1><p>{state.view === "ending" ? `你已完成三卷鉴定，为夜行图选中了「${getProjects(state.variant).find(item => item.verdict === "suitable")?.name}」。` : appraisalStory.next}</p>{state.view === "pavilion" && <DialoguePanel id="pavilion-letter" state={state} dispatch={dispatch} />}<p>这次练习：核对运行环境、辨认使用许可、判断维护线索。<br />这是模拟关卡完成，不是 GitHub 实操验证或主线毕业。</p><div className="ending-actions"><Button onClick={() => dispatch({ type: "navigate", view: "map" })}>查看解锁地图 <MapTrifold size={20} /></Button><Button variant="secondary" onClick={() => dispatch({ type: "new-round" })}>换一组条件再练</Button><Button variant="secondary" onClick={() => dispatch({ type: "start-assessment" })}>开始迁移评估</Button></div><Link href="/start/">准备好真实实践？查看 Fork / Clone 指南 →</Link>{state.view === "ending" && !sharing && <div className="ending-share"><AdventureShareCard demo={demo} character={state.character} {...summary} /></div>}</div>
     </section>}
     {state.view !== "market" && <div className={`map-feedback ${state.feedbackKind}`} role="status">{state.feedback}</div>}
     {book && <Handbook termId={book.termId} close={closeBook} state={state} dispatch={dispatch} />}

@@ -51,7 +51,7 @@ export function WorldMap({ state, dispatch }: { state: AdventureState; dispatch:
           {status(node) === "locked" ? <LockKey size={20} /> : status(node) === "completed" ? <CheckCircle size={20} /> : <MapPin size={20} />}
           <span>{node.title}<small>{label(node)}</small></span>
         </Button>)}
-        {state.character && <div className="map-player" style={{ left: `${Math.max(1,current.x - 10)}%`, top: `${current.y - 3}%`, width:28 }}><CharacterArt id={state.character} pose="walking" /><span className="sr-only">你在{current.title}</span></div>}
+        {state.character && <div className="map-player" style={{ left: `${Math.max(1,current.x - 10)}%`, top: `${current.y - 3}%`, width:28 }}><CharacterArt id={state.character} pose="standing" /><span className="sr-only">你在{current.title}</span></div>}
       </div>
       <div className="map-heading"><p>营地 · 集市 · 协作山门 · 百炼盟会</p><h1 id="map-title">云溪谷</h1><span>完整江湖 · 修好一卷夜行图</span></div>
       <div className="map-tools" aria-label="地图视角"><Button variant="secondary" onClick={() => setZoom(Math.min(1.6, zoom + .2))}>放大</Button><Button variant="secondary" onClick={() => setZoom(Math.max(1, zoom - .2))}>缩小</Button><Button variant="secondary" onClick={() => setOffset(Math.max(-250, offset - 80))}>向左平移</Button><Button variant="secondary" onClick={() => setOffset(Math.min(250, offset + 80))}>向右平移</Button><Button variant="secondary" onClick={reset}>重置视角</Button></div>

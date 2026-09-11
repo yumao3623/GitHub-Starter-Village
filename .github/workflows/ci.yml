@@ -35,6 +35,8 @@ jobs:
         run: npm run test
       - name: Test desktop protocol boundaries
         run: npm run desktop:test
+      - name: Check asset provenance and download configuration
+        run: npm run assets:validate && npm run desktop:release-check
       - name: Build
         run: npm run build
       - name: Export desktop static assets
