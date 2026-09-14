@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": "E",
   "purpose": "local-release-preparation",
-  "generatedAt": "2026-09-14T14:39:26.865Z",
+  "generatedAt": "2026-09-14T14:41:40.403Z",
   "repository": "https://github.com/yumao3623/GitHub-Starter-Village",
   "releaseTag": "v0.2.0",
   "packageVersion": "0.2.0",
@@ -59,8 +59,8 @@
       "detail": "产物仍标记为未发布"
     },
     "worktree": {
-      "status": "blocked",
-      "detail": "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。"
+      "status": "passed",
+      "detail": "工作树干净（忽略本次生成的报告文件）"
     },
     "targets": {
       "status": "passed",
@@ -74,8 +74,7 @@
   "blockers": [
     "签名状态为 adhoc；公开 macOS 分发需要 Developer ID。",
     "公证状态为 not-performed；需对同一最终产物完成公证并 staple。",
-    "干净系统验收状态为 pending。",
-    "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。"
+    "干净系统验收状态为 pending。"
   ],
   "publicReleaseReady": false,
   "githubWritePerformed": false

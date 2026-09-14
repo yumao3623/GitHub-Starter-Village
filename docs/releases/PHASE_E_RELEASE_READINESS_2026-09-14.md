@@ -21,7 +21,7 @@
 - ⛔ notarization：公证状态为 not-performed；需对同一最终产物完成公证并 staple。
 - ⛔ systemAcceptance：干净系统验收状态为 pending。
 - ✅ publishedFlag：产物仍标记为未发布
-- ⛔ worktree：当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。
+- ✅ worktree：工作树干净（忽略本次生成的报告文件）
 - ✅ targets：所有目标平台公开开关均已关闭
 - ✅ githubAuth：GitHub CLI 已登录
 
@@ -34,6 +34,5 @@
 - 签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
 - 公证状态为 not-performed；需对同一最终产物完成公证并 staple。
 - 干净系统验收状态为 pending。
-- 当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。
 
 机器可读证据：[PHASE_E_RELEASE_READINESS_2026-09-14.json](PHASE_E_RELEASE_READINESS_2026-09-14.json)
