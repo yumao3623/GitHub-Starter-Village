@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "phase": "E",
   "purpose": "local-release-preparation",
-  "generatedAt": "2026-09-14T14:44:44.016Z",
+  "generatedAt": "2026-09-14T14:47:31.526Z",
   "repository": "https://github.com/yumao3623/GitHub-Starter-Village",
   "releaseTag": "v0.2.0",
   "packageVersion": "0.2.0",
@@ -67,14 +67,15 @@
       "detail": "所有目标平台公开开关均已关闭"
     },
     "githubAuth": {
-      "status": "passed",
-      "detail": "GitHub CLI 已登录"
+      "status": "blocked",
+      "detail": "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。"
     }
   },
   "blockers": [
     "签名状态为 adhoc；公开 macOS 分发需要 Developer ID。",
     "公证状态为 not-performed；需对同一最终产物完成公证并 staple。",
-    "干净系统验收状态为 pending。"
+    "干净系统验收状态为 pending。",
+    "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。"
   ],
   "publicReleaseReady": false,
   "githubWritePerformed": false
