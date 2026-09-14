@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import path from "node:path";
 import brand from "../src/config/brand.json" with { type: "json" };
 import config from "../src/config/distribution.json" with { type: "json" };
@@ -57,12 +57,9 @@ const dirtyPaths = statusLines.filter((line) => !generatedReports.has(line.slice
 check("worktree", dirtyPaths.length === 0, "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。", "工作树干净（忽略本次生成的报告文件）");
 check("targets", config.targets.every((target) => target.public === false), "仍有目标平台标记为 public；在真实下载复核前必须保持关闭。", "所有目标平台公开开关均已关闭");
 let ghAuth = false;
-try {
-  const authOutput = execFileSync("gh", ["auth", "status"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
-  ghAuth = !/failed to log in|invalid token|not logged in/i.test(authOutput);
-} catch {
-  ghAuth = false;
-}
+const authResult = spawnSync("gh", ["auth", "status"], { encoding: "utf8" });
+const authOutput = `${authResult.stdout ?? ""}\n${authResult.stderr ?? ""}`;
+ghAuth = authResult.status === 0 && !/failed to log in|invalid token|not logged in/i.test(authOutput);
 check("githubAuth", ghAuth, "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。", "GitHub CLI 已登录");
 if (publicMode) blockers.push("--public 仅用于最终人工门禁，本命令不会执行 GitHub 上传或标签推送。");
 
