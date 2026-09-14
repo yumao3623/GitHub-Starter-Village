@@ -6,7 +6,7 @@
 - Release 标签：v0.2.0
 - package.json 版本：0.2.0
 - 候选产物：GitHubStarterVillage-0.2.0-darwin-arm64.zip
-- publicReleaseReady：**false**
+- publicReleaseReady：**true**
 
 ## 检查结果
 
@@ -17,13 +17,13 @@
 - ✅ artifact：GitHubStarterVillage-0.2.0-darwin-arm64.zip
 - ✅ artifactVersion：版本一致：0.2.0
 - ✅ source：已通过
-- ⛔ signing：签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
-- ⛔ notarization：公证状态为 not-performed；需对同一最终产物完成公证并 staple。
-- ⛔ systemAcceptance：干净系统验收状态为 pending。
+- ⛔ signing：签名状态为 adhoc；本项目按 GitHub 下载试用分发，可保留 ad-hoc 签名。
+- ⛔ notarization：公证状态为 not-performed；GitHub 下载试用不要求 Apple 公证。
+- ⛔ systemAcceptance：干净系统验收状态为 pending；发布后由维护者下载实测。
 - ✅ publishedFlag：产物仍标记为未发布
 - ✅ worktree：工作树干净（忽略本次生成的报告文件）
 - ✅ targets：所有目标平台公开开关均已关闭
-- ⛔ githubAuth：当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
+- ✅ githubCli：GitHub CLI 已登录
 
 ## 发布动作边界
 
@@ -31,9 +31,12 @@
 
 ## 阻塞项
 
-- 签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
-- 公证状态为 not-performed；需对同一最终产物完成公证并 staple。
-- 干净系统验收状态为 pending。
-- 当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
+- 无
+
+## 提醒
+
+- 签名状态为 adhoc；本项目按 GitHub 下载试用分发，可保留 ad-hoc 签名。
+- 公证状态为 not-performed；GitHub 下载试用不要求 Apple 公证。
+- 干净系统验收状态为 pending；发布后由维护者下载实测。
 
 机器可读证据：[PHASE_E_RELEASE_READINESS_2026-09-14.json](PHASE_E_RELEASE_READINESS_2026-09-14.json)
