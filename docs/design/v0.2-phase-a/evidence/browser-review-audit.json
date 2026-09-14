@@ -1,0 +1,1511 @@
+{
+  "date": "2026-09-12",
+  "scope": "Stage A standalone review only, not application acceptance",
+  "cases": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1126,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1210
+        },
+        {
+          "text": "选择同行角色",
+          "x": 1226,
+          "y": 753,
+          "width": 184,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "intro",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "踏入江湖",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "choose",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "查看锁牌",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "map",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1126,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1210
+        },
+        {
+          "text": "查看操作规则",
+          "x": 1226,
+          "y": 753,
+          "width": 184,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "chapter",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "回到任务",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "book",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "返回历练",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "bag",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "重访江湖",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "thanks",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "回到地图",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "guide",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1384,
+        "height": 572,
+        "bottom": 736,
+        "right": 1412
+      },
+      "footer": {
+        "x": 0,
+        "y": 824,
+        "width": 1440,
+        "height": 76,
+        "bottom": 900,
+        "right": 1440
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 1140,
+          "y": 758.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 801.171875,
+          "right": 1224
+        },
+        {
+          "text": "返回地图",
+          "x": 1240,
+          "y": 753,
+          "width": 170,
+          "height": 54,
+          "bottom": 807,
+          "right": 1410
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "errors",
+      "size": "1440x900",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 966,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1050
+        },
+        {
+          "text": "选择同行角色",
+          "x": 1066,
+          "y": 653,
+          "width": 184,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "intro",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "踏入江湖",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "choose",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "查看锁牌",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "map",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 966,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1050
+        },
+        {
+          "text": "查看操作规则",
+          "x": 1066,
+          "y": 653,
+          "width": 184,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "chapter",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "回到任务",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "book",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "返回历练",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "bag",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "重访江湖",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "thanks",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "回到地图",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "guide",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "scroll": [
+        1280,
+        800
+      ],
+      "scene": {
+        "x": 28,
+        "y": 164,
+        "width": 1224,
+        "height": 472,
+        "bottom": 636,
+        "right": 1252
+      },
+      "footer": {
+        "x": 0,
+        "y": 724,
+        "width": 1280,
+        "height": 76,
+        "bottom": 800,
+        "right": 1280
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 980,
+          "y": 658.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 701.171875,
+          "right": 1064
+        },
+        {
+          "text": "返回地图",
+          "x": 1080,
+          "y": 653,
+          "width": 170,
+          "height": 54,
+          "bottom": 707,
+          "right": 1250
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "errors",
+      "size": "1280x800",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 718,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 802
+        },
+        {
+          "text": "选择同行角色",
+          "x": 818,
+          "y": 573,
+          "width": 184,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "intro",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "踏入江湖",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "choose",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "查看锁牌",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "map",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 718,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 802
+        },
+        {
+          "text": "查看操作规则",
+          "x": 818,
+          "y": 573,
+          "width": 184,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "chapter",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "回到任务",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "book",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "返回历练",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "bag",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "重访江湖",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "thanks",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "回到地图",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "guide",
+      "size": "1024x720",
+      "pass": true
+    },
+    {
+      "viewport": [
+        1024,
+        720
+      ],
+      "scroll": [
+        1024,
+        720
+      ],
+      "scene": {
+        "x": 20,
+        "y": 164,
+        "width": 984,
+        "height": 392,
+        "bottom": 556,
+        "right": 1004
+      },
+      "footer": {
+        "x": 0,
+        "y": 644,
+        "width": 1024,
+        "height": 76,
+        "bottom": 720,
+        "right": 1024
+      },
+      "controls": [
+        {
+          "text": "重看规则",
+          "x": 732,
+          "y": 578.828125,
+          "width": 84,
+          "height": 42.34375,
+          "bottom": 621.171875,
+          "right": 816
+        },
+        {
+          "text": "返回地图",
+          "x": 832,
+          "y": 573,
+          "width": 170,
+          "height": 54,
+          "bottom": 627,
+          "right": 1002
+        }
+      ],
+      "images": [],
+      "fonts": [],
+      "fontStatus": "loaded",
+      "view": "errors",
+      "size": "1024x720",
+      "pass": true
+    }
+  ],
+  "fontEvidence": [
+    {
+      "selector": ".sample-title h1",
+      "fonts": [
+        {
+          "familyName": "Ma Shan Zheng",
+          "postScriptName": "MaShanZheng-Regular",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "selector": ".aside-note p",
+      "fonts": [
+        {
+          "familyName": "LXGW WenKai",
+          "postScriptName": "LXGWWenKai-Regular",
+          "isCustomFont": true,
+          "glyphCount": 32
+        }
+      ]
+    },
+    {
+      "selector": ".sample-actions .paper-button",
+      "fonts": [
+        {
+          "familyName": "Ma Shan Zheng",
+          "postScriptName": "MaShanZheng-Regular",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": ".sample-footer p",
+      "fonts": [
+        {
+          "familyName": "LXGW WenKai",
+          "postScriptName": "LXGWWenKai-Regular",
+          "isCustomFont": true,
+          "glyphCount": 50
+        }
+      ]
+    },
+    {
+      "selector": ".change-card .en",
+      "fonts": [
+        {
+          "familyName": "Cormorant Garamond Light",
+          "postScriptName": "CormorantGaramond-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    }
+  ],
+  "uiChecks": [
+    {
+      "case": "chapter 0 vs chapter 10 1440x900",
+      "sameFrame": true
+    },
+    {
+      "case": "chapter 8 vs chapter 10 1440x900",
+      "sameFrame": true
+    },
+    {
+      "case": "chapter 0 vs chapter 10 1280x800",
+      "sameFrame": true
+    },
+    {
+      "case": "chapter 8 vs chapter 10 1280x800",
+      "sameFrame": true
+    },
+    {
+      "case": "chapter 0 vs chapter 10 1024x720",
+      "sameFrame": true
+    },
+    {
+      "case": "chapter 8 vs chapter 10 1024x720",
+      "sameFrame": true
+    },
+    {
+      "case": "map node dialog",
+      "pass": true
+    },
+    {
+      "case": "dialog closes",
+      "pass": true
+    },
+    {
+      "case": "ledger search",
+      "pass": true
+    },
+    {
+      "case": "chapter card selection",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

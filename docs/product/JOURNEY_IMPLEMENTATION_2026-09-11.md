@@ -52,7 +52,7 @@
 
 `npm run content:validate`、`content:coverage`、`content:sources`、`typecheck`、`lint`、`test`、`build`、`desktop:test`、`desktop:verify`、`assets:validate` 全部退出码 0；单元测试 75 项通过，桌面测试 6/6 通过。完整 Playwright 主旅程覆盖引导、选角、地图、0–12 章、迷雾/揭雾、移动、错误重试、宝典、自由探索、键盘、缩放和控制台错误，最新结果 12 passed。验证日志和截图位于 `artifacts/journey-verification/`、`artifacts/journey/`、`artifacts/journey-desktop/`。
 
-最新 Apple Silicon 桌面包：[`GitHubStarterVillage-0.1.0-darwin-arm64.zip`](../../artifacts/desktop/darwin-arm64-1789122392000/GitHubStarterVillage-0.1.0-darwin-arm64.zip)，162,321,473 bytes，SHA-256 `375c0beeec338373d53420761c42758943754fdabc77a6d7826795d06373be1c`。原生窗口验证通过：离线、首次启动、重启恢复第 0/7 章、13 章完成、演示隔离、1024px 窗口、宝典、表单无 Node 暴露、请求/控制台错误为 0。未签名、未公证、未发布；未在 Intel/Windows 验证。
+历史 Apple Silicon 桌面包已在 2026-09-14 清理；当前候选包与验收状态见 [阶段 D 成品验收](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
 
 ## 已知限制与人工门槛
 

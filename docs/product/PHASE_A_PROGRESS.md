@@ -1,5 +1,7 @@
 # 阶段 A 实施记录
 
+> 当前基线已统一到 [阶段 A/B/C 当前交付基线](PHASE_ABC_BASELINE.md)。本文保留 A 的历史实施证据；其中“14 章”等旧课程统计不代表当前武侠主线章数。
+
 更新：用户已审核通过阶段 A，并于 2026-09-11 授权阶段 B。下文保留阶段 A 当时的实施和验收记录，新增结果见 [PHASE_B_PROGRESS.md](PHASE_B_PROGRESS.md)。
 
 用户于 2026-09-10 批准改版需求并授权开始阶段 A。
@@ -80,7 +82,7 @@ Taste dials：DESIGN_VARIANCE 6 / MOTION_INTENSITY 4 / VISUAL_DENSITY 5。适度
 
 ## 本机产物与后续边界
 
-验收产物目录：`artifacts/desktop/darwin-arm64-1789052291957/GitHubStarterVillage-darwin-arm64/`。内含 `GitHubStarterVillage.app`（约 299 MB）及 Electron 许可证文件。配套 ZIP 位于同一时间戳目录，仅供本地交付，不是已发布的 GitHub Release。
+历史验收产物目录已在 2026-09-14 清理，不再作为可下载包；当前候选包见 [阶段 D 成品验收](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
 
 ZIP 文件：`GitHubStarterVillage-phase-a-mac-arm64.zip`（约 135 MB），压缩包完整性检查通过。SHA-256：`1bec444624adbdf31d5f73ce04812d3ef6cc4aa0499ff48b38510325a2f497b3`。哈希用于核对文件是否改变，不是开发者签名或安全背书。解压后打开目录里的 `.app`，无需安装 Node.js/npm；未签名样板在其他机器可能受到系统安全检查阻止，不建议关闭系统安全保护。
 

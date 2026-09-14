@@ -39,7 +39,7 @@ const output = path.join(root, "artifacts/desktop", `${target}-${architecture}-$
 const packages = await packager({ dir: stage, out: output, platform: target, arch: architecture, name: config.executableName,
   appBundleId: config.appId, appVersion: pkg.version, electronVersion: pkg.devDependencies.electron, asar: true,
   download: { cacheRoot: path.join(root, "artifacts/electron-cache"), checksums },
-  prune: false, overwrite: false, ...(target === "darwin" ? { darwinDarkModeSupport: false } : {}),
+  prune: false, overwrite: false, ...(target === "darwin" ? { darwinDarkModeSupport: false, icon: path.join(stage, "out/brand/jianghu-manual-icon-v1.icns") } : {}),
   ...(target === "win32" ? { win32metadata: { CompanyName: config.publisherLabel } } : {}),
 });
 const folder = packages[0];
@@ -49,11 +49,19 @@ await cp(path.join(root, "docs/assets"), path.join(folder, "asset-notices"), { r
 await cp(path.join(stage, "dependency-licenses"), path.join(folder, "dependency-licenses"), { recursive: true });
 await writeFile(path.join(folder, "START_HERE.txt"), `这是 GitHub 新手村桌面预览版。\n完整解压后打开 .app 或 .exe；Windows 请保留所有同目录文件。\n不需要安装 Node.js、npm 或 Git。\n${target === "darwin" ? `${macosFirstOpenNotice}\nApple 官方说明：https://support.apple.com/zh-cn/102445\n若提示“已损坏”或检测到恶意软件，请停止并联系维护者。\n` : "若有系统安全提示，请停止并联系维护者。\n"}请只从项目 GitHub Release 下载并核对 SHA-256。\n存档位于系统应用数据目录，可在行囊导出；删除应用不会自动删除存档。\n本项目独立开发，非 GitHub 官方产品；不收集凭据。\n`);
 if (target === "darwin") {
+  // Packager 20 may retain Electron's fallback icon when the source bundle
+  // already has an icon plist. Replace that fallback explicitly so Finder and
+  // the Dock show the same wuxia manual mark as the running app.
+  const appBundle = path.join(folder, `${config.executableName}.app`);
+  const resources = path.join(appBundle, "Contents/Resources");
+  await cp(path.join(stage, "out/brand/jianghu-manual-icon-v1.icns"), path.join(resources, "jianghu-manual-icon-v1.icns"));
+  await execFileSync("/usr/libexec/PlistBuddy", ["-c", "Set :CFBundleIconFile jianghu-manual-icon-v1.icns", path.join(appBundle, "Contents/Info.plist")]);
+  await execFileSync("rm", ["-f", path.join(resources, "electron.icns")]);
   // Electron's packager leaves linker signatures on nested binaries. Any files
   // copied above change the final bundle, so re-sign the complete app before
   // archiving; otherwise Gatekeeper reports the downloaded app as damaged.
-  execFileSync("codesign", ["--deep", "--force", "--verbose", "--sign", "-", path.join(folder, `${config.executableName}.app`)], { stdio: "inherit" });
-  execFileSync("codesign", ["--verify", "--deep", "--strict", path.join(folder, `${config.executableName}.app`)], { stdio: "inherit" });
+  execFileSync("codesign", ["--deep", "--force", "--verbose", "--sign", "-", appBundle], { stdio: "inherit" });
+  execFileSync("codesign", ["--verify", "--deep", "--strict", appBundle], { stdio: "inherit" });
 }
 const filename = artifactName(config.executableName, pkg.version, target, architecture);
 const archive = path.join(output, filename);

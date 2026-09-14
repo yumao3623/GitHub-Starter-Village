@@ -1,0 +1,1198 @@
+{
+  "date": "2026-09-12",
+  "fontFiles": [
+    {
+      "name": "mashanzheng.ttf",
+      "bytes": 5857936,
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "tableBoundsValid": true
+    },
+    {
+      "name": "zhimangxing.ttf",
+      "bytes": 4063532,
+      "sha256": "644e0cae9b40f0b10ab729a01bd32032e3973bac22be3dccae01bf6ae7fde969",
+      "tableBoundsValid": true
+    },
+    {
+      "name": "cormorant.ttf",
+      "bytes": 1195560,
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+      "tableBoundsValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-100.woff2",
+      "bytes": 62716,
+      "sha256": "ed12464f4f3b64c5f778a1f6cb2f8d1c3fc37d1d5df8c7e342c5db61ec6f25fa",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-101.woff2",
+      "bytes": 56304,
+      "sha256": "4c6610e8fba09efbed383ab8f497873d8e0fbaf3306dc2b39aee5b9a88c6e0bd",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-102.woff2",
+      "bytes": 59064,
+      "sha256": "d0ff138da1d5e5becd2aef31e3497519ea8aaf371a8ebb8ae5ebb79a00d20823",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-103.woff2",
+      "bytes": 61924,
+      "sha256": "5b1f92cc9622f526f597a49ade6939625e829622baf3ef39ec9dee07a11a8d98",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-104.woff2",
+      "bytes": 59976,
+      "sha256": "848229017d5dd1e6cdf2a18a21e25479d1ef22edc44fc016b33061aecd1a9325",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-105.woff2",
+      "bytes": 61148,
+      "sha256": "acb1358e136ecb6d3a08d8aad776cf428c2a16b806f344b650a7b8e9d533c812",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-106.woff2",
+      "bytes": 60256,
+      "sha256": "5c5273bb131b3d79263ddf41871ebd07d548e867361576745f0378f8f68668a5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-107.woff2",
+      "bytes": 59252,
+      "sha256": "c3b3fadf6f4379d0d2a7eef2c7701f8f45604f16a2c3c6677f408cbcf71dbb26",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-108.woff2",
+      "bytes": 59628,
+      "sha256": "71b3dcabd6057d9c42bf5e3f791e69923097d00f69c7dab4a6939d7d4bd9899f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-109.woff2",
+      "bytes": 58640,
+      "sha256": "4a73982b82d950f4bd99bc43e927d5aaf2bd92c2d152d3e168b4ffe745ba40b6",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-110.woff2",
+      "bytes": 57500,
+      "sha256": "f5b23fa35b1c64e1fac8d68117b1d9c8d42186598cbf1e8a48fc451b3578fd54",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-111.woff2",
+      "bytes": 59528,
+      "sha256": "30b090d3db2ff74ef43f2a027725eda29472a6bab652b1082b7e7766ba9b4df6",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-112.woff2",
+      "bytes": 56724,
+      "sha256": "98efe6d51509d50acbd1a5a94893ede9c62fc74187930e397ace273116d57e21",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-113.woff2",
+      "bytes": 55988,
+      "sha256": "4ed462f12bf26b041de10e8cd5f494df522233dac4f3709a962a154c04c86fe8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-114.woff2",
+      "bytes": 54744,
+      "sha256": "bf95ee002643919e46a7b578b99b9d74142b2899b383a1de70a7c3e3cf9ef682",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-115.woff2",
+      "bytes": 53504,
+      "sha256": "2e38294e4175b4847a69724ffa09cdc851e4cd81725e3c4675a1d35826ec14de",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-116.woff2",
+      "bytes": 50560,
+      "sha256": "a48d699b33c5c94dda699ddda56800a5d96a7acce49f6b9586b0373e29a8b5a8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-117.woff2",
+      "bytes": 49400,
+      "sha256": "6d25c10667c6e89127df46e42627a0e052dfa4b53f42eaab923b89db1f0f3292",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-118.woff2",
+      "bytes": 44176,
+      "sha256": "f29c89cd7420937450ecf9ba3c2f23268673a107dfe84c63243769cc0a12c418",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-119.woff2",
+      "bytes": 34732,
+      "sha256": "2e7b09ef00f5e8f2398d73d885b96e8ef8693e5c382750205c1d9efaa527c580",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-21.woff2",
+      "bytes": 26856,
+      "sha256": "5e8abbc13e24198885a7ece6ee5997c1882ca877064ea382d52e05a4f5d82641",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-22.woff2",
+      "bytes": 60144,
+      "sha256": "ab9c0078234bfbbd0ea504c0c71a3bd12870f5c182ff132c8eb71962832d2d04",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-23.woff2",
+      "bytes": 56628,
+      "sha256": "c4b231d5b8db3ec57d02fc33b98800913ac60700953da11758874b6cd61da656",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-24.woff2",
+      "bytes": 58428,
+      "sha256": "9bed5de310fadab61e19e885323aa50e9b1b65239d264792236e635789d902b4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-25.woff2",
+      "bytes": 56684,
+      "sha256": "be4d6ccbfd0a56709ffa6b7d432f7c24141b36ab17f3244a31cb359a9cb5b3b5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-26.woff2",
+      "bytes": 58312,
+      "sha256": "60c4742d61d3ffa6704dbf6336338876d7b98571a1764f180055dc9b4dd5e996",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-27.woff2",
+      "bytes": 49864,
+      "sha256": "3850e1583d12da1285f5d53eb664f8765607bf51a9c161ce929734a1c5587a51",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-28.woff2",
+      "bytes": 47872,
+      "sha256": "2308cc77c655cc4ec938160f06e42a7542c61050e9af21dc8e2ab10db2156f0f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-29.woff2",
+      "bytes": 59256,
+      "sha256": "795d07570b485e6846494369f4ed84a1d555d852b298daccf26669026c943a62",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-30.woff2",
+      "bytes": 63996,
+      "sha256": "4ddbde8572767e48e6d5b36d78a8ed321478cd03f002be4f9763fbcde4802e87",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-31.woff2",
+      "bytes": 51280,
+      "sha256": "08eef328158785685c54e33e5bc365c0bc8195ac902f543b2328bcb5eabc37f0",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-32.woff2",
+      "bytes": 48336,
+      "sha256": "b30f46bef003854e5a04678832e9bfef9e77d91809f650e0b1602d4f2049b45a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-33.woff2",
+      "bytes": 52736,
+      "sha256": "5c047fe5521df0947ec3a446006647fd7457d275feca5f963cdf2fb083b8303a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-34.woff2",
+      "bytes": 48424,
+      "sha256": "96a7994e1a5fc95dcae7501245db26957a6b10c0d2b8223fc348e30109812be1",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-35.woff2",
+      "bytes": 47460,
+      "sha256": "ac88c668bdb248d3d265a040d7c9297a6bf0c61408f152cb67fa20ee3e359d12",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-36.woff2",
+      "bytes": 50560,
+      "sha256": "450f815b57df7060d4f438d32c007e50e25c35426f73816453486b77d77e90f1",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-37.woff2",
+      "bytes": 52468,
+      "sha256": "62ebf393fb64e4d0443de9d9cf395040c67fadc67ec8625624a256a158d07479",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-38.woff2",
+      "bytes": 58024,
+      "sha256": "eb03e2f2fb780947699f8f346cab96075c4872fa4bd2dfc6d4453c0b08224c50",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-39.woff2",
+      "bytes": 57168,
+      "sha256": "7d361c9b44d97e25ac35d74b4782db3af2d4372712f00eac72a9c5f78c7fce44",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-4.woff2",
+      "bytes": 7456,
+      "sha256": "5b2e31780544ce1be16c88f696f01a9a171b0a873271d935a4281dd6699b58f5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-40.woff2",
+      "bytes": 53164,
+      "sha256": "a9f5b65f07d996e0b61d575ffa2cf8f9d04d4c9218261c6525bacdae17603ce1",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-41.woff2",
+      "bytes": 41644,
+      "sha256": "94846ea770eab5c3cca8a73262106faab670f6a8b3b7cfeb5739dc3fc182772b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-42.woff2",
+      "bytes": 50244,
+      "sha256": "7506b9cb435fcbac32c4f00417308e390a06de2220658e7b6b1807a1d318e225",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-43.woff2",
+      "bytes": 48320,
+      "sha256": "706f02636bf717a22aafc0da34bfa35f73b4e24060b3a6bcb85525c076f264f4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-44.woff2",
+      "bytes": 52808,
+      "sha256": "9ba69b599da877b9ec8071d8d50a4d719d4f0094c67de6812ddc5c67bfc2eb65",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-45.woff2",
+      "bytes": 63604,
+      "sha256": "f0ba799d44f58a771cd5b1af478a73f99b3dd6442b1d4783512c8b8d2081c05f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-46.woff2",
+      "bytes": 57480,
+      "sha256": "aad1b4e5913a71a4ed71acc6ac7f999a0eadff8e42c120af5ab4b5d860cda991",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-47.woff2",
+      "bytes": 63012,
+      "sha256": "a842d6c20a9e611ff83885987995b1f1d061312b633ba1239add1521d70df9d9",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-48.woff2",
+      "bytes": 52528,
+      "sha256": "36606f24ab7ef45a6eb2823c4c5eafa67a3ba9a42e83c2d015ebcacbc1798fd0",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-49.woff2",
+      "bytes": 56612,
+      "sha256": "98b93bf514ed454668074de074cc9d51c8b5e605f94831a408b7c07353b53ce7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-5.woff2",
+      "bytes": 17740,
+      "sha256": "532a50eb83e758562b7cb78f3d6397fe06e53c1ae663d6277a31904325eb9650",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-50.woff2",
+      "bytes": 53428,
+      "sha256": "7d850e4923677a2b4e014be9298eafe644b116d2b3bee36f33ce8ceb60904a00",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-51.woff2",
+      "bytes": 47756,
+      "sha256": "85af093f64d48cace81749d5929f1b05da212728c313a5d2938222f841dafbfe",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-52.woff2",
+      "bytes": 56392,
+      "sha256": "bcb7275795c80a9cc48bcf012d2cdda460a6f659f6244f9903df527394e6522f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-53.woff2",
+      "bytes": 46880,
+      "sha256": "662c996f29d7167fd745f74fbaa21cddf11eea250978d823298677854f9f100b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-54.woff2",
+      "bytes": 55840,
+      "sha256": "af93c49435e3d4b061987a3f91847dd12b7d090a76f244b83cbc4b445c67e2d5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-55.woff2",
+      "bytes": 49020,
+      "sha256": "7fc968034f0715addb5d14f356521ade99344a186c03f4f98799d32bd351435d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-56.woff2",
+      "bytes": 55756,
+      "sha256": "904b629c281101718d3c17b8ef0b055e42d7db11b7c69cf35690fe4327b73b40",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-57.woff2",
+      "bytes": 54820,
+      "sha256": "aa0a6b3bbb2cdbc70a24cef10a092cb974dc7ebe8419730d2085eed40a9a1139",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-58.woff2",
+      "bytes": 60292,
+      "sha256": "66df70c6073751fcfb863bd873f0aba129e1c2198c898715d73e80c6299b876d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-59.woff2",
+      "bytes": 50616,
+      "sha256": "2f0c0507d7b454652d14cf2f5da00eb9cfcf0906cc46d5e8aabd1958ab2bf6f5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-6.woff2",
+      "bytes": 12180,
+      "sha256": "fdac24f6747e94ff1f33de9ec409574ae98db97797b6388fb18f72fdde920dd4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-60.woff2",
+      "bytes": 43496,
+      "sha256": "a6af1ca335eca7d247d073c49f39b55974331480523ec1d4bcfdaedc68ef032a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-61.woff2",
+      "bytes": 44240,
+      "sha256": "d8ba73188b5e1e3264485b778bb53f5cca7de9dd316183a260cb77993ea69d05",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-62.woff2",
+      "bytes": 65248,
+      "sha256": "b5476aea510ea89ca0e101c79cf3062aac8c7a5095594c15ef6956be0813fa0b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-63.woff2",
+      "bytes": 55476,
+      "sha256": "34625cbffd7ed80f3ea3050ec1b86a8be64198a811eccb4e153e4dcd70228876",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-64.woff2",
+      "bytes": 45436,
+      "sha256": "56a9ff6e85b23cf479343572224ad0243ebeb2b0d12c4249ca48a9ddda2ff837",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-65.woff2",
+      "bytes": 48324,
+      "sha256": "f66af0c236f8845268685309e08e3dd9047139167d83f4d062d3e821daa69367",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-66.woff2",
+      "bytes": 54628,
+      "sha256": "fe6cb69290e66ece56d80bae8927c924ff597b913025ad4a4cea487a826cce55",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-67.woff2",
+      "bytes": 59708,
+      "sha256": "d3a0fd64bf440e5dee1f34ee53611174227de6f95e3abae7a2cb6cb40c183a42",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-68.woff2",
+      "bytes": 46976,
+      "sha256": "252b9643e52b21851dc49b86f2467856c1e3d07eef5ac517dd4ef7613569f296",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-69.woff2",
+      "bytes": 59820,
+      "sha256": "3dd17220af5da96db5bb8ac3490adf3e77477a5eb0897ef3c96349cc58eb8595",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-70.woff2",
+      "bytes": 45468,
+      "sha256": "7a014303f98547cee228820dc6ff1d7ca9430b065ca15eb1697d41e27d85395c",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-71.woff2",
+      "bytes": 50432,
+      "sha256": "bb4d08beb320660bfaef77f5cca74e0fdc333b6ad9de64ac08e700ce1edd9a66",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-72.woff2",
+      "bytes": 53400,
+      "sha256": "910ebb06fd48c5e3ad53fd1e261e07c768280660cc31ae680de7a3a3df25cf0c",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-73.woff2",
+      "bytes": 42880,
+      "sha256": "88c2747926fc8416110cbdebb4ce4e36daebad0d53318958c78c646adc3f5258",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-74.woff2",
+      "bytes": 61288,
+      "sha256": "1ea20cc2bd0cf5708659b9760147b56c04936a9966729186638515564637ae34",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-75.woff2",
+      "bytes": 52856,
+      "sha256": "8d0b47e1b0fa318cf71e2da6a66b1a1245e6b205a6c383ee6cd6c4a1c777957d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-76.woff2",
+      "bytes": 54260,
+      "sha256": "82197fa5073023d65cf6b829d8ad72d759870894a6d448a72ed95fd03f3357d5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-77.woff2",
+      "bytes": 43920,
+      "sha256": "cb801efa400d53a570a0c9e03c3971f89b7971c900ee6f89110fcaa70cfc7f7f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-78.woff2",
+      "bytes": 55624,
+      "sha256": "b63426437debd55c72355f9426f795165f245f113cd32d2e7c3ccaf8ccc1cafa",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-79.woff2",
+      "bytes": 47976,
+      "sha256": "f08571150b483814f995f72848ef92c9013c2bb8bd8ad85780fe4d1674c46eb6",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-80.woff2",
+      "bytes": 37116,
+      "sha256": "f0ed0e2051f3851b4741ec8907537a932f8efffc2a1ab98ea838aa9a30466bf9",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-81.woff2",
+      "bytes": 47316,
+      "sha256": "946758d5951efbb9df0cd009b497162e60bc0caacb97c389d8b50d58b621b44f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-82.woff2",
+      "bytes": 48044,
+      "sha256": "a0a3ac104ffba726b45e8e5bd2f080f10bd7bc56d4a2fcc1d1f48c0268ca2ef8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-83.woff2",
+      "bytes": 50064,
+      "sha256": "abbefb23d1c2c71907003c6ef2ebb0388fbb87ecb3171c11f57d212d6eb9c880",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-84.woff2",
+      "bytes": 36456,
+      "sha256": "d4b2719db6af08f2b001f50ae7b73894ef312c5b78dbf7416bc689bfa6bf2799",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-85.woff2",
+      "bytes": 26200,
+      "sha256": "9367fa9045a674dce4ff4eb3ec2b00e5ea03c12f2f5e2dd958346828b078495b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-86.woff2",
+      "bytes": 22140,
+      "sha256": "66406edba7be92b9be2bd1db2acea1d0c1fc3e86d0195b486351098e9ced60b4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-87.woff2",
+      "bytes": 11528,
+      "sha256": "70a64b62ffcf6f6ae49062b617f4527f147dab89e9e082068e8e3a2d456debb4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-88.woff2",
+      "bytes": 11208,
+      "sha256": "9117ba3b341792d6b986b3db41884e4cb1d5bac1ffcd265d17d3e490073408e4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-89.woff2",
+      "bytes": 14732,
+      "sha256": "648fc44e73d442049fef8e5ecf952b9c16094c58d59c46dbe29a41f2598338f7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-90.woff2",
+      "bytes": 15056,
+      "sha256": "ad3555a9140d3b7ccbffb4aa671b6ef1537ff0e4921e05a6a67f38303df979a3",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-91.woff2",
+      "bytes": 12216,
+      "sha256": "be66d21c1a9d1360b0c024f6e036e4da1027b08b2510ee6dc0f3f74abb867dd8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-97.woff2",
+      "bytes": 9888,
+      "sha256": "20c5e3c87ee276fba79c2728d9a8f1e114d6a76fed7b9b30b06b69abf788aa05",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-98.woff2",
+      "bytes": 17836,
+      "sha256": "f17f580693b03ac2027ea97ead43e379c66270d76cd752c8e5ba98d9b51df869",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkai-regular-subset-99.woff2",
+      "bytes": 15700,
+      "sha256": "fe33789fdb79e507b2d2cd22f2ca403bdea11f942c109486a78b7e184c67eac5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-100.woff2",
+      "bytes": 62364,
+      "sha256": "a15818ed2a4a8bb5d693029605f11eb6681a10f0b88233c45e7d4ee6a996079c",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-101.woff2",
+      "bytes": 56040,
+      "sha256": "c5a66d37b2a752d8d489b528b83768abfa054fdb38459aac50fa0865ac8c1fed",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-102.woff2",
+      "bytes": 58732,
+      "sha256": "4d2a0ad4c8e64c33ecb5ad386f2398bfd9218b7ee776ba5bb633f5fa3c1f1003",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-103.woff2",
+      "bytes": 61452,
+      "sha256": "09ff91c9516108c43e91495564bb0033b6cb62c900892881a166a8d40517c94d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-104.woff2",
+      "bytes": 59564,
+      "sha256": "657ce10a3228700ee1a1c18e531bb3f0c848de61c06ecccdb488eb9f4755d234",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-105.woff2",
+      "bytes": 60788,
+      "sha256": "46df3c87f00e2f4116a1b9254c2b3a30011362f6c00ca1bdd7ddeab2401969ba",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-106.woff2",
+      "bytes": 59820,
+      "sha256": "6609e71ac653d84b6845d14939957c48e570906e823ac9b70accfe5d23be2d0a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-107.woff2",
+      "bytes": 58944,
+      "sha256": "0c648ed6d42baf517ba9f703c8d1ca8b84905c57ac41e4fc42030a1bace7cdb7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-108.woff2",
+      "bytes": 59436,
+      "sha256": "fdd1215c14ab4017163959320caf478e4828de848b82d15b2d1226f08b372090",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-109.woff2",
+      "bytes": 58304,
+      "sha256": "435c7a01db8312bfb8d5d4256a3ddd519c2386b988ad636389b40ed9083accd5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-110.woff2",
+      "bytes": 57044,
+      "sha256": "671babab7127dc8fa8ff0807ab0a587285c82a4e84419e027a35c12052d8fd62",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-111.woff2",
+      "bytes": 59140,
+      "sha256": "4d8cb886678c3052f9a6263fcdaed5fe7b0e2133fc511f967a4b6e06b934afcf",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-112.woff2",
+      "bytes": 56404,
+      "sha256": "6d6efc23baa8bc6ebf126fd3c00493fccb24105a056cd32f9106d01b902e2e5d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-113.woff2",
+      "bytes": 55592,
+      "sha256": "57a6aed19ca48bac26cc1c773c2f68e64617d05dd5ded1ffd295a7e31b370941",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-114.woff2",
+      "bytes": 54408,
+      "sha256": "d213a0f3c024070cf42e48ff881703f5feb677c6f17706d1358af49dba4673b6",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-115.woff2",
+      "bytes": 52408,
+      "sha256": "8c789f1a8d62a8488c14e06f4ac80bc77d06bec94864e377abf4939e6e6c7809",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-116.woff2",
+      "bytes": 50324,
+      "sha256": "bce725e80273d819cd242dfff8af4e065e5228d626f9c7b82ed3f17742cb5fbb",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-117.woff2",
+      "bytes": 49020,
+      "sha256": "2dc567daac98db1e47bc5c3acc8fe4e0d0c96b7be9009af5a9ae7350b18c209e",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-118.woff2",
+      "bytes": 43724,
+      "sha256": "a68099e80d9138d633915aed4388ee7a9915951fe2bf16520cd8f9b67b50baed",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-119.woff2",
+      "bytes": 35268,
+      "sha256": "a986498adbd431715c0aecd0149dbda4d1a35b69eb1e67bbb1ade77c9c58eada",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-21.woff2",
+      "bytes": 26408,
+      "sha256": "d4651013fba83d1d6593f8f3a4ed91d973e05fe5b0e469484d1a4b61d56e9ec8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-22.woff2",
+      "bytes": 59760,
+      "sha256": "e9aa990fe99487a0fbb092bbcf06ac8f6a859b72cc29fa4b04ebf83eff15daf2",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-23.woff2",
+      "bytes": 56308,
+      "sha256": "cbe4139c089d8a121cbea994ee5aa7514363555946f939470411224c1bfde21d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-24.woff2",
+      "bytes": 58140,
+      "sha256": "f7deba4c88d73e49e270857e1903436ea70c4d7698aba243c09460e2aedf520d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-25.woff2",
+      "bytes": 56268,
+      "sha256": "db28df88ede63d039e9ba4027200e050081a349621aaf8fcc464ffb8004bfb36",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-26.woff2",
+      "bytes": 57872,
+      "sha256": "9a3ed6e3d81b26674a1ab16c126f0c3a0402eeb2969828fca311c5b17abd3785",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-27.woff2",
+      "bytes": 49492,
+      "sha256": "7f249b73cb5295af9686e6bf50b4695ac8228a0d809639a5947657f107c73b71",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-28.woff2",
+      "bytes": 47616,
+      "sha256": "cff57928badbdb69fc4d9cfa7e24e56841b2da92633055e21a94b0670899eedf",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-29.woff2",
+      "bytes": 58944,
+      "sha256": "7656060b35a1bf7a5c4311e93edc4994bfcc7b1fe497b68a4493c63fa96cfc66",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-30.woff2",
+      "bytes": 63640,
+      "sha256": "209851354ee669aa96a41a6981d2bf4b2b086ad8fe351c7b931799d2c8b033d4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-31.woff2",
+      "bytes": 50916,
+      "sha256": "9317204e21b3dd635b4957230f2813e0f2bf84a7a822672876b0af0b5aa63989",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-32.woff2",
+      "bytes": 48016,
+      "sha256": "c7d92c0a8e6907cdff68a409fe0b0ee5e79033bf62dbefba2fde7a8ea76fdb24",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-33.woff2",
+      "bytes": 52424,
+      "sha256": "365d52c24472fd06c00fb7addf5c2c193a80f409aa5a0ce4b9fe028a480cd7a0",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-34.woff2",
+      "bytes": 47952,
+      "sha256": "b4d54d2368c8592df4ec18dec7370f8af1f0063e0dd0befc023d895e5c8bf22f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-35.woff2",
+      "bytes": 46960,
+      "sha256": "6cda535d6a48c8c4db12f1f210a925da5afe185fdaef0ef39ebc70b43c5b7ca5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-36.woff2",
+      "bytes": 50120,
+      "sha256": "7a0e402a510e393668de182096c93e712c5840335937876931213947efe63d3f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-37.woff2",
+      "bytes": 52064,
+      "sha256": "6709ce695b9d384cff6fc4028499e9fa950664952033f2ae216b1e9bc237e821",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-38.woff2",
+      "bytes": 57676,
+      "sha256": "2579b8cb75e2cdedcbe50e39cce937a3d6651733582deec436206bcc625daa9a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-39.woff2",
+      "bytes": 56644,
+      "sha256": "0dcf8ea0cc573c1dbad530738864fb013b2ec94df985c2543be4ea9a70e75ed7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-4.woff2",
+      "bytes": 7216,
+      "sha256": "a53dedef17df1eadb65ba2b569c5793573fa2023d70ff55fe48a3878008031c5",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-40.woff2",
+      "bytes": 52760,
+      "sha256": "e7720f4f6ede884eece0081e08d141515fff7d99ba330754fe6ec0e3c5c2e5ba",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-41.woff2",
+      "bytes": 41180,
+      "sha256": "6ad97756b7c7280cf2c9759adc898a78c840ab185df8dcedbb2dcda9ad0a9b24",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-42.woff2",
+      "bytes": 49792,
+      "sha256": "66057973282b929a4c3ede414a7ddcbf9eb6dd2fe0799f6361f21f277ecd180d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-43.woff2",
+      "bytes": 47896,
+      "sha256": "c27241f3e1285438fcc53a0d019d868dd8b665f82f7433ad9a9286b4dc6367bf",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-44.woff2",
+      "bytes": 52424,
+      "sha256": "07a9cff999512e6350bb075a6085259265e64b16ffd46890d534b3aa55998deb",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-45.woff2",
+      "bytes": 63384,
+      "sha256": "d9acabfb744d3866dd545416d4ede43ca69f56cbeea4af2f116f480d3ca2265f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-46.woff2",
+      "bytes": 57040,
+      "sha256": "71b371c139b810cd51f497dd190928f3c6c622c12cfedbf8fd6fb3beed834b2b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-47.woff2",
+      "bytes": 62736,
+      "sha256": "1eada8db63ac47b7c83ae8e1edd2690ba4b43515a7e5965b325c48db23e70576",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-48.woff2",
+      "bytes": 52128,
+      "sha256": "6041b1d72b7e80fdb85e99bdef3eee62cd68942fc417aa47a5b3f053ba84c86d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-49.woff2",
+      "bytes": 56376,
+      "sha256": "e6470f6c07201002176f926062b2bd583a4ed7a3c30440877da9404100046d5f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-5.woff2",
+      "bytes": 17468,
+      "sha256": "c0e799f76691c9d4a4824ac02bad288391fcaee851ee0e9b8ab8db699daf8dc7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-50.woff2",
+      "bytes": 52944,
+      "sha256": "e48540551c631bcb4844ec47be1776d028868bc87a8e5f11524a9ba16cf70dae",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-51.woff2",
+      "bytes": 47452,
+      "sha256": "8bbd906abbfd84e99ea1209a4bca2b218ff57b270f02b967bb5e33790e01cdfd",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-52.woff2",
+      "bytes": 55980,
+      "sha256": "19d2fd78ea4f8ea79060c722927bf192367e82e3ab9a50c3db75bac9e7e29cbb",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-53.woff2",
+      "bytes": 46512,
+      "sha256": "f936edd655bd557074cbff241476c47b302a0c619eecf4c4ed77bce883439d3e",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-54.woff2",
+      "bytes": 55412,
+      "sha256": "a02098f37d0e68c85ee611089aa4bf4e391be725c6aa35708a75fb4d1112c6a4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-55.woff2",
+      "bytes": 48684,
+      "sha256": "5cd5845f2cf1db28ba08e1741a43c98611ec6a6385f3d37f0d8c8a2ca5e1309f",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-56.woff2",
+      "bytes": 55404,
+      "sha256": "4c15ede49e5f355d78b3e655aea80dd57be0c3a97c622ba5371c86dfbf1fa096",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-57.woff2",
+      "bytes": 54504,
+      "sha256": "1567aea867c6f845a084a8b5510443f20fea6f94d10f0c6761e88d41c2446e12",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-58.woff2",
+      "bytes": 59952,
+      "sha256": "56bc02e7d9910b791fe386f373064d4e3037aed4a624782b6b1f93e7436c3d50",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-59.woff2",
+      "bytes": 50152,
+      "sha256": "2375d23b5266e253c0f7275785a4de336800c90ff2198b7661e40fe351389a0d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-6.woff2",
+      "bytes": 11912,
+      "sha256": "1ec693dd5a828b8170113504e5a3c98bd2e11126fb6e0fc5b178a8112bf3dee8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-60.woff2",
+      "bytes": 43212,
+      "sha256": "f0c4663fa5faa5bedcef475e25a64cc90c83d98da760ce4e4414ff2d8757cc36",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-61.woff2",
+      "bytes": 43752,
+      "sha256": "52c9b84ad9548fadd05584ed6d5bb36a9dfd4dbaf1ef26f2ad556bb8975cbdc0",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-62.woff2",
+      "bytes": 64888,
+      "sha256": "48d66eceac9a56033115158faab391cb9c067d42daba219ecacaa0042cc918f7",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-63.woff2",
+      "bytes": 55112,
+      "sha256": "2f709790ec313b88f7c59c47f068852ddbfc34ac74e9fd675fc4b3118dc9e11a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-64.woff2",
+      "bytes": 45144,
+      "sha256": "ccf14df158105574d1c674d4e51d94aad2c9dd5ecf7ee25aba6f4b0a9e33a01a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-65.woff2",
+      "bytes": 47884,
+      "sha256": "812674b0f115e3949c5068767a307484b207ef11b04ffeae905588801f9ca135",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-66.woff2",
+      "bytes": 54268,
+      "sha256": "e3ee2064a51e521e50bfa29f9aad4deede48ab901157f9eb2ae0df03d537c109",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-67.woff2",
+      "bytes": 59400,
+      "sha256": "584c2f9bc5ec69a84b88eaec86385226b44f693db553aca1c192092cc8bcff73",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-68.woff2",
+      "bytes": 46716,
+      "sha256": "0a67687c1e0864881433ad3f627a29899ef5e0baf29b788d4c304e47797e7a62",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-69.woff2",
+      "bytes": 59524,
+      "sha256": "6136d9bab266d9e4c8affe6c1843923de76202d30222edf06c066a3b489b6825",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-70.woff2",
+      "bytes": 45056,
+      "sha256": "6d689a7afd1cb7bc8ed505d2af38a830308634e3a9c41ccf12e6903adc7c5508",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-71.woff2",
+      "bytes": 49940,
+      "sha256": "377ab2bbf03b2cf7eae41fcbac5295761c4eb2a96a748f5fa84bddea3547cdb4",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-72.woff2",
+      "bytes": 53108,
+      "sha256": "48eff1a65341f0180348485da2e5dcb16a704f57f08778df948283e19b0b619b",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-73.woff2",
+      "bytes": 42588,
+      "sha256": "7935d0867add6baab4f13a22697d8556f80182aeeaea33c6b202af049a6dd6fd",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-74.woff2",
+      "bytes": 60880,
+      "sha256": "4e0aa2da52a62ae9f3f458e3b3670c845c77ea9b33dd0806f62a5c77c843a13a",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-75.woff2",
+      "bytes": 52504,
+      "sha256": "30f257b3a840da08f78193c0cca64e31e723e534ba2e85a698cc9ea5cbe83c45",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-76.woff2",
+      "bytes": 53936,
+      "sha256": "b0d5c9be9bdf6627f3dffb5ce4e527df3236ab29f64b6f8d5be6fac86c2c8f1d",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-77.woff2",
+      "bytes": 43624,
+      "sha256": "5213b7e617c3558380ca4c7a5be528eb63ec0f4f0a6a86dc65aa232f27ecc72e",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-78.woff2",
+      "bytes": 55388,
+      "sha256": "5c9c212c8c285b5b2f87133c2916e0113513c3a580d04e990f93c9fcca63f997",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-79.woff2",
+      "bytes": 47524,
+      "sha256": "dc6c58f787c901662207d0e3d7f0f5af306a601fc70926c6ec1a5759f4989963",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-80.woff2",
+      "bytes": 36712,
+      "sha256": "28c8afd0b6838bc9a5bc941faf799c8db264ff0fd663e340c9565d4bcaf1be71",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-81.woff2",
+      "bytes": 46868,
+      "sha256": "c19cc4c2b8b229463ffd068f728310df06da0c87ce57ac3efef627c7a4927d68",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-82.woff2",
+      "bytes": 47620,
+      "sha256": "3dbe9cbb50dfb87add496b5c4e067266bb6c9f9ad1f28f0f3c775321644d56a8",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-83.woff2",
+      "bytes": 49728,
+      "sha256": "790fc211899d497d6d52e7179e3c3b359e6a86b0d6abb198466ea2652da53d12",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-84.woff2",
+      "bytes": 36240,
+      "sha256": "4478758281cb4e46dffb7aa50eee88e5b009938aebe8fc307338bc73eddc0be3",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-85.woff2",
+      "bytes": 25848,
+      "sha256": "792ce57e75161c88f6d946a2b8167c51920d5db6d54f8445d6adaae746d93317",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-86.woff2",
+      "bytes": 21828,
+      "sha256": "660334a49bc9185f7a6beff0181b02453ef9ddeab230bcae10301740fa2945df",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-87.woff2",
+      "bytes": 11132,
+      "sha256": "be7507ab69b572c7835ba10e2117f56224f47079f607974d505b5e07c89bb947",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-88.woff2",
+      "bytes": 10948,
+      "sha256": "dc0559899cd43f17fe9a5a13a6eb731cfec8372ecaa6ce3073e7f4c07fd1c317",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-89.woff2",
+      "bytes": 14416,
+      "sha256": "07e402fc057105ec2ce62ec4f0d482be2622ae60cb4ed516309dee00f48803c1",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-90.woff2",
+      "bytes": 14712,
+      "sha256": "8e87178b4b90a8458036f1e4a2f00148e1a1b209258439b80cfb9682f406cfed",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-91.woff2",
+      "bytes": 12036,
+      "sha256": "8fecc77eed46018bc82aec437573e317995d142b5f75ad9956fdc58d0261fd64",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-97.woff2",
+      "bytes": 9504,
+      "sha256": "7eedd63d9a312f4c00675874135bf4a9b51010136126e01a5d9dc5364485d0cb",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-98.woff2",
+      "bytes": 19276,
+      "sha256": "77af55918969f51ae3d9db7026a482c4c64a61bb0211f46cba4bce356cd02b06",
+      "woff2LengthValid": true
+    },
+    {
+      "name": "wenkai-web/files/lxgwwenkaimono-regular-subset-99.woff2",
+      "bytes": 17000,
+      "sha256": "d4ac592dcf249e1f6a53d86ba861c8d5d7a571510ad2227ea1f8550d25ededf2",
+      "woff2LengthValid": true
+    }
+  ],
+  "unicodeRangeCoverage": {
+    "lxgwwenkai-regular": {
+      "hanCharacters": 1129,
+      "missing": []
+    },
+    "lxgwwenkaimono-regular": {
+      "hanCharacters": 1129,
+      "missing": []
+    }
+  },
+  "note": "TTF table bounds and WOFF2 header lengths check structural integrity, not aesthetic approval. Actual rendered fonts also checked in the review browser."
+}

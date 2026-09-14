@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "phase": "D",
+  "verifiedAt": "2026-09-14",
+  "baseline": "docs/product/PHASE_ABC_BASELINE.md",
+  "checks": {
+    "contentValidate": "passed",
+    "contentCoverage": "passed",
+    "contentSources": "passed",
+    "assetsValidate": { "status": "passed", "runtimeAssets": 169 },
+    "typecheck": "passed",
+    "lint": { "status": "passed", "warnings": 3 },
+    "unitTests": { "status": "passed", "files": 16, "tests": 121 },
+    "desktopTests": { "status": "passed", "tests": 6 },
+    "build": "passed",
+    "desktopBuild": "passed",
+    "releaseCheck": { "status": "passed", "publicReleaseReady": false },
+    "electronPackagedVerification": { "status": "passed", "method": "CUA direct desktop launch", "checks": ["首屏", "菜单栏应用标识", "入村引导", "角色选择", "13章地图节点", "第0章工作台", "关闭重开恢复"], "playwrightShellDiagnostic": "Process failed to launch / exit -6 in restricted shell" }
+  },
+  "artifact": {
+    "path": "artifacts/desktop/darwin-arm64-1789378049043/GitHubStarterVillage-0.1.0-darwin-arm64.zip",
+    "sha256": "fdc80c0b7e6c71355c203edbbc4569677eca36c96eab50386e1fb64f5601f3ce",
+    "appAsarSha256": "6eadbd92304b1fb9992d689088e5f6aa149a383970f5ebe0ff53dffa15634aad",
+    "platform": "darwin",
+    "arch": "arm64",
+    "signing": "adhoc",
+    "notarization": "not-performed",
+    "published": false,
+    "sourceDirty": true
+  },
+  "icon": {
+    "plistValue": "jianghu-manual-icon-v1.icns",
+    "electronFallbackPresent": false,
+    "sha256MatchesPublicBrand": true
+  },
+  "publicReleaseReady": false
+}

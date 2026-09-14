@@ -1,5 +1,7 @@
 # 阶段 C 教学与 UI 审读
 
+> 本文是早期六章教学审读。当前 C 成品为 0–12 共 13 章主线，另含百戏客栈节点；完整交付与人工结论见 [PHASE_ABC_BASELINE.md](../product/PHASE_ABC_BASELINE.md) 和 [PHASE_C_V2_REAUDIT_RESULT.md](../verification/PHASE_C_V2_REAUDIT_RESULT.md)。
+
 2026-09-11。不是只检查 URL 存在：六章故事、操作条件、错误原因与现实边界分别编写。52 个关联词条在 `contribution-review.ts` 中有逐条操作说明与常见误区，课程引用由 `content:validate` 校验。来源在线可用不等于每一句解释都已被自动审核。
 
 ## 核心 UI 对照

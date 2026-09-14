@@ -1,5 +1,7 @@
 # 阶段 B 实施与验收记录
 
+> 当前基线已统一到 [阶段 A/B/C 当前交付基线](PHASE_ABC_BASELINE.md)。本文保留 B 的历史实施证据；代表性样板不应被误读为完整主线范围。
+
 日期：2026-09-11。用户明确确认阶段 A 已审核通过，授权阶段 B，不授权扩展阶段 C、推送、部署或发布。
 
 状态：阶段 B 已实现并通过下述内部验收，等待用户体验审核。
@@ -68,7 +70,7 @@
 
 桌面命令仍为 `npm run desktop:build`、`npm run desktop:open`、`npm run desktop:package`。新包写入不同时间戳目录，不覆盖阶段 A。`GSV_VERIFICATION_DIR=artifacts/phase-b npm run desktop:verify` 可将本阶段证据写到独立目录。
 
-最终应用：`artifacts/desktop/darwin-arm64-1789059598011/GitHubStarterVillage-darwin-arm64/GitHubStarterVillage.app`。本机验收报告：`artifacts/phase-b/desktop-packaged-verification.json`，时间 2026-09-11 01:00（UTC+8）。实际页面/控制台错误、资源失败、错误响应均为空；另记录 11 次收到 200 后的 HEAD 取消，25 次本地 RSC 数据响应。未签名、未公证，不承诺其他机器能无提示打开。
+历史应用包已在 2026-09-14 清理；本机验收报告仍保留在 `artifacts/phase-b/desktop-packaged-verification.json`。当前候选包与阶段 D 状态见 [阶段 D 成品验收](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
 
 较早的阶段 B 封装目录也予以保留，但本节所列目录才是最终验收产物。阶段 A 原应用与 ZIP 未修改。
 

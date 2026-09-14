@@ -1,0 +1,26 @@
+{
+  "chapters": 13,
+  "configuredChapterIds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "mechanismFamilies": 13,
+  "termOccurrences": 139,
+  "uniqueTerms": 117,
+  "missingTerms": [],
+  "productionItems": 130,
+  "generatedSampleGroups": 8,
+  "integrated": 0,
+  "userAestheticApproved": 1
+}

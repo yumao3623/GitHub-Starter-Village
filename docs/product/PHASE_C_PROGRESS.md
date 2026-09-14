@@ -1,5 +1,7 @@
 # 阶段 C 实施与验收记录
 
+> **历史记录声明（2026-09-14）**：本文记录早期六章贡献链，已由 [PHASE_C_V2_REAUDIT_RESULT.md](../verification/PHASE_C_V2_REAUDIT_RESULT.md) 取代。当前阶段 C 是 13 章主线 + 百戏客栈地图节点；请勿使用本文早期数字作为成品基线。
+
 日期：2026-09-11。状态：深化版已实现；本机浏览器与 macOS ARM64 桌面完整链路验收通过，待用户体验审核。不是跨平台公开发行声明。
 
 ## A/B 基线与实施边界
@@ -111,9 +113,7 @@
 
 打开 http://localhost:3000/adventure 。本次验收服务器单独使用 127.0.0.1:3012，避免干扰其他服务器。
 
-最终测试包（未签名、未发布）：
-
-    artifacts/desktop/darwin-arm64-1789065161164/GitHubStarterVillage-darwin-arm64/GitHubStarterVillage.app
+历史测试包已清理；当前候选包和验收状态见 [阶段 D 成品验收](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
 
 可在 Finder 中打开。不要为了运行而关闭系统整体安全保护；正式分发需要后续签名/公证与干净系统测试。此目录已含运行资源，不需要用户另外安装 Node。
 

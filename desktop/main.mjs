@@ -27,6 +27,9 @@ function createWindow() {
   void mainWindow.loadURL(`${origin}${config.entryPath}`);
 }
 app.whenReady().then(() => {
+  // Keep the installed app's Dock identity aligned with the wuxia manual. The
+  // PNG is bundled locally, so the icon is available in the offline desktop build.
+  if (process.platform === "darwin" && app.dock) app.dock.setIcon(path.resolve(assetRoot, "brand/jianghu-manual-icon-v1.png"));
   session.defaultSession.setPermissionRequestHandler((_contents, _permission, callback) => callback(false));
   session.defaultSession.setPermissionCheckHandler(() => false);
   session.defaultSession.webRequest.onBeforeRequest((details, callback) => {

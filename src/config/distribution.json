@@ -1,8 +1,8 @@
 {
-  "status": "published",
-  "releaseTag": "v0.1.3",
+  "status": "candidate",
+  "releaseTag": "v0.2.0",
   "targets": [
-    { "platform": "darwin", "arch": "arm64", "label": "macOS · Apple 芯片", "public": true },
+    { "platform": "darwin", "arch": "arm64", "label": "macOS · Apple 芯片", "public": false },
     { "platform": "win32", "arch": "x64", "label": "Windows · x64", "public": false },
     { "platform": "darwin", "arch": "x64", "label": "macOS · Intel（实验构建）", "public": false }
   ]

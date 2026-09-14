@@ -1,0 +1,106 @@
+[
+  {
+    "chapter": 0,
+    "title": "村口路标",
+    "mapAnchor": {
+      "x": 10,
+      "y": 67
+    }
+  },
+  {
+    "chapter": 1,
+    "title": "护身堂",
+    "mapAnchor": {
+      "x": 20,
+      "y": 64
+    }
+  },
+  {
+    "chapter": 2,
+    "title": "拓印坊",
+    "mapAnchor": {
+      "x": 27,
+      "y": 28
+    }
+  },
+  {
+    "chapter": 3,
+    "title": "营火工坊",
+    "mapAnchor": {
+      "x": 33,
+      "y": 39
+    }
+  },
+  {
+    "chapter": 4,
+    "title": "藏图阁",
+    "mapAnchor": {
+      "x": 42,
+      "y": 46
+    }
+  },
+  {
+    "chapter": 5,
+    "title": "集市鉴宝",
+    "mapAnchor": {
+      "x": 50,
+      "y": 53
+    }
+  },
+  {
+    "chapter": 6,
+    "title": "飞鸽传书",
+    "mapAnchor": {
+      "x": 57,
+      "y": 51
+    }
+  },
+  {
+    "chapter": 7,
+    "title": "悬赏亭",
+    "mapAnchor": {
+      "x": 63,
+      "y": 32
+    }
+  },
+  {
+    "chapter": 8,
+    "title": "双城驿站",
+    "mapAnchor": {
+      "x": 68,
+      "y": 39
+    }
+  },
+  {
+    "chapter": 9,
+    "title": "分流竹林",
+    "mapAnchor": {
+      "x": 73,
+      "y": 48
+    }
+  },
+  {
+    "chapter": 10,
+    "title": "合卷台",
+    "mapAnchor": {
+      "x": 81,
+      "y": 51
+    }
+  },
+  {
+    "chapter": 11,
+    "title": "议事堂",
+    "mapAnchor": {
+      "x": 87,
+      "y": 25
+    }
+  },
+  {
+    "chapter": 12,
+    "title": "百炼炉",
+    "mapAnchor": {
+      "x": 92,
+      "y": 40
+    }
+  }
+]

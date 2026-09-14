@@ -1,0 +1,158 @@
+[
+  {
+    "id": "icon-a",
+    "prompt": "Use case: stylized-concept. Asset type: macOS app icon candidate for a Chinese wuxia beginner learning game, square 1024x1024. Input image is ONLY a style reference, not an edit target: preserve its muted Chinese ink-and-mineral watercolor, mountain-blue grey, pine ink green, faded ochre, warm fibrous paper. Make a hand-painted storybook illustration matching this landscape, NOT 3D product render, NOT glossy, NOT plastic, NOT photoreal, NOT generic fantasy/mobile-game jewel icon. Strong clear silhouette readable at 32 px and 64 px, generous 10% safe margin. A single martial-arts manual, clearly recognizable as a traditional Chinese thread-bound book. No Latin letters, no random pseudo-Chinese writing, no atom logos, no decorative frame. Quiet textured warm-paper background, matte ink contours, diffuse daylight. The full square is a composed icon master; macOS mask preview will be applied separately.\nPrimary request: ONE closed indigo-grey thread-bound practice manual, almost front-on with slight top-down view, worn pale paper page edges on the right, three ivory stitch loops on left, long ivory blank title slip, tiny vermilion seal with abstract non-letter mark at foot. Book occupies 75% of image height, cover bears a very faint brush-painted pine branch and mountain silhouette. Austere literati restraint. No brush, no sword, no extra floating objects.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-3311420f-47fd-418d-a02e-1570be5ef253.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "icon-b",
+    "prompt": "Use case: stylized-concept. Asset type: macOS app icon candidate for a Chinese wuxia beginner learning game, square 1024x1024. Input image is ONLY a style reference, not an edit target: preserve its muted Chinese ink-and-mineral watercolor, mountain-blue grey, pine ink green, faded ochre, warm fibrous paper. Make a hand-painted storybook illustration matching this landscape, NOT 3D product render, NOT glossy, NOT plastic, NOT photoreal, NOT generic fantasy/mobile-game jewel icon. Strong clear silhouette readable at 32 px and 64 px, generous 10% safe margin. A single martial-arts manual, clearly recognizable as a traditional Chinese thread-bound book. No Latin letters, no random pseudo-Chinese writing, no atom logos, no decorative frame. Quiet textured warm-paper background, matte ink contours, diffuse daylight. The full square is a composed icon master; macOS mask preview will be applied separately.\nPrimary request: ONE opened warm-paper martial-arts manual, viewed from above at gentle three-quarter angle, shallow V shape and visible sewn spine, restrained grey-blue cloth cover below page edges. Across the two open pages a very spare ink mountain and one pine forms a continuous hand-painted illustration, no text. Small vermilion rectangular seal mark in lower corner. No dense page content. Clear book silhouette, calm pale paper backdrop.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-70fd41c3-65de-4f77-a882-e67214246dd8.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "icon-c",
+    "prompt": "Use case: stylized-concept. Asset type: macOS app icon candidate for a Chinese wuxia beginner learning game, square 1024x1024. Input image is ONLY a style reference, not an edit target: preserve its muted Chinese ink-and-mineral watercolor, mountain-blue grey, pine ink green, faded ochre, warm fibrous paper. Make a hand-painted storybook illustration matching this landscape, NOT 3D product render, NOT glossy, NOT plastic, NOT photoreal, NOT generic fantasy/mobile-game jewel icon. Strong clear silhouette readable at 32 px and 64 px, generous 10% safe margin. A single martial-arts manual, clearly recognizable as a traditional Chinese thread-bound book. No Latin letters, no random pseudo-Chinese writing, no atom logos, no decorative frame. Quiet textured warm-paper background, matte ink contours, diffuse daylight. The full square is a composed icon master; macOS mask preview will be applied separately.\nPrimary request: ONE closed olive-grey paperbound martial-arts manual wrapped by a muted ochre woven cloth band with a simple flat knot, a narrow blank title slip on the book peeking from band, visible stitched binding and lightly worn page edge. Book seen nearly front-on, slightly angled 8 degrees. Small red cord and square vermilion stamp accent, but no metal pendant or ornate frame. Hand-painted humble traveller's handbook.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-91993687-0e4a-4fa2-a92b-1c956d792294.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "lock-a",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. A single compact roadside wooden pass plaque: a vertically hanging weathered grey-green timber plaque, broad flat paper inset, a small believable old Chinese rectangular brass padlock fastened physically through a metal clasp at the top. Rope loop attached; visible small peg and grounded short base. The inset bears ONE clearly legible brush-ink Chinese chapter numeral 四, no other characters. The lock and number are integral parts of the one object, not a floating number under an icon. A clear compact silhouette readable at 56px. Faded bronze, no shiny gold. Restrained and humble, no elaborate temple or ornamental frame.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-b4840343-b0e4-4850-bd21-62eab2a901cc.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "lock-b",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. One sealed travel scroll used as a locked chapter node: an upright short partially unrolled ivory paper scroll around two dark grey wood rollers, olive silk fastening strip, small old bronze padlock attached through top loop. Brush-ink numeral 四 is printed clearly on the exposed central paper as an integral part of the object. A trailing short muted red seal cord. Only a scroll, no stand, no free-floating numbers. Compact silhouette for 56px map marker. Aged paper, faded bronze, no ornate frame.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-eaa505a8-ba6a-48b8-8778-8e317a1a9a4e.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "button-base",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. A single wide horizontal physical wood-and-paper command tablet for a game button. Aspect roughly 4 to 1 within the image, very broad blank pale rice-paper center for readable text added later. Thin irregular worn grey-green wood edge, subtle fibrous torn paper edge. No border decorations, no seals, no letters, no icon. Flat handpainted front view, subtle bottom thickness, suitable for nine-slice scaling without stretching corners.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-4efbc0f0-d4f3-45da-8a07-bcf61a9efcfd.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "change-slip",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. A single handpainted paper change slip for a tabletop manuscript editing game: a long vertical ivory rag paper rectangle with softly uneven edges, a modest dark green cloth tab clipped at upper left by bamboo, sparse visible but blank pale writing area. Bottom corner curled very slightly, no text, no characters, no drawn ink lines. Suitable to display editable text as HTML on top. It should look like a physical small sheet from the landscape world, not a digital card.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-cc759686-fbd8-4a3b-8d41-b36a3ddacb2f.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "coin-pouch",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. One small travelling cloth coin pouch resting with its mouth loosely open, three visible old brown bronze square-hole coins at its base physically touching the pouch. Muted sage-grey cloth with soft watercolor folds, dark thread, no text. Clear quiet silhouette, no gold treasure glow. Asset for rewards and wallet, not a full scene.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-fa2252dd-6afe-4332-b2ad-9c5e9a2cb0ef.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "silver-note",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. One horizontal rectangular Chinese paper banknote used as fictional in-game currency. Thin fibrous warm ivory paper, very restrained old muted vermilion and pine-ink imprints, clearly legible Chinese characters 壹佰文 in the center, small abstract seal marks. No ornate modern banknote engraving, no real currency reproduction. One note, no surrounding objects, clean alpha. It must feel like a modest old receipt matching the watercolor landscape.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-2386fb42-4021-4fa7-8ab9-c73ba758b649.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "travel-pass",
+    "prompt": "Create ONE production-quality reusable game prop asset. Reference image is a style reference only: muted mineral watercolor, grey pine green, slate blue, faded brown ochre, paper grain, traditional Chinese wuxia landscape game. Handpainted matte illustration with ink edges, natural diffuse daylight, NOT 3D/render/plastic, NOT vector/line icon. Transparent alpha background, no checkerboard, no backdrop, no detached cast shadow, isolated silhouette with clean edges and generous 12% margin. Front three-quarter view, gentle top-down angle suitable for landscape map and game tabletop. No English text or pseudo-letter glyphs. One traditional wooden travel pass token, a hand-held narrow weathered grey-brown wood tablet with rounded worn shoulders and a short faded red thread tied through a drilled top hole. Central warm ivory paper inset with clearly legible brush characters 路引. Tiny vermilion seal at foot, no extra text. Matte wood with restrained irregular ink contours; no gold filigree. Asset will be reused on map, chapter tabletop, and inventory.",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-38ebe9a0-3a4c-4719-9173-796bc10b9801.png",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "date": "2026-09-12"
+  },
+  {
+    "id": "button-refined",
+    "prompt": "Edit the provided generated wooden paper button. Keep the matte mineral watercolor, worn grey green wood, warm paper. Remove ALL pine branches, pine needles, rocks, hanging ropes, carved decorations and any landscape drawings. Simplify to ONE thin flat command tablet, clearly wider than tall, 4.5:1. Blank ivory paper inset with maximum clear center (80%). Straight nearly front-on. No gilding or ornamental corners. Real transparent alpha outside, no halo/backdrop/shadow. Keep subtly imperfect handpainted edges and minimal wood thickness, no modern UI appearance. This must be legible as a modest button at 190x48 CSS pixels.",
+    "reference": "docs/design/v0.2-phase-a/assets/button-base.png",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen edit",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-aeb3c53b-8218-4e13-ab48-61eb43dd117b.png"
+  },
+  {
+    "id": "slip-refined",
+    "prompt": "Edit this exact change slip. Keep muted ink watercolor paper and small green cloth clip at top left. Remove all background and glow completely; outside paper must have alpha 0. Remove printed landscapes and stains in writing area. Orient the paper vertically STRAIGHT front-on with only a gently irregular edge, no diagonal tilt, aspect 2:3. Central 75% completely blank light ivory readable paper. Reduce ribbon to a small tab that does not hang far out. No ornamental frame, no text. A single usable game paper card, matte and spare.",
+    "reference": "docs/design/v0.2-phase-a/assets/change-slip.png",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen edit",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-56b80f32-f71e-4f37-b499-09b4371d467c.png"
+  },
+  {
+    "id": "lock-open",
+    "prompt": "Edit this exact scroll chapter node, preserving its silhouette, scale, paper numeral 四, wood, perspective, colors and alpha. Change only the state: the brass lock is now OPEN, its shackle lifted and turned aside on the same fastening strip. A small muted green silk tab indicates it can be entered. No glow. No new frame. Outside object alpha 0, no background. A readable open gate state in the same visual family.",
+    "reference": "docs/design/v0.2-phase-a/assets/lock-b.png",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen edit",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-d548b5e3-56f7-41e2-a4f0-c647151eb254.png"
+  },
+  {
+    "id": "lock-complete",
+    "prompt": "Edit this exact scroll chapter node, preserving its silhouette, scale, paper numeral 四, wood, perspective, colors and transparent background. Change only the state: remove the lock and replace its occupied area with an aged vermilion wax approval seal tied to the existing ribbon. The seal bears a single legible character 成. Keep number 四 unoccluded. No glow or trophies. A completed chapter marker in the same visual family.",
+    "reference": "docs/design/v0.2-phase-a/assets/lock-b.png",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen edit",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-88a0d40d-e4c1-48e8-b028-f4e5a28dc094.png"
+  },
+  {
+    "id": "button-final",
+    "prompt": "Generate a NEW isolated asset for a traditional Chinese wuxia watercolor game. Use the supplied landscape solely for muted mineral watercolor style and palette. The image output MUST be a PNG with REAL transparent alpha channel: every background pixel must be fully transparent alpha=0. Do NOT draw a checkerboard, grey checks, white backdrop, black backdrop, studio halo or cast shadow. Handpainted matte grey-green wood and ivory fibrous paper, ink outlines, no plastic/3D render, restrained details. Entire single object inside generous transparent margin. One front-facing wide flat wood-and-paper tablet, horizontal 4.5:1 object ratio. Blank pale ivory paper center makes up 85% of surface. Very thin grey-green wood edge, no extra decorations, no branches, no rocks, no ropes, no text. Calm and simple, suitable for readable button at 180x48 CSS px.",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "reason": "Rejected prior edit output because it baked checkerboard into opaque pixels",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-9accdadb-a80b-425d-8763-0f140f443671.png"
+  },
+  {
+    "id": "slip-final",
+    "prompt": "Generate a NEW isolated asset for a traditional Chinese wuxia watercolor game. Use the supplied landscape solely for muted mineral watercolor style and palette. The image output MUST be a PNG with REAL transparent alpha channel: every background pixel must be fully transparent alpha=0. Do NOT draw a checkerboard, grey checks, white backdrop, black backdrop, studio halo or cast shadow. Handpainted matte grey-green wood and ivory fibrous paper, ink outlines, no plastic/3D render, restrained details. Entire single object inside generous transparent margin. One front-facing vertical small manuscript page, object ratio 2:3, completely straight and flat. Tiny dark sage cloth tab at top left, gently irregular paper edge, broad blank ivory center over 85% of area. No landscapes, no lines, no stamps, no frame, no text. For in-game text to be laid over the paper.",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "reason": "Rejected prior edit output because it baked checkerboard into opaque pixels",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-5d001872-53e9-4063-b6f9-38ce484f7be5.png"
+  },
+  {
+    "id": "lock-open-final",
+    "prompt": "Generate a NEW isolated asset for a traditional Chinese wuxia watercolor game. Use the supplied landscape solely for muted mineral watercolor style and palette. The image output MUST be a PNG with REAL transparent alpha channel: every background pixel must be fully transparent alpha=0. Do NOT draw a checkerboard, grey checks, white backdrop, black backdrop, studio halo or cast shadow. Handpainted matte grey-green wood and ivory fibrous paper, ink outlines, no plastic/3D render, restrained details. Entire single object inside generous transparent margin. One travel-scroll chapter marker matching the provided world: upright short partially unrolled pale scroll around two grey wood rollers, tilted gently at 15 degrees, olive fabric fastening strip, simple old brass Chinese padlock attached near top with visibly OPEN U-shaped shackle, tiny green cloth flag beside it, muted red thread tail at right. One large legible brush ink 四 on exposed central paper, sparse pale mountain ink at foot. Lock physically attached, numeral integral to scroll, no other writing. Compact for 64px display.",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "reason": "Rejected prior edit output because it baked checkerboard into opaque pixels",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-bd6d9a2c-164c-43b6-a6e1-60246957dd96.png"
+  },
+  {
+    "id": "lock-complete-final",
+    "prompt": "Generate a NEW isolated asset for a traditional Chinese wuxia watercolor game. Use the supplied landscape solely for muted mineral watercolor style and palette. The image output MUST be a PNG with REAL transparent alpha channel: every background pixel must be fully transparent alpha=0. Do NOT draw a checkerboard, grey checks, white backdrop, black backdrop, studio halo or cast shadow. Handpainted matte grey-green wood and ivory fibrous paper, ink outlines, no plastic/3D render, restrained details. Entire single object inside generous transparent margin. One travel-scroll chapter marker: upright short partially unrolled pale scroll around two grey wood rollers, tilted gently at 15 degrees, olive fastening strip, muted red thread tail right. One large legible brush ink 四 centered on exposed paper. In place of a lock near top, a small matte red wax seal with single clear 成, attached to existing cloth. Sparse pale mountain ink at foot. No other writing. Compact for 64px display.",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "reason": "Rejected prior edit output because it baked checkerboard into opaque pixels",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-d25cd1af-c5cf-4360-9754-5056b0657a91.png"
+  },
+  {
+    "id": "chapter10-artboard",
+    "prompt": "Generate one polished widescreen environment illustration for chapter 'manuscript binding pavilion' of a Chinese wuxia GitHub learning game. Use the attached existing landscape ONLY as exact style anchor: muted mineral watercolor, pale ink mist, blue-grey distant mountains, restrained green pine, warm paper grain and ochre stone. Not modern fantasy, not 3D render. Composition: a modest open-air wooden scholar pavilion overlooking this same mountain valley. A large real wooden work table with unobstructed empty matte grey-brown tabletop dominates the middle-right foreground, spanning x=28%-91% width and y=45%-78% height; slightly top-down view so the tabletop can receive game paper objects later. Table legs meet a grounded stone terrace at 86% image height. Leave leftmost 22% of foreground terrace empty for placing the existing full-body guide character later; do NOT draw any character. Background has distant village roofs and a pine near one side, quiet and lower contrast. Some books and rolled scrolls on a low shelf at far rear right, not on the main empty tabletop. No gameplay cards or interface, no typography, no button, no seals or logo. No framing border around the image, no ornamental corners, no giant gold details. The goal is a scene-grounded art direction proof replacing the previous coarse geometric table. Landscape 16:9.",
+    "date": "2026-09-12",
+    "mode": "built-in imagegen",
+    "reference": "public/world/jianghu-full-v1.png",
+    "originalPath": "/Users/maoyu/.codex/generated_images/01a09357-696d-7c33-bb48-c36924548fb2/exec-0b124bf2-a2f0-4167-a0f5-413efe1756e6.png"
+  }
+]

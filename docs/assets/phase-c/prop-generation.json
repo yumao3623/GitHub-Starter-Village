@@ -1,0 +1,210 @@
+[
+  {
+    "chapter": 0,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 路牌木座; 2. 用途布幡; 3. 石障桥口; 4. 入谷旗; 5. 路引托盘; 6. 山道纹理; 7. 旅人行囊; 8. 木桥. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 0, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-3754bdb4-1d71-42d5-8478-ba77b607c1f5.png",
+    "file": "public/assets/phase-c/props/chapter-0.png",
+    "subjects": [
+      "路牌木座",
+      "用途布幡",
+      "石障桥口",
+      "入谷旗",
+      "路引托盘",
+      "山道纹理",
+      "旅人行囊",
+      "木桥"
+    ]
+  },
+  {
+    "chapter": 1,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 护身匣; 2. 请求笺; 3. 核验印; 4. 拒绝槽; 5. 门禁横闩; 6. 安全护符; 7. 信使布包; 8. 灯笼. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 1, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-e3403bae-9be1-438a-a9ec-34953e173312.png",
+    "file": "public/assets/phase-c/props/chapter-1.png",
+    "subjects": [
+      "护身匣",
+      "请求笺",
+      "核验印",
+      "拒绝槽",
+      "门禁横闩",
+      "安全护符",
+      "信使布包",
+      "灯笼"
+    ]
+  },
+  {
+    "chapter": 2,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. Fork 拓印机; 2. Clone 装订机; 3. ZIP 包扎台; 4. 原卷副本册; 5. 产物检验架; 6. 运输马车; 7. 工位木托; 8. 云端工坊. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 2, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-b50bb4b5-f9e7-4f2a-b704-732a612fc8dc.png",
+    "file": "public/assets/phase-c/props/chapter-2.png",
+    "subjects": [
+      "Fork 拓印机",
+      "Clone 装订机",
+      "ZIP 包扎台",
+      "原卷副本册",
+      "产物检验架",
+      "运输马车",
+      "工位木托",
+      "云端工坊"
+    ]
+  },
+  {
+    "chapter": 3,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 运行炉膛; 2. 目录木匣; 3. 依赖箱; 4. 铜管接头; 5. 日志长卷; 6. 服务观察窗; 7. 风箱开关; 8. 火苗. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 3, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-ec662a18-88d6-4c30-846e-183ab5426a8b.png",
+    "file": "public/assets/phase-c/props/chapter-3.png",
+    "subjects": [
+      "运行炉膛",
+      "目录木匣",
+      "依赖箱",
+      "铜管接头",
+      "日志长卷",
+      "服务观察窗",
+      "风箱开关",
+      "火苗"
+    ]
+  },
+  {
+    "chapter": 4,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 多层书架; 2. 档案册页; 3. 四格托盘; 4. 版本书签; 5. 问题签; 6. 归档匣; 7. 许可印记; 8. 档案封皮. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 4, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-3f046202-009f-4738-876c-bc2310d09ff5.png",
+    "file": "public/assets/phase-c/props/chapter-4.png",
+    "subjects": [
+      "多层书架",
+      "档案册页",
+      "四格托盘",
+      "版本书签",
+      "问题签",
+      "归档匣",
+      "许可印记",
+      "档案封皮"
+    ]
+  },
+  {
+    "chapter": 5,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 鉴宝案桌; 2. 项目卷牌; 3. 证据短签; 4. 摊主口供牌; 5. 彩头盘; 6. 质疑印; 7. 交付匣; 8. 摊幡. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 5, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-307eea2e-d11b-4c7f-a0db-66e2c3886f5e.png",
+    "file": "public/assets/phase-c/props/chapter-5.png",
+    "subjects": [
+      "鉴宝案桌",
+      "项目卷牌",
+      "证据短签",
+      "摊主口供牌",
+      "彩头盘",
+      "质疑印",
+      "交付匣",
+      "摊幡"
+    ]
+  },
+  {
+    "chapter": 6,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 信鸽; 2. 信台; 3. 来信信封; 4. 仓库通知笺; 5. 人物动态笺; 6. 规则拨签; 7. 投信回执; 8. 风铃. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 6, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-6c3b36d1-7473-45e6-8ef2-d6780489908a.png",
+    "file": "public/assets/phase-c/props/chapter-6.png",
+    "subjects": [
+      "信鸽",
+      "信台",
+      "来信信封",
+      "仓库通知笺",
+      "人物动态笺",
+      "规则拨签",
+      "投信回执",
+      "风铃"
+    ]
+  },
+  {
+    "chapter": 7,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 悬赏公告板; 2. 案卷底纸; 3. 证据拼片; 4. 人物指派令; 5. 里程碑旗; 6. 安全封信; 7. 归档印; 8. 告示钉. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 7, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-4eb7ba0a-f059-4abf-abfc-b594e6c211ce.png",
+    "file": "public/assets/phase-c/props/chapter-7.png",
+    "subjects": [
+      "悬赏公告板",
+      "案卷底纸",
+      "证据拼片",
+      "人物指派令",
+      "里程碑旗",
+      "安全封信",
+      "归档印",
+      "告示钉"
+    ]
+  },
+  {
+    "chapter": 8,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 本地站台; 2. origin 城门; 3. upstream 远站; 4. 运卷货车; 5. 版本货件; 6. 远端消息册; 7. 驿站回执; 8. 桥面. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 8, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-3c8f5378-d6de-492d-902d-1b11abec3442.png",
+    "file": "public/assets/phase-c/props/chapter-8.png",
+    "subjects": [
+      "本地站台",
+      "origin 城门",
+      "upstream 远站",
+      "运卷货车",
+      "版本货件",
+      "远端消息册",
+      "驿站回执",
+      "桥面"
+    ]
+  },
+  {
+    "chapter": 9,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 分叉竹径; 2. 提交石标; 3. main 门牌; 4. 修复竹签; 5. 当前分支绳结; 6. 差异竹简; 7. 切换机关; 8. 竹叶. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 9, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-8e897908-10ed-453b-a2e1-24764579f10b.png",
+    "file": "public/assets/phase-c/props/chapter-9.png",
+    "subjects": [
+      "分叉竹径",
+      "提交石标",
+      "main 门牌",
+      "修复竹签",
+      "当前分支绳结",
+      "差异竹简",
+      "切换机关",
+      "竹叶"
+    ]
+  },
+  {
+    "chapter": 10,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 改动签; 2. 四槽暂存案; 3. Diff 对照卷; 4. 封卷册; 5. 合卷印章; 6. 提交记录简; 7. 快递封套; 8. 私人便条. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 10, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-50d8654d-d6b4-49cb-b006-58ad1bca9d1f.png",
+    "file": "public/assets/phase-c/props/chapter-10.png",
+    "subjects": [
+      "改动签",
+      "四槽暂存案",
+      "Diff 对照卷",
+      "封卷册",
+      "合卷印章",
+      "提交记录简",
+      "快递封套",
+      "私人便条"
+    ]
+  },
+  {
+    "chapter": 11,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 议事长桌; 2. 来源目标卷架; 3. 评审意见牌; 4. 举证行动牌; 5. 冲突合卷册; 6. 待复查封签; 7. 批准印; 8. 席位旗. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 11, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-d59556e8-2eb4-4965-9bfb-0c475e0d8dbc.png",
+    "file": "public/assets/phase-c/props/chapter-11.png",
+    "subjects": [
+      "议事长桌",
+      "来源目标卷架",
+      "评审意见牌",
+      "举证行动牌",
+      "冲突合卷册",
+      "待复查封签",
+      "批准印",
+      "席位旗"
+    ]
+  },
+  {
+    "chapter": 12,
+    "prompt": "Use case: historical-scene production game sprite assets. Generate a TRANSPARENT PNG sprite sheet, wide 2:1 aspect, precisely 4 columns × 2 rows of EIGHT equal square cells, read left to right top then bottom. Each cell contains ONE fully contained separate object with 15% clear padding. Objects: 1. 分层百炼炉; 2. 状态火苗; 3. 依赖机关带; 4. 任务工牌; 5. 日志长卷; 6. 产物箱; 7. 发行卷标签; 8. 烟口. Chinese antique wuxia ink-and-mineral-watercolor game, same quiet sage green, warm aged ivory, weathered dark wood, old brass, muted cinnabar as reference landscape. Hand-painted believable wooden constructions, soft brush grain and ink edges, NO modern UI, NO pictogram outlines, NO geometric placeholder shapes, no cartoon shiny render, no typography or labels, no text. Orthographic three-quarter front view, even soft light. Objects are independent usable gameplay pieces, no shared backdrop, no groundplane or outside shadow, TRUE transparent background everywhere outside objects, not checkerboard. Uniform cell grid. Do not draw sheet dividers or captions. Specific chapter 12, imagery must be grounded in its objects, not literal modern computers.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-3ca786af-bed6-4caa-9f7f-8ea51d549438.png",
+    "file": "public/assets/phase-c/props/chapter-12.png",
+    "subjects": [
+      "分层百炼炉",
+      "状态火苗",
+      "依赖机关带",
+      "任务工牌",
+      "日志长卷",
+      "产物箱",
+      "发行卷标签",
+      "烟口"
+    ]
+  }
+]

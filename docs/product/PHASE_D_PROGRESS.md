@@ -1,6 +1,10 @@
 # 阶段 D 实施与验收记录
 
-日期：2026-09-11。状态：**本地开发修复与内部候选交付完成；公开下载版本的签名/公证、跨系统实机与干净系统验收仍未闭环，不宣称公开版已完成。** 本轮获准创建本地 Git 提交，没有推送或上传 Release。
+日期：2026-09-14。状态：**阶段 D 本地成品验收已完成；公开发布门禁仍未开放。本文旧的 2026-09-11 记录只作历史证据，不能覆盖本轮结果。** 本轮不推送、不上传 Release。
+
+> 当前验收基线：[PHASE_ABC_BASELINE.md](PHASE_ABC_BASELINE.md)；阶段 C 的实际完成状态以 [PHASE_C_V2_REAUDIT_RESULT.md](../verification/PHASE_C_V2_REAUDIT_RESULT.md) 为准。旧记录中的 a19516f、六章、53 项测试和 8 项资产属于历史候选包口径。
+
+本轮阶段 D 机器验收明细见 [PHASE_D_ACCEPTANCE_2026-09-14.md](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
 
 ## 基线与实施顺序
 
@@ -55,13 +59,8 @@ Design Read：沿用淡彩水墨江湖与清晰现代操作区，新增动作只
 
 ## 交付包与证据位置
 
-最终候选（不要使用其他较早时间戳目录）：
-
-- Mac：artifacts/desktop/darwin-arm64-1789092061717/GitHubStarterVillage-0.1.0-darwin-arm64.zip，152897538字节（约145.8MiB）。
-- Mac SHA-256：257ab3fb4bd42f48d9164b571eb568b6ff269e612de763181a457f41ba9347e3。
-- Windows：artifacts/desktop/win32-x64-1789092139865/GitHubStarterVillage-0.1.0-win32-x64.zip，181536041字节（约173.1MiB）。
-- Windows SHA-256：f2595a55063aea62b3e99c21c2412c378e541e3b66b35580ca4940918e52f52d。
-- 最终Mac解压目录：artifacts/phase-d/final-unpacked/；实际报告 desktop-phase-d-verification.json，截图 desktop-*.png。
+历史时间戳候选包（包括 Windows 交叉包）已在 2026-09-14 清理，不再作为交付物。当前 Mac 候选包、SHA-256 和本轮阻塞说明见 [阶段 D 成品验收](../releases/PHASE_D_ACCEPTANCE_2026-09-14.md)。
+- 旧 `artifacts/phase-d/final-unpacked/` 与旧截图同样不作为本轮直接验收证据。
 - 录屏样片：artifacts/phase-d/recording/（WebM与recording.json），明确固定演示，非用户实绩。
 - 分享图：artifacts/phase-d/desktop-share-1080.png、desktop-share-1200.png。
 - 产物清单记录构建时HEAD a19516f和dirty=true；sourceDigest固定本次输入，appAsarSha256固定实际应用。Git提交发生在验收之后，因此不把提交前构建虚称为干净提交构建。

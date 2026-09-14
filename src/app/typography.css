@@ -1,0 +1,8 @@
+@font-face{font-family:'Ma Shan Zheng';src:url('/fonts/mashanzheng.ttf') format('truetype');font-display:swap;font-weight:400}
+@font-face{font-family:'Zhi Mang Xing';src:url('/fonts/zhimangxing.ttf') format('truetype');font-display:swap;font-weight:400}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant.ttf') format('truetype');font-display:swap;font-weight:400;unicode-range:U+0000-024F}
+:root{--font-body:'LXGW WenKai',serif;--font-heading:'Ma Shan Zheng','LXGW WenKai',serif;--font-mono:'LXGW WenKai Mono',monospace}
+html body,body :is(button,input,select,textarea),.wuxia-v3,.wuxia-v3 :is(p,small,span,div,label,button,input,select,textarea){font-family:var(--font-body)}
+html body :is(h1,h2,h3,h4),.wuxia-v3 :is(h1,h2,h3,h4,.character-name){font-family:var(--font-heading);font-weight:400}
+html body :is(code,pre,kbd,samp),.wuxia-v3 :is(code,pre,kbd,samp){font-family:var(--font-mono)}
+html body .adventure-brand{font-family:'Zhi Mang Xing','LXGW WenKai',serif}

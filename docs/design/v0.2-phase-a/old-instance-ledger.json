@@ -1,0 +1,2781 @@
+[
+  {
+    "id": "old-0-0-0",
+    "chapter": 0,
+    "stage": 0,
+    "label": "README",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-0-1",
+    "chapter": 0,
+    "stage": 0,
+    "label": "Code",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-0-2",
+    "chapter": 0,
+    "stage": 0,
+    "label": "Releases",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-0-3",
+    "chapter": 0,
+    "stage": 0,
+    "label": "Fork",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-1-0",
+    "chapter": 0,
+    "stage": 1,
+    "label": "README",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-1-1",
+    "chapter": 0,
+    "stage": 1,
+    "label": "Code",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-1-2",
+    "chapter": 0,
+    "stage": 1,
+    "label": "Releases",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-1-3",
+    "chapter": 0,
+    "stage": 1,
+    "label": "Fork",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-2-0",
+    "chapter": 0,
+    "stage": 2,
+    "label": "准备 Clone 路线",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-2-1",
+    "chapter": 0,
+    "stage": 2,
+    "label": "打开自己的 Fork",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-0-2-2",
+    "chapter": 0,
+    "stage": 2,
+    "label": "阅读中文 README",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C00-01",
+      "C00-02",
+      "C00-03",
+      "C00-04",
+      "C00-05",
+      "C00-06"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-0-0",
+    "chapter": 1,
+    "stage": 0,
+    "label": "已有账号",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-0-1",
+    "chapter": 1,
+    "stage": 0,
+    "label": "还没有账号",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-1-0",
+    "chapter": 1,
+    "stage": 1,
+    "label": "走向 Settings",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-1-1",
+    "chapter": 1,
+    "stage": 1,
+    "label": "识别 Sign in",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-1-2",
+    "chapter": 1,
+    "stage": 1,
+    "label": "核对 github.com",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-0",
+    "chapter": 1,
+    "stage": 2,
+    "label": "2FA",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-1",
+    "chapter": 1,
+    "stage": 2,
+    "label": "Passkey",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-2",
+    "chapter": 1,
+    "stage": 2,
+    "label": "Recovery codes",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-3",
+    "chapter": 1,
+    "stage": 2,
+    "label": "索要密码",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-4",
+    "chapter": 1,
+    "stage": 2,
+    "label": "索要 Token",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-2-5",
+    "chapter": 1,
+    "stage": 2,
+    "label": "索要 SSH 私钥",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-3-0",
+    "chapter": 1,
+    "stage": 3,
+    "label": "锁好护身堂",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-3-1",
+    "chapter": 1,
+    "stage": 3,
+    "label": "拒绝陌生索取",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-1-3-2",
+    "chapter": 1,
+    "stage": 3,
+    "label": "自己保管恢复代码",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C01-01",
+      "C01-02",
+      "C01-03",
+      "C01-04",
+      "C01-05",
+      "C01-06",
+      "C01-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-0-0",
+    "chapter": 2,
+    "stage": 0,
+    "label": "账号旅人的项目卷",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-0-1",
+    "chapter": 2,
+    "stage": 0,
+    "label": "协作旅人的项目卷",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-0-2",
+    "chapter": 2,
+    "stage": 0,
+    "label": "阅览旅人的项目卷",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-1-0",
+    "chapter": 2,
+    "stage": 1,
+    "label": "账号副本",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-1-1",
+    "chapter": 2,
+    "stage": 1,
+    "label": "本地历史与远程关系",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-1-2",
+    "chapter": 2,
+    "stage": 1,
+    "label": "文件快照",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-2-0",
+    "chapter": 2,
+    "stage": 2,
+    "label": "HTTPS 地址",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-2-1",
+    "chapter": 2,
+    "stage": 2,
+    "label": "SSH 公钥方式",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-2-2",
+    "chapter": 2,
+    "stage": 2,
+    "label": "SSH 私钥",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-3-0",
+    "chapter": 2,
+    "stage": 3,
+    "label": "电脑中打开 Clone 产物",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-2-3-1",
+    "chapter": 2,
+    "stage": 3,
+    "label": "浏览器中需要云端工作区",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C02-01",
+      "C02-02",
+      "C02-03",
+      "C02-04",
+      "C02-05",
+      "C02-06",
+      "C02-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-0-0",
+    "chapter": 3,
+    "stage": 0,
+    "label": "确认 Node.js 与 npm",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-0-1",
+    "chapter": 3,
+    "stage": 0,
+    "label": "打开 Terminal",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-0-2",
+    "chapter": 3,
+    "stage": 0,
+    "label": "进入项目 Directory",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-1-0",
+    "chapter": 3,
+    "stage": 1,
+    "label": "npm install",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-1-1",
+    "chapter": 3,
+    "stage": 1,
+    "label": "npm run dev",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-1-2",
+    "chapter": 3,
+    "stage": 1,
+    "label": "localhost",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-2-0",
+    "chapter": 3,
+    "stage": 2,
+    "label": "打开 localhost",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-2-1",
+    "chapter": 3,
+    "stage": 2,
+    "label": "重新点燃 npm run dev",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-2-2",
+    "chapter": 3,
+    "stage": 2,
+    "label": "重连 npm install",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-2-3",
+    "chapter": 3,
+    "stage": 2,
+    "label": "查看日志：缺少 Dependency",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-3-2-4",
+    "chapter": 3,
+    "stage": 2,
+    "label": "拔开依赖线（模拟）",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C03-01",
+      "C03-02",
+      "C03-03",
+      "C03-04",
+      "C03-05",
+      "C03-06",
+      "C03-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-0-0",
+    "chapter": 4,
+    "stage": 0,
+    "label": "Files",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-0-1",
+    "chapter": 4,
+    "stage": 0,
+    "label": "Branch / main",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-0-2",
+    "chapter": 4,
+    "stage": 0,
+    "label": "Commit history",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-0-3",
+    "chapter": 4,
+    "stage": 0,
+    "label": "License",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-0-4",
+    "chapter": 4,
+    "stage": 0,
+    "label": "Release / Tags",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-1-0",
+    "chapter": 4,
+    "stage": 1,
+    "label": "Files 清单",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-1-1",
+    "chapter": 4,
+    "stage": 1,
+    "label": "Commit history 日期",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-1-2",
+    "chapter": 4,
+    "stage": 1,
+    "label": "License 原文",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-1-3",
+    "chapter": 4,
+    "stage": 1,
+    "label": "Release / Tag 关联",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-1-4",
+    "chapter": 4,
+    "stage": 1,
+    "label": "Branch / main 标识",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-2-0",
+    "chapter": 4,
+    "stage": 2,
+    "label": "最后追溯 Release",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-2-1",
+    "chapter": 4,
+    "stage": 2,
+    "label": "再查 License 来源",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-2-2",
+    "chapter": 4,
+    "stage": 2,
+    "label": "再查 Files 完整度",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-2-3",
+    "chapter": 4,
+    "stage": 2,
+    "label": "先核对当前 Branch",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-3-0",
+    "chapter": 4,
+    "stage": 3,
+    "label": "Public",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-3-1",
+    "chapter": 4,
+    "stage": 3,
+    "label": "Private",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-3-2",
+    "chapter": 4,
+    "stage": 3,
+    "label": "Owner",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-3-3",
+    "chapter": 4,
+    "stage": 3,
+    "label": "Contributors",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-4-3-4",
+    "chapter": 4,
+    "stage": 3,
+    "label": "Commits",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C04-01",
+      "C04-02",
+      "C04-03",
+      "C04-04",
+      "C04-05",
+      "C04-06",
+      "C04-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-0-0",
+    "chapter": 5,
+    "stage": 0,
+    "label": "芦岸图：Node ≥20 / MIT / 最近修复",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-0-1",
+    "chapter": 5,
+    "stage": 0,
+    "label": "云栈图：Node ≥24 / MIT / 活跃",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-0-2",
+    "chapter": 5,
+    "stage": 0,
+    "label": "旧雾图：Node ≥20 / 无许可 / Archived",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-1-0",
+    "chapter": 5,
+    "stage": 1,
+    "label": "Requirements：Node ≥20",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-1-1",
+    "chapter": 5,
+    "stage": 1,
+    "label": "README：安装步骤",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-1-2",
+    "chapter": 5,
+    "stage": 1,
+    "label": "License：MIT 条款",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-1-3",
+    "chapter": 5,
+    "stage": 1,
+    "label": "Last commit：最近修复",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-1-4",
+    "chapter": 5,
+    "stage": 1,
+    "label": "Issues：仍有回应",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-2-0",
+    "chapter": 5,
+    "stage": 2,
+    "label": "芦岸图",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-2-1",
+    "chapter": 5,
+    "stage": 2,
+    "label": "云栈图",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-5-2-2",
+    "chapter": 5,
+    "stage": 2,
+    "label": "旧雾图",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C05-01",
+      "C05-02",
+      "C05-03",
+      "C05-04",
+      "C05-05",
+      "C05-06",
+      "C05-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-0-0",
+    "chapter": 6,
+    "stage": 0,
+    "label": "Star",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-0-1",
+    "chapter": 6,
+    "stage": 0,
+    "label": "Watch",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-0-2",
+    "chapter": 6,
+    "stage": 0,
+    "label": "Follow",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-0-3",
+    "chapter": 6,
+    "stage": 0,
+    "label": "Fork",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-1-0",
+    "chapter": 6,
+    "stage": 1,
+    "label": "0 不订阅",
+    "oldMode": "slider",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-1-1",
+    "chapter": 6,
+    "stage": 1,
+    "label": "1 Releases",
+    "oldMode": "slider",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-1-2",
+    "chapter": 6,
+    "stage": 1,
+    "label": "2 All activity",
+    "oldMode": "slider",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-2-0",
+    "chapter": 6,
+    "stage": 2,
+    "label": "可复现的报错",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-6-2-1",
+    "chapter": 6,
+    "stage": 2,
+    "label": "开放的使用交流",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-0-0",
+    "chapter": 7,
+    "stage": 0,
+    "label": "README 北门应为南门",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-0-1",
+    "chapter": 7,
+    "stage": 0,
+    "label": "希望增加夜间路线",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-0-2",
+    "chapter": 7,
+    "stage": 0,
+    "label": "和 Issue #12 完全重复",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-0-3",
+    "chapter": 7,
+    "stage": 0,
+    "label": "文档一字修正，有清晰步骤",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-1-0",
+    "chapter": 7,
+    "stage": 1,
+    "label": "青砚",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-1-1",
+    "chapter": 7,
+    "stage": 1,
+    "label": "夜行图修订",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-1-2",
+    "chapter": 7,
+    "stage": 1,
+    "label": "希望收到跟进",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-2-0",
+    "chapter": 7,
+    "stage": 2,
+    "label": "修复后 Closed 归档",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-2-1",
+    "chapter": 7,
+    "stage": 2,
+    "label": "保持 Open 等待修复",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-2-2",
+    "chapter": 7,
+    "stage": 2,
+    "label": "Mention 青砚",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-2-3",
+    "chapter": 7,
+    "stage": 2,
+    "label": "添加 Comment 复现步骤",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-3-0",
+    "chapter": 7,
+    "stage": 3,
+    "label": "Contributing",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-3-1",
+    "chapter": 7,
+    "stage": 3,
+    "label": "Code of conduct",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-3-2",
+    "chapter": 7,
+    "stage": 3,
+    "label": "Security policy",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-7-3-3",
+    "chapter": 7,
+    "stage": 3,
+    "label": "Contributor",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C07-01",
+      "C07-02",
+      "C07-03",
+      "C07-04",
+      "C07-05",
+      "C07-06",
+      "C07-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-0-0",
+    "chapter": 8,
+    "stage": 0,
+    "label": "origin",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-0-1",
+    "chapter": 8,
+    "stage": 0,
+    "label": "upstream",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-1-0",
+    "chapter": 8,
+    "stage": 1,
+    "label": "Push origin：Fork 接收 u1",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-1-1",
+    "chapter": 8,
+    "stage": 1,
+    "label": "Pull upstream：本地整合 u1",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-1-2",
+    "chapter": 8,
+    "stage": 1,
+    "label": "Fetch upstream：查看 u1",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-2-0",
+    "chapter": 8,
+    "stage": 2,
+    "label": "尚未提交的 Working directory",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-2-1",
+    "chapter": 8,
+    "stage": 2,
+    "label": "网页 Sync fork",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-8-2-2",
+    "chapter": 8,
+    "stage": 2,
+    "label": "Push upstream 无写权限",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C08-01",
+      "C08-02",
+      "C08-03",
+      "C08-04",
+      "C08-05",
+      "C08-06",
+      "C08-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-1-0",
+    "chapter": 9,
+    "stage": 1,
+    "label": "确认当前 Branch",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-1-1",
+    "chapter": 9,
+    "stage": 1,
+    "label": "切换 fix/ 修复小径",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-1-2",
+    "chapter": 9,
+    "stage": 1,
+    "label": "查看 main 竹门",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-2-0",
+    "chapter": 9,
+    "stage": 2,
+    "label": "Changes：README 待修改",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-2-1",
+    "chapter": 9,
+    "stage": 2,
+    "label": "Diff 删除：北门",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-9-2-2",
+    "chapter": 9,
+    "stage": 2,
+    "label": "Diff 新增：南门",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C09-01",
+      "C09-02",
+      "C09-03",
+      "C09-04",
+      "C09-05",
+      "C09-06",
+      "C09-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-1-0",
+    "chapter": 10,
+    "stage": 1,
+    "label": "确认标题和路线保留",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-1-1",
+    "chapter": 10,
+    "stage": 1,
+    "label": "核对新增的南门",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-1-2",
+    "chapter": 10,
+    "stage": 1,
+    "label": "核对删除的北门",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-2-0",
+    "chapter": 10,
+    "stage": 2,
+    "label": "README 南门修复",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-2-1",
+    "chapter": 10,
+    "stage": 2,
+    "label": "notes.txt 私人便条",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-4-0",
+    "chapter": 10,
+    "stage": 4,
+    "label": "读取远程回执 c1",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-4-1",
+    "chapter": 10,
+    "stage": 4,
+    "label": "Push 到自己的 origin",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-10-4-2",
+    "chapter": 10,
+    "stage": 4,
+    "label": "查看本地 Commit c1",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C10-01",
+      "C10-02",
+      "C10-03",
+      "C10-04",
+      "C10-05",
+      "C10-06",
+      "C10-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-0-0",
+    "chapter": 11,
+    "stage": 0,
+    "label": "自己的 Fork / main",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-0-1",
+    "chapter": 11,
+    "stage": 0,
+    "label": "自己的 Fork / 修复分支",
+    "oldMode": "place",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-1-0",
+    "chapter": 11,
+    "stage": 1,
+    "label": "Ready for review",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-1-1",
+    "chapter": 11,
+    "stage": 1,
+    "label": "New pull request → Draft",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-1-2",
+    "chapter": 11,
+    "stage": 1,
+    "label": "检查 Files changed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-1-3",
+    "chapter": 11,
+    "stage": 1,
+    "label": "Compare changes",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-2-0",
+    "chapter": 11,
+    "stage": 2,
+    "label": "记录：补充夜行安全说明",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-2-1",
+    "chapter": 11,
+    "stage": 2,
+    "label": "查看 NPC Request changes",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-2-2",
+    "chapter": 11,
+    "stage": 2,
+    "label": "查看 NPC Comment",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-4-0",
+    "chapter": 11,
+    "stage": 4,
+    "label": "请求 NPC 复查 → Approve",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-4-1",
+    "chapter": 11,
+    "stage": 4,
+    "label": "Resolve conversation",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-4-2",
+    "chapter": 11,
+    "stage": 4,
+    "label": "Commit 并 Push 修订",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-4-3",
+    "chapter": 11,
+    "stage": 4,
+    "label": "Stage 修订",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-6-0",
+    "chapter": 11,
+    "stage": 6,
+    "label": "合并已审阅卷轴（模拟）",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-6-1",
+    "chapter": 11,
+    "stage": 6,
+    "label": "确认 Approve",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-11-6-2",
+    "chapter": 11,
+    "stage": 6,
+    "label": "确认最新修订",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C11-01",
+      "C11-02",
+      "C11-03",
+      "C11-04",
+      "C11-05",
+      "C11-06",
+      "C11-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-0-0",
+    "chapter": 12,
+    "stage": 0,
+    "label": "打开失败日志：缺少 Changelog",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-0-1",
+    "chapter": 12,
+    "stage": 0,
+    "label": "Job / Step 2：Failed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-0-2",
+    "chapter": 12,
+    "stage": 0,
+    "label": "Job / Step 1：Passed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-0-3",
+    "chapter": 12,
+    "stage": 0,
+    "label": "Run workflow",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-0",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Checks：Passed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-1",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Step 2：Passed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-2",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Step 1：Passed",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-3",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Re-run all jobs",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-4",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Cancel workflow → Cancelled",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-5",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Run workflow：新的 SHA",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-6",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Commit / Push 修复",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-2-7",
+    "chapter": 12,
+    "stage": 2,
+    "label": "Stage Changelog 修复",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-3-0",
+    "chapter": 12,
+    "stage": 3,
+    "label": "Artifact：nightwalk.zip",
+    "oldMode": "explore",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-6-0",
+    "chapter": 12,
+    "stage": 6,
+    "label": "查看 GitHub Pages 展示页",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-6-1",
+    "chapter": 12,
+    "stage": 6,
+    "label": "将 Artifact 装入发行箱",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  },
+  {
+    "id": "old-12-6-2",
+    "chapter": 12,
+    "stage": 6,
+    "label": "Publish release（模拟）",
+    "oldMode": "sequence",
+    "source": "src/components/adventure/chapter-workbench.tsx",
+    "newAssetGroup": [
+      "C12-01",
+      "C12-02",
+      "C12-03",
+      "C12-04",
+      "C03-05",
+      "C12-06",
+      "C12-07"
+    ],
+    "disposition": "随本章主玩法重做；该旧物件知识与功能按 knowledge-action-matrix 转入新动作"
+  }
+]

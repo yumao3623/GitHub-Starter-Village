@@ -34,7 +34,7 @@ ${rows.join("\n")}
 - P1 主线覆盖率：${percent(covered("P1", mainline), byPriority("P1").length)}。
 - P0 互动覆盖率：${percent(covered("P0", interactive), byPriority("P0").length)}。
 - P0 结业测试覆盖率：${percent(covered("P0", graduation), byPriority("P0").length)}。
-- 主线章节：${missions.length} 个，从第零章到第十三章。
+- 旧课程主线：${missions.length} 个，从第零章到第十三章（这是课程词条覆盖分母，不是武侠地图章数）。
 
 ## 未覆盖项
 
@@ -44,9 +44,10 @@ ${vocabulary.filter((item) => item.priority !== "P2" && !mainline.has(item.id)).
 
 “主线覆盖”表示术语出现在章节的明确学习范围中；“互动覆盖”表示术语至少由一道可操作的场景题覆盖；“结业测试覆盖”只对 P0 强制。P2 只要求进入可搜索词典，不阻塞毕业。
 
-## 本次 13 章页游主线
+## 当前武侠主线（阶段 C）
 
 - 独立章节：${chapterLessons.length}；操作绑定词条：${journeyTerms.size}。
+- 地图节点：${chapterLessons.length} 个主线节点，另有百戏客栈支线节点。
 - P0 操作覆盖：${percent(covered("P0",journeyTerms),byPriority("P0").length)}；P1 操作覆盖：${percent(covered("P1",journeyTerms),byPriority("P1").length)}。
 - 以上仅表示内容存在操作绑定，不代表玩家掌握或真实新手验证。
 
@@ -56,8 +57,8 @@ ${vocabulary.filter((item) => item.priority !== "P2" && !mainline.has(item.id)).
 - 场景明确引用词条：${new Set(contributionMissions.flatMap(item=>item.termIds)).size} 个。
 - 逐条改写操作说明与误区：${contributionGuidanceIds.length} 个词条，全部具有官方来源。
 - 区域支线：${Object.values(regionLessons).map(item=>item.title).join("、")}。
-- 上方旧版 14 章结构覆盖率不代表武侠版 P0 独立掌握率。新小游戏记录操作结果，不自动给旧版结业题加分、不授予真实 GitHub 认证。
-- UI 对照与模拟边界见 [阶段 C 教学审读](PHASE_C_REVIEW.md)，真正通关证据见 [阶段 C 验收](../product/PHASE_C_PROGRESS.md)。
+- 旧课程覆盖率不代表武侠版 P0 独立掌握率。新小游戏记录操作结果，不自动给旧版结业题加分、不授予真实 GitHub 认证。
+- UI 对照与模拟边界见 [阶段 C 教学审读](PHASE_C_REVIEW.md)，当前通关证据见 [C V2 复核结果](../verification/PHASE_C_V2_REAUDIT_RESULT.md)。
 `;
 
 writeFileSync("docs/curriculum/COVERAGE_REPORT.md", report);

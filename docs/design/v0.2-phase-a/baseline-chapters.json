@@ -1,0 +1,1450 @@
+[
+  {
+    "chapter": 0,
+    "title": "村口路标",
+    "mechanic": "路牌探索 · 寻路",
+    "story": "夜行图的四块路牌散在溪边。青砚请你点亮入口，让后来的旅人先读说明，再取回自己的项目副本。",
+    "landmarks": [
+      "入口牌楼",
+      "入谷山道",
+      "溪流",
+      "村旗"
+    ],
+    "reward": "路标残页",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "stages": [
+      {
+        "title": "点亮仓库四块路牌",
+        "instruction": "在场景中移动，调查每件发亮的物件。Tab 选择物件，Enter 调查；方向键沿地面移动。",
+        "mode": "explore",
+        "items": [
+          "README",
+          "Code",
+          "Releases",
+          "Fork"
+        ],
+        "evidence": "你走到 Repository 的入口并点亮 README、Code、Releases、Fork；它们各自通向说明、源码、发行附件和账号副本。Code tab 浏览文件，Code button 打开获取菜单。",
+        "termIds": [
+          "repository",
+          "readme",
+          "code-menu",
+          "code-tab",
+          "release",
+          "fork"
+        ]
+      },
+      {
+        "title": "把路牌连向用途",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "README",
+          "Code",
+          "Releases",
+          "Fork"
+        ],
+        "targets": [
+          "读项目说明",
+          "获取源码",
+          "查看发行附件",
+          "自己的账号副本"
+        ],
+        "pairs": {
+          "README": "读项目说明",
+          "Code": "获取源码",
+          "Releases": "查看发行附件",
+          "Fork": "自己的账号副本"
+        },
+        "evidence": "路牌与用途连成发光山道。Fork 没有把文件下载到电脑；Code 也不一定提供桌面安装包。",
+        "termIds": [
+          "readme",
+          "fork",
+          "download-zip"
+        ]
+      },
+      {
+        "title": "沿正确路线点灯",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "准备 Clone 路线",
+          "打开自己的 Fork",
+          "阅读中文 README"
+        ],
+        "order": [
+          "阅读中文 README",
+          "打开自己的 Fork",
+          "准备 Clone 路线"
+        ],
+        "evidence": "真实路线仍由你在 GitHub 官方环境完成；本场景只是路牌教学模拟。",
+        "termIds": [
+          "readme",
+          "fork",
+          "clone"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "title": "护身堂",
+    "mechanic": "安全机关 · 灯笼节奏",
+    "story": "守门灯被一封冒名信扰乱。青砚让你按亮灯顺序核对域名、身份入口和安全设置，再封好护身匣。这里只处理凭据类型卡。",
+    "landmarks": [
+      "药堂山门",
+      "三盏灯笼",
+      "石阶",
+      "护身匣"
+    ],
+    "reward": "护身符",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "stages": [
+      {
+        "title": "辨认两种身份入口",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "已有账号",
+          "还没有账号"
+        ],
+        "targets": [
+          "Sign in",
+          "Sign up"
+        ],
+        "pairs": {
+          "已有账号": "Sign in",
+          "还没有账号": "Sign up"
+        },
+        "evidence": "Sign up 创建账号，Sign in 进入已有账号；本关只配对文字机关，不打开凭据表单。",
+        "termIds": [
+          "sign-up",
+          "sign-in"
+        ]
+      },
+      {
+        "title": "跟随灯笼亮起的顺序",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "走向 Settings",
+          "识别 Sign in",
+          "核对 github.com"
+        ],
+        "order": [
+          "核对 github.com",
+          "识别 Sign in",
+          "走向 Settings"
+        ],
+        "evidence": "Sign in 登录已有账号；Username 标识身份，Profile 展示资料，Settings 管理安全。没有打开或仿造登录表单。",
+        "termIds": [
+          "sign-in",
+          "username",
+          "profile",
+          "settings"
+        ]
+      },
+      {
+        "title": "把防护和索取请求分开",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "2FA",
+          "Passkey",
+          "Recovery codes",
+          "索要密码",
+          "索要 Token",
+          "索要 SSH 私钥"
+        ],
+        "targets": [
+          "护身匣",
+          "拒绝槽"
+        ],
+        "pairs": {
+          "2FA": "护身匣",
+          "Passkey": "护身匣",
+          "Recovery codes": "护身匣",
+          "索要密码": "拒绝槽",
+          "索要 Token": "拒绝槽",
+          "索要 SSH 私钥": "拒绝槽"
+        },
+        "evidence": "拒绝槽关闭了索取秘密的门。Recovery codes 由本人安全保管，游戏只认识卡片名称。",
+        "termIds": [
+          "two-factor-authentication",
+          "passkey",
+          "recovery-codes"
+        ]
+      },
+      {
+        "title": "封匣并留下恢复路线",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "锁好护身堂",
+          "拒绝陌生索取",
+          "自己保管恢复代码"
+        ],
+        "order": [
+          "自己保管恢复代码",
+          "拒绝陌生索取",
+          "锁好护身堂"
+        ],
+        "evidence": "你建立了官方域名、防护方法和拒绝索取三道防线。真实安全设置只能在 GitHub 官方页面完成。",
+        "termIds": [
+          "recovery-codes",
+          "settings"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "title": "拓印坊",
+    "mechanic": "三台拓印机 · 资源调度",
+    "story": "三位旅人分别需要账号副本、本地协作历史和一份快照。每台机器只产一种物件，青砚请你分配三张项目卷。",
+    "landmarks": [
+      "工坊水车",
+      "木架",
+      "纸卷",
+      "传送带"
+    ],
+    "reward": "拓印纸",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "stages": [
+      {
+        "title": "投放项目卷到三台机器",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "账号旅人的项目卷",
+          "协作旅人的项目卷",
+          "阅览旅人的项目卷"
+        ],
+        "targets": [
+          "Fork 机",
+          "Clone 机",
+          "Download ZIP 机"
+        ],
+        "pairs": {
+          "账号旅人的项目卷": "Fork 机",
+          "协作旅人的项目卷": "Clone 机",
+          "阅览旅人的项目卷": "Download ZIP 机"
+        },
+        "evidence": "三台机器各消耗一张项目卷，生成账号副本、本地历史和文件快照。",
+        "termIds": [
+          "fork",
+          "clone",
+          "download-zip"
+        ]
+      },
+      {
+        "title": "把产物交给正确的旅人",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "账号副本",
+          "本地历史与远程关系",
+          "文件快照"
+        ],
+        "targets": [
+          "GitHub 账号",
+          "电脑工作台",
+          "只读行囊"
+        ],
+        "pairs": {
+          "账号副本": "GitHub 账号",
+          "本地历史与远程关系": "电脑工作台",
+          "文件快照": "只读行囊"
+        },
+        "evidence": "只有 Clone 产物带着正常的 Git 历史与 Remote 关系；ZIP 不能代替协作仓库。",
+        "termIds": [
+          "remote",
+          "clone",
+          "download-zip"
+        ]
+      },
+      {
+        "title": "为 Clone 马车挂协议牌",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "HTTPS 地址",
+          "SSH 公钥方式",
+          "SSH 私钥"
+        ],
+        "targets": [
+          "Clone 路线",
+          "自己保管，拒绝上传"
+        ],
+        "pairs": {
+          "HTTPS 地址": "Clone 路线",
+          "SSH 公钥方式": "Clone 路线",
+          "SSH 私钥": "自己保管，拒绝上传"
+        },
+        "evidence": "HTTPS 和 SSH 都是连接方式；私钥永远留在自己的安全环境，不放进游戏。",
+        "termIds": [
+          "https",
+          "ssh",
+          "remote"
+        ]
+      },
+      {
+        "title": "把工作环境交给旅人",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "电脑中打开 Clone 产物",
+          "浏览器中需要云端工作区"
+        ],
+        "targets": [
+          "GitHub Desktop 或 Terminal",
+          "Codespaces"
+        ],
+        "pairs": {
+          "电脑中打开 Clone 产物": "GitHub Desktop 或 Terminal",
+          "浏览器中需要云端工作区": "Codespaces"
+        },
+        "evidence": "Codespaces 是云端开发环境；是否可用与额度由 GitHub 决定，游戏不代开。",
+        "termIds": [
+          "codespaces",
+          "clone",
+          "terminal"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "title": "营火工坊",
+    "mechanic": "点火动线 · 拔线修复",
+    "story": "本地工坊有燃料却没亮灯。你要连好目录、终端和服务器。青砚会拔开一条教学线路，让你通过日志找回断点。",
+    "landmarks": [
+      "营火",
+      "柴堆",
+      "烟囱",
+      "错误日志木牌"
+    ],
+    "reward": "营火芯",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "stages": [
+      {
+        "title": "走通工坊点火动线",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "确认 Node.js 与 npm",
+          "打开 Terminal",
+          "进入项目 Directory"
+        ],
+        "order": [
+          "进入项目 Directory",
+          "打开 Terminal",
+          "确认 Node.js 与 npm"
+        ],
+        "evidence": "终端在项目目录里执行命令；Node.js 提供运行时，npm 管理依赖和脚本。",
+        "termIds": [
+          "directory",
+          "terminal",
+          "nodejs",
+          "npm"
+        ]
+      },
+      {
+        "title": "连接命令火槽",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "npm install",
+          "npm run dev",
+          "localhost"
+        ],
+        "targets": [
+          "Dependency 燃料槽",
+          "开发服务器",
+          "浏览器灯笼"
+        ],
+        "pairs": {
+          "npm install": "Dependency 燃料槽",
+          "npm run dev": "开发服务器",
+          "localhost": "浏览器灯笼"
+        },
+        "evidence": "依赖准备好后，开发脚本启动服务器；浏览器打开 localhost 才看到本地页面。",
+        "termIds": [
+          "dependency",
+          "localhost",
+          "npm",
+          "npm-install",
+          "npm-run-dev",
+          "installation"
+        ]
+      },
+      {
+        "title": "拔线后根据日志修复",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "打开 localhost",
+          "重新点燃 npm run dev",
+          "重连 npm install",
+          "查看日志：缺少 Dependency",
+          "拔开依赖线（模拟）"
+        ],
+        "order": [
+          "拔开依赖线（模拟）",
+          "查看日志：缺少 Dependency",
+          "重连 npm install",
+          "重新点燃 npm run dev",
+          "打开 localhost"
+        ],
+        "evidence": "你亲手造成断线，再根据错误日志修复。点火成功是本地模拟，不会在电脑执行命令。",
+        "termIds": [
+          "dependency",
+          "terminal",
+          "localhost"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "title": "藏图阁",
+    "mechanic": "探照搜证 · 机关书架",
+    "story": "藏图阁只有一束探照灯。找到五枚证据印并放回对应书架，青砚才能按可靠线索打开阁门。",
+    "landmarks": [
+      "阁楼",
+      "竹桥",
+      "书架",
+      "证据印"
+    ],
+    "reward": "藏图印",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "stages": [
+      {
+        "title": "移动探照灯搜集五枚印",
+        "instruction": "在场景中移动，调查每件发亮的物件。Tab 选择物件，Enter 调查；方向键沿地面移动。",
+        "mode": "explore",
+        "items": [
+          "Files",
+          "Branch / main",
+          "Commit history",
+          "License",
+          "Release / Tags"
+        ],
+        "evidence": "Files 与 Folders 组织文件；Branch/main 决定当前版本线路，Commit history 记录变化。",
+        "termIds": [
+          "files",
+          "folders",
+          "branch",
+          "main",
+          "commit-history",
+          "license",
+          "releases",
+          "tag"
+        ]
+      },
+      {
+        "title": "按证据性质装配机关书架",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "Files 清单",
+          "Commit history 日期",
+          "License 原文",
+          "Release / Tag 关联",
+          "Branch / main 标识"
+        ],
+        "targets": [
+          "完整度",
+          "新鲜度",
+          "来源与授权",
+          "来源与版本",
+          "当前线路"
+        ],
+        "pairs": {
+          "Files 清单": "完整度",
+          "Commit history 日期": "新鲜度",
+          "License 原文": "来源与授权",
+          "Release / Tag 关联": "来源与版本",
+          "Branch / main 标识": "当前线路"
+        },
+        "evidence": "新鲜度、完整度和来源解决不同问题；仅有新日期不能证明许可或安全。",
+        "termIds": [
+          "commit-history",
+          "license",
+          "tag"
+        ]
+      },
+      {
+        "title": "按书架顺序开门",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "最后追溯 Release",
+          "再查 License 来源",
+          "再查 Files 完整度",
+          "先核对当前 Branch"
+        ],
+        "order": [
+          "先核对当前 Branch",
+          "再查 Files 完整度",
+          "再查 License 来源",
+          "最后追溯 Release"
+        ],
+        "evidence": "阁门依证据顺序开启，查看对象先确认分支，使用代码先确认授权。",
+        "termIds": [
+          "branch",
+          "files",
+          "license",
+          "release"
+        ]
+      },
+      {
+        "title": "核对阁藏归属和浏览范围",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "Public",
+          "Private",
+          "Owner",
+          "Contributors",
+          "Commits"
+        ],
+        "targets": [
+          "可公开查看，不代表写权限",
+          "仅授权访问",
+          "判断仓库归属",
+          "追溯参与人员",
+          "打开提交历史"
+        ],
+        "pairs": {
+          "Public": "可公开查看，不代表写权限",
+          "Private": "仅授权访问",
+          "Owner": "判断仓库归属",
+          "Contributors": "追溯参与人员",
+          "Commits": "打开提交历史"
+        },
+        "evidence": "你分开确认可见性、所有者和贡献人员。Commit history 可从 Commits 入口追溯；公开也不等于可任意修改。",
+        "termIds": [
+          "public",
+          "private",
+          "owner",
+          "contributors",
+          "commits-tab",
+          "commit-history"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "title": "集市鉴宝",
+    "mechanic": "证据卡牌 · 组合鉴定",
+    "story": "夜行图需要能在 Node.js 22 上运行、可依法改编的工具。青砚要你亲自翻三家摊位，收藏数量不能代替证据。",
+    "landmarks": [
+      "摊位棚顶",
+      "石板路",
+      "鉴宝桌",
+      "证据卡"
+    ],
+    "reward": "鉴宝铃",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "stages": [
+      {
+        "title": "翻看三家仓库摊位",
+        "instruction": "在场景中移动，调查每件发亮的物件。Tab 选择物件，Enter 调查；方向键沿地面移动。",
+        "mode": "explore",
+        "items": [
+          "芦岸图：Node ≥20 / MIT / 最近修复",
+          "云栈图：Node ≥24 / MIT / 活跃",
+          "旧雾图：Node ≥20 / 无许可 / Archived"
+        ],
+        "evidence": "Search、Language、Topics 帮你缩小候选；Stars 与 Forks 只是线索，不能证明能运行。",
+        "termIds": [
+          "search",
+          "language",
+          "topics",
+          "stars",
+          "forks",
+          "archived"
+        ]
+      },
+      {
+        "title": "组合五张证据卡",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "Requirements：Node ≥20",
+          "README：安装步骤",
+          "License：MIT 条款",
+          "Last commit：最近修复",
+          "Issues：仍有回应"
+        ],
+        "targets": [
+          "可运行",
+          "可授权",
+          "可维护线索"
+        ],
+        "pairs": {
+          "Requirements：Node ≥20": "可运行",
+          "README：安装步骤": "可运行",
+          "License：MIT 条款": "可授权",
+          "Last commit：最近修复": "可维护线索",
+          "Issues：仍有回应": "可维护线索"
+        },
+        "evidence": "Requirements 与 Documentation 支撑运行结论；License 支撑授权判断，Updated 和 Issues 仅提供维护线索。",
+        "termIds": [
+          "requirements",
+          "readme",
+          "documentation",
+          "license",
+          "updated",
+          "issue"
+        ]
+      },
+      {
+        "title": "给三件工具盖鉴定印",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "芦岸图",
+          "云栈图",
+          "旧雾图"
+        ],
+        "targets": [
+          "符合当前条件",
+          "Node 22 无法满足 Node ≥24",
+          "缺少许可，先核实"
+        ],
+        "pairs": {
+          "芦岸图": "符合当前条件",
+          "云栈图": "Node 22 无法满足 Node ≥24",
+          "旧雾图": "缺少许可，先核实"
+        },
+        "evidence": "你用完整证据推荐芦岸图；这不是安全认证，不把高星数或公开可见当授权。",
+        "termIds": [
+          "requirements",
+          "license",
+          "archived"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "title": "飞鸽传书",
+    "mechanic": "信件分拣 · 通知路线",
+    "story": "四封信从集市飞来。青砚请你分清收藏、订阅、关注与副本，再为两封需求信选投递渠道。",
+    "landmarks": [
+      "驿道",
+      "鸽舍",
+      "旗杆",
+      "通知风铃"
+    ],
+    "reward": "飞鸽信",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "stages": [
+      {
+        "title": "将四封信送到信台",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "Star",
+          "Watch",
+          "Follow",
+          "Fork"
+        ],
+        "targets": [
+          "仓库收藏架",
+          "仓库通知台",
+          "作者动态台",
+          "账号副本台"
+        ],
+        "pairs": {
+          "Star": "仓库收藏架",
+          "Watch": "仓库通知台",
+          "Follow": "作者动态台",
+          "Fork": "账号副本台"
+        },
+        "evidence": "四类信有四种对象；收藏项目、订阅仓库、关注人和复制仓库不会互相替代。",
+        "termIds": [
+          "star",
+          "watch",
+          "follow",
+          "fork"
+        ]
+      },
+      {
+        "title": "拉动风铃，只接收发行信",
+        "instruction": "拖动滑杆观察信箱：0 不订阅，1 只收 Releases，2 所有活动。委托只需要版本信。",
+        "mode": "slider",
+        "items": [
+          "0 不订阅",
+          "1 Releases",
+          "2 All activity"
+        ],
+        "initial": "0",
+        "contains": [
+          "1"
+        ],
+        "evidence": "Watch 设为仅 Releases：版本信进入箱内，普通 Issue 事件不由此设置送达。真实通知还受参与、提及与账号设置影响。",
+        "termIds": [
+          "watch",
+          "notifications"
+        ]
+      },
+      {
+        "title": "把场景需求信送往讨论入口",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "可复现的报错",
+          "开放的使用交流"
+        ],
+        "targets": [
+          "Issue",
+          "Discussion"
+        ],
+        "pairs": {
+          "可复现的报错": "Issue",
+          "开放的使用交流": "Discussion"
+        },
+        "evidence": "Issue 用于可跟踪问题，Discussion 适合开放交流。没有向任何真实仓库发信。",
+        "termIds": [
+          "issue",
+          "discussions"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "title": "悬赏亭",
+    "mechanic": "揭榜配签 · 委托编排",
+    "story": "四张事件单压住悬赏铃。先配正确标签，再为南门错字安排负责人、阶段目标和订阅，青砚才能跟进。",
+    "landmarks": [
+      "亭台",
+      "告示墙",
+      "悬铃",
+      "任务印"
+    ],
+    "reward": "悬赏签",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "stages": [
+      {
+        "title": "揭下事件单并贴标签",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "README 北门应为南门",
+          "希望增加夜间路线",
+          "和 Issue #12 完全重复",
+          "文档一字修正，有清晰步骤"
+        ],
+        "targets": [
+          "bug",
+          "enhancement",
+          "duplicate",
+          "good first issue"
+        ],
+        "pairs": {
+          "README 北门应为南门": "bug",
+          "希望增加夜间路线": "enhancement",
+          "和 Issue #12 完全重复": "duplicate",
+          "文档一字修正，有清晰步骤": "good first issue"
+        },
+        "evidence": "Label 描述议题性质；good first issue 是常用标签，并非自动领取权限。",
+        "termIds": [
+          "issue",
+          "label",
+          "good-first-issue"
+        ]
+      },
+      {
+        "title": "为南门单安排推进方式",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "青砚",
+          "夜行图修订",
+          "希望收到跟进"
+        ],
+        "targets": [
+          "Assignee 负责人",
+          "Milestone 阶段目标",
+          "Subscribe 订阅"
+        ],
+        "pairs": {
+          "青砚": "Assignee 负责人",
+          "夜行图修订": "Milestone 阶段目标",
+          "希望收到跟进": "Subscribe 订阅"
+        },
+        "evidence": "Assignee、Milestone 和 Subscribe 分别安排人、目标与通知。本关临时授予模拟维护权限，真实权限因仓库而异。",
+        "termIds": [
+          "assignee",
+          "milestone",
+          "subscribe"
+        ]
+      },
+      {
+        "title": "跟进告示状态",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "修复后 Closed 归档",
+          "保持 Open 等待修复",
+          "Mention 青砚",
+          "添加 Comment 复现步骤"
+        ],
+        "order": [
+          "添加 Comment 复现步骤",
+          "Mention 青砚",
+          "保持 Open 等待修复",
+          "修复后 Closed 归档"
+        ],
+        "evidence": "Comment 留下证据，Mention 指定讨论对象；Closed 表示议题已关闭，不自动意味着代码合并。",
+        "termIds": [
+          "comment",
+          "mention",
+          "open",
+          "closed"
+        ]
+      },
+      {
+        "title": "为贡献者备好协作告示",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "Contributing",
+          "Code of conduct",
+          "Security policy",
+          "Contributor"
+        ],
+        "targets": [
+          "阅读贡献步骤",
+          "遵守交流约定",
+          "使用私下安全报告渠道",
+          "在自己的 Fork 安全练习"
+        ],
+        "pairs": {
+          "Contributing": "阅读贡献步骤",
+          "Code of conduct": "遵守交流约定",
+          "Security policy": "使用私下安全报告渠道",
+          "Contributor": "在自己的 Fork 安全练习"
+        },
+        "evidence": "贡献前先看 CONTRIBUTING、CODE_OF_CONDUCT 和 SECURITY。敏感漏洞不应公开贴到 Issue，游戏不代发报告。",
+        "termIds": [
+          "contributing",
+          "code-of-conduct",
+          "security-policy",
+          "contributor"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "title": "双城驿站",
+    "mechanic": "本地远程 · 货运调度",
+    "story": "上游城有新货 u1，本地城和自己的 Fork 仍是 u0。把别名放到正确马车，再让一件补给依次抵达本地和远程。",
+    "landmarks": [
+      "石桥",
+      "本地站台",
+      "远程城门",
+      "马车"
+    ],
+    "reward": "驿站牌",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "stages": [
+      {
+        "title": "为两辆马车设置远端别名",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "origin",
+          "upstream"
+        ],
+        "targets": [
+          "自己的 Fork",
+          "原项目"
+        ],
+        "pairs": {
+          "origin": "自己的 Fork",
+          "upstream": "原项目"
+        },
+        "evidence": "origin/upstream 是本练习采用的远端别名；名称本身不授予写权限。",
+        "termIds": [
+          "origin",
+          "upstream",
+          "local-repository",
+          "remote-repository"
+        ]
+      },
+      {
+        "title": "按货物状态调度",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "Push origin：Fork 接收 u1",
+          "Pull upstream：本地整合 u1",
+          "Fetch upstream：查看 u1"
+        ],
+        "order": [
+          "Fetch upstream：查看 u1",
+          "Pull upstream：本地整合 u1",
+          "Push origin：Fork 接收 u1"
+        ],
+        "evidence": "Fetch 只更新远端跟踪线索，Pull 才整合本地，Push 把已提交历史送到有写权限的远端。",
+        "termIds": [
+          "fetch",
+          "pull",
+          "push"
+        ]
+      },
+      {
+        "title": "检查货运边界",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "尚未提交的 Working directory",
+          "网页 Sync fork",
+          "Push upstream 无写权限"
+        ],
+        "targets": [
+          "留在本地，先 Commit",
+          "只更新 GitHub 上的 Fork",
+          "退回自己的 origin"
+        ],
+        "pairs": {
+          "尚未提交的 Working directory": "留在本地，先 Commit",
+          "网页 Sync fork": "只更新 GitHub 上的 Fork",
+          "Push upstream 无写权限": "退回自己的 origin"
+        },
+        "evidence": "网页同步 Fork 不顺便更新电脑；路由错误可以恢复，不用 force push 绕过权限。",
+        "termIds": [
+          "working-directory",
+          "sync-fork",
+          "commit",
+          "origin"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "title": "分流竹林",
+    "mechanic": "分支潜行 · 差异竹签",
+    "story": "main 竹门旁挂着禁止直接修路的牌子。先开一条修复小径，切换进去，再寻找三枚 Diff 竹签。",
+    "landmarks": [
+      "竹林",
+      "分叉小径",
+      "溪涧",
+      "main 竹门"
+    ],
+    "reward": "分支竹签",
+    "source": "https://git-scm.com/docs/git-switch",
+    "stages": [
+      {
+        "title": "Create branch：给修复小径命名",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：fix/。不能保留：main、 。",
+        "mode": "edit",
+        "items": [],
+        "initial": "",
+        "contains": [
+          "fix/"
+        ],
+        "forbidden": [
+          "main",
+          " "
+        ],
+        "min": 8,
+        "evidence": "创建分支为修复提供独立线路；本关分支名以 fix/ 开头。",
+        "termIds": [
+          "branch",
+          "create-branch"
+        ]
+      },
+      {
+        "title": "Switch branch：进入侧路",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "确认当前 Branch",
+          "切换 fix/ 修复小径",
+          "查看 main 竹门"
+        ],
+        "order": [
+          "查看 main 竹门",
+          "切换 fix/ 修复小径",
+          "确认当前 Branch"
+        ],
+        "evidence": "查看 main 不会修改它。Switch branch 改变当前工作线路，副本 Fork 与仓库内 Branch 是不同层次。",
+        "termIds": [
+          "branch",
+          "main",
+          "switch-branch"
+        ]
+      },
+      {
+        "title": "沿侧路拾取三枚差异竹签",
+        "instruction": "在场景中移动，调查每件发亮的物件。Tab 选择物件，Enter 调查；方向键沿地面移动。",
+        "mode": "explore",
+        "items": [
+          "Changes：README 待修改",
+          "Diff 删除：北门",
+          "Diff 新增：南门"
+        ],
+        "evidence": "Changes 告诉你有改动，Diff 展示具体删除和新增；观察差异后才到合卷台编辑。",
+        "termIds": [
+          "changes",
+          "diff"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "title": "合卷台",
+    "mechanic": "修改拓印 · 暂存快照",
+    "story": "把竹签上的南门线索落到 README。青砚提醒：纸面修改、暂存快照、本地提交和远程回执是四个不同状态。",
+    "landmarks": [
+      "山门书案",
+      "石台",
+      "卷轴架",
+      "Diff 墨迹"
+    ],
+    "reward": "合卷印",
+    "source": "https://git-scm.com/docs/git-add",
+    "stages": [
+      {
+        "title": "编辑 README 指定句子",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：# 江湖夜行图、安全入口：南门、路线：沿溪水前往客栈。。不能保留：北门。",
+        "mode": "edit",
+        "items": [],
+        "initial": "# 江湖夜行图\n安全入口：北门\n路线：沿溪水前往客栈。",
+        "contains": [
+          "# 江湖夜行图",
+          "安全入口：南门",
+          "路线：沿溪水前往客栈。"
+        ],
+        "forbidden": [
+          "北门"
+        ],
+        "min": 0,
+        "evidence": "README 工作区已改成南门；Uncommitted changes 尚未进入历史。",
+        "termIds": [
+          "readme",
+          "uncommitted-changes"
+        ]
+      },
+      {
+        "title": "逐笔检查 Diff",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "确认标题和路线保留",
+          "核对新增的南门",
+          "核对删除的北门"
+        ],
+        "order": [
+          "核对删除的北门",
+          "核对新增的南门",
+          "确认标题和路线保留"
+        ],
+        "evidence": "逐行 Diff 确认只修改目标句子，后续暂存不夹带无关文件。",
+        "termIds": [
+          "diff",
+          "changes"
+        ]
+      },
+      {
+        "title": "将相关快照送入 Stage",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "README 南门修复",
+          "notes.txt 私人便条"
+        ],
+        "targets": [
+          "Add / Stage 暂存台",
+          "留在工作区"
+        ],
+        "pairs": {
+          "README 南门修复": "Add / Stage 暂存台",
+          "notes.txt 私人便条": "留在工作区"
+        },
+        "evidence": "Stage 只保存选中的当时快照，不会把后续编辑自动加入。",
+        "termIds": [
+          "stage",
+          "working-directory"
+        ]
+      },
+      {
+        "title": "刻下 Commit message",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：南门。",
+        "mode": "edit",
+        "items": [],
+        "initial": "",
+        "contains": [
+          "南门"
+        ],
+        "forbidden": [],
+        "min": 8,
+        "evidence": "带说明的 Commit 保存在本地，生成模拟 SHA c1；真实 SHA 是对象标识。",
+        "termIds": [
+          "commit",
+          "commit-message",
+          "sha"
+        ]
+      },
+      {
+        "title": "等到远程回执",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "读取远程回执 c1",
+          "Push 到自己的 origin",
+          "查看本地 Commit c1"
+        ],
+        "order": [
+          "查看本地 Commit c1",
+          "Push 到自己的 origin",
+          "读取远程回执 c1"
+        ],
+        "evidence": "Commit 与 Push 是两步。只有远程回执到达，议事堂才有可比较的来源。",
+        "termIds": [
+          "push",
+          "commit"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "title": "议事堂",
+    "mechanic": "合卷议案 · 多角色评审",
+    "story": "让修复卷进入自己的 Fork 议事流程。青砚会提出夜行安全意见，你必须修订、解决讨论、处理冲突，再请求批准。",
+    "landmarks": [
+      "议事楼",
+      "长桌",
+      "旗幡",
+      "评审席"
+    ],
+    "reward": "议事令",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "stages": [
+      {
+        "title": "选择合卷的来源和目标",
+        "instruction": "先选物件，再选择目的地；也可以把物件拖到目标上。错放会说明原因，原有物件保留。",
+        "mode": "place",
+        "items": [
+          "自己的 Fork / main",
+          "自己的 Fork / 修复分支"
+        ],
+        "targets": [
+          "Base repository / Base branch",
+          "Head repository / Compare branch"
+        ],
+        "pairs": {
+          "自己的 Fork / main": "Base repository / Base branch",
+          "自己的 Fork / 修复分支": "Head repository / Compare branch"
+        },
+        "evidence": "Base 接收修改，Head 提供修改。真实毕业练习两端都选自己的 Fork。",
+        "termIds": [
+          "base-repository",
+          "base-branch",
+          "head-repository",
+          "compare-branch",
+          "pull-request"
+        ]
+      },
+      {
+        "title": "先比较，再创建草稿",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "Ready for review",
+          "New pull request → Draft",
+          "检查 Files changed",
+          "Compare changes"
+        ],
+        "order": [
+          "Compare changes",
+          "检查 Files changed",
+          "New pull request → Draft",
+          "Ready for review"
+        ],
+        "evidence": "Draft 允许早期讨论，Ready for review 表示准备审阅，均不等于已合并。",
+        "termIds": [
+          "new-pull-request",
+          "draft",
+          "ready-for-review",
+          "files-changed",
+          "conversation"
+        ]
+      },
+      {
+        "title": "听取不同评审意见",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "记录：补充夜行安全说明",
+          "查看 NPC Request changes",
+          "查看 NPC Comment"
+        ],
+        "order": [
+          "查看 NPC Comment",
+          "查看 NPC Request changes",
+          "记录：补充夜行安全说明"
+        ],
+        "evidence": "Comment 是讨论，Request changes 要求修改；NPC 不替你修改卷轴。",
+        "termIds": [
+          "comment",
+          "request-changes",
+          "review"
+        ]
+      },
+      {
+        "title": "根据意见修订卷轴",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：安全入口：南门、夜间请结伴通行。",
+        "mode": "edit",
+        "items": [],
+        "initial": "安全入口：南门",
+        "contains": [
+          "安全入口：南门",
+          "夜间请结伴通行"
+        ],
+        "forbidden": [],
+        "min": 0,
+        "evidence": "修订保留南门并补足夜行说明，需要新提交和推送后才解决讨论。",
+        "termIds": [
+          "review",
+          "commit"
+        ]
+      },
+      {
+        "title": "提交修订并解决讨论",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "请求 NPC 复查 → Approve",
+          "Resolve conversation",
+          "Commit 并 Push 修订",
+          "Stage 修订"
+        ],
+        "order": [
+          "Stage 修订",
+          "Commit 并 Push 修订",
+          "Resolve conversation",
+          "请求 NPC 复查 → Approve"
+        ],
+        "evidence": "Resolve conversation 不自动批准，NPC 复查通过后才显示 Approve。",
+        "termIds": [
+          "resolve-conversation",
+          "approve"
+        ]
+      },
+      {
+        "title": "Merge conflict：同时保留入口和时间",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：南门、18:00。不能保留：<<<、>>>、===、北门。",
+        "mode": "edit",
+        "items": [],
+        "initial": "<<<<<<< 修复\n南门\n=======\n北门，18:00 开放\n>>>>>>> 主线",
+        "contains": [
+          "南门",
+          "18:00"
+        ],
+        "forbidden": [
+          "<<<",
+          ">>>",
+          "===",
+          "北门"
+        ],
+        "min": 0,
+        "evidence": "你保留双方意图并清除冲突标记，避免只保留一边。",
+        "termIds": [
+          "merge-conflict"
+        ]
+      },
+      {
+        "title": "完成议案，送往检查炉",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "合并已审阅卷轴（模拟）",
+          "确认 Approve",
+          "确认最新修订"
+        ],
+        "order": [
+          "确认最新修订",
+          "确认 Approve",
+          "合并已审阅卷轴（模拟）"
+        ],
+        "evidence": "本关完成模拟合并；自动化检查与发行还在百炼炉。真实仓库是否允许合并取决于规则。",
+        "termIds": [
+          "merge",
+          "pull-request"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "title": "百炼炉",
+    "mechanic": "检查与发布 · 连锁炉火",
+    "story": "百炼炉把卷轴变成可交付版本。先经历一次失败和取消，读日志修复，再领取构建产物并铸成 Release。",
+    "landmarks": [
+      "炉台",
+      "烟火",
+      "山口",
+      "流水线"
+    ],
+    "reward": "百炼炉火",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "stages": [
+      {
+        "title": "点燃第一次 Workflow",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "打开失败日志：缺少 Changelog",
+          "Job / Step 2：Failed",
+          "Job / Step 1：Passed",
+          "Run workflow"
+        ],
+        "order": [
+          "Run workflow",
+          "Job / Step 1：Passed",
+          "Job / Step 2：Failed",
+          "打开失败日志：缺少 Changelog"
+        ],
+        "evidence": "Actions 执行 Workflow；一次 Workflow run 中有 Job 和 Step，Checks Failed 提供修复线索。",
+        "termIds": [
+          "actions",
+          "workflow",
+          "workflow-run",
+          "job",
+          "step",
+          "checks",
+          "passed",
+          "failed"
+        ]
+      },
+      {
+        "title": "修复失败步骤",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：南门、修复。",
+        "mode": "edit",
+        "items": [],
+        "initial": "",
+        "contains": [
+          "南门",
+          "修复"
+        ],
+        "forbidden": [],
+        "min": 12,
+        "evidence": "Changelog 已说明本次南门修复；还需要 Commit / Push，让新的运行读取修复后的 SHA。",
+        "termIds": [
+          "changelog"
+        ]
+      },
+      {
+        "title": "观察取消，再重跑成功",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "Checks：Passed",
+          "Step 2：Passed",
+          "Step 1：Passed",
+          "Re-run all jobs",
+          "Cancel workflow → Cancelled",
+          "Run workflow：新的 SHA",
+          "Commit / Push 修复",
+          "Stage Changelog 修复"
+        ],
+        "order": [
+          "Stage Changelog 修复",
+          "Commit / Push 修复",
+          "Run workflow：新的 SHA",
+          "Cancel workflow → Cancelled",
+          "Re-run all jobs",
+          "Step 1：Passed",
+          "Step 2：Passed",
+          "Checks：Passed"
+        ],
+        "evidence": "Cancelled 是取消而非通过。新提交触发修复后的运行；Re-run all jobs 重跑该运行，仍使用它原来的 SHA / REF，不能自动读取未来修改。",
+        "termIds": [
+          "cancelled",
+          "workflow-run",
+          "checks"
+        ]
+      },
+      {
+        "title": "从通过的检查领取构建产物",
+        "instruction": "在场景中移动，调查每件发亮的物件。Tab 选择物件，Enter 调查；方向键沿地面移动。",
+        "mode": "explore",
+        "items": [
+          "Artifact：nightwalk.zip"
+        ],
+        "evidence": "Artifact 是此次构建输出，尚不是正式 Release 附件。",
+        "termIds": [
+          "artifact"
+        ]
+      },
+      {
+        "title": "为版本打 Tag",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：v1.。不能保留： 。",
+        "mode": "edit",
+        "items": [],
+        "initial": "",
+        "contains": [
+          "v1."
+        ],
+        "forbidden": [
+          " "
+        ],
+        "min": 6,
+        "evidence": "Tag 标识版本位置，Version 是版本号，二者与发行说明共同组织交付。",
+        "termIds": [
+          "tag",
+          "version"
+        ]
+      },
+      {
+        "title": "填写 Changelog 和发行说明",
+        "instruction": "在卷轴上编辑后盖验收印。必须包含：南门。",
+        "mode": "edit",
+        "items": [],
+        "initial": "",
+        "contains": [
+          "南门"
+        ],
+        "forbidden": [],
+        "min": 12,
+        "evidence": "发行说明告诉使用者改了什么，不能只写‘更新了’。",
+        "termIds": [
+          "changelog",
+          "release"
+        ]
+      },
+      {
+        "title": "铸成发行卷并展示",
+        "instruction": "观察机关当前状态，按因果顺序操作。操作错误可立即重试，撤销可退回上一步。",
+        "mode": "sequence",
+        "items": [
+          "查看 GitHub Pages 展示页",
+          "将 Artifact 装入发行箱",
+          "Publish release（模拟）"
+        ],
+        "order": [
+          "Publish release（模拟）",
+          "将 Artifact 装入发行箱",
+          "查看 GitHub Pages 展示页"
+        ],
+        "evidence": "Release 组织标签、说明和附件；Pages 提供静态展示。现在可回到自己的 Fork 完成安全毕业练习。",
+        "termIds": [
+          "release",
+          "artifact",
+          "github-pages"
+        ]
+      }
+    ]
+  }
+]

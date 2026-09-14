@@ -1,6 +1,6 @@
 {
   "name": "github-starter-village",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "A game-based Chinese learning project for GitHub beginners.",
@@ -26,6 +26,7 @@
     "desktop:package:mac-intel": "node scripts/package-desktop.mjs darwin x64",
     "assets:validate": "node scripts/validate-assets.mjs",
     "desktop:release-check": "node scripts/release-check.mjs",
+    "desktop:release-prepare": "node scripts/prepare-release.mjs",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

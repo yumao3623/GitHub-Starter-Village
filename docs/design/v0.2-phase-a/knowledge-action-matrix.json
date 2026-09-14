@@ -1,0 +1,1392 @@
+[
+  {
+    "chapter": 0,
+    "term": "repository",
+    "actionId": "CH00-K1",
+    "action": "辨认四类入口并把读说明｜看文件｜取源码的求助接对",
+    "result": "相应页面用途和取用位置显现",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "readme",
+    "actionId": "CH00-K1",
+    "action": "辨认四类入口并把读说明｜看文件｜取源码的求助接对",
+    "result": "相应页面用途和取用位置显现",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "code-menu",
+    "actionId": "CH00-K1",
+    "action": "辨认四类入口并把读说明｜看文件｜取源码的求助接对",
+    "result": "相应页面用途和取用位置显现",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "code-tab",
+    "actionId": "CH00-K1",
+    "action": "辨认四类入口并把读说明｜看文件｜取源码的求助接对",
+    "result": "相应页面用途和取用位置显现",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "release",
+    "actionId": "CH00-K2",
+    "action": "给运行成品与源码快照两种旅人选择交付入口",
+    "result": "发行附件与源码 ZIP 显示不同包装与说明",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "download-zip",
+    "actionId": "CH00-K2",
+    "action": "给运行成品与源码快照两种旅人选择交付入口",
+    "result": "发行附件与源码 ZIP 显示不同包装与说明",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "fork",
+    "actionId": "CH00-K3",
+    "action": "对照账号副本与电脑副本并规划贡献路线",
+    "result": "Fork 后账号站有副本；Clone 后电脑站有工作副本",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 0,
+    "term": "clone",
+    "actionId": "CH00-K3",
+    "action": "对照账号副本与电脑副本并规划贡献路线",
+    "result": "Fork 后账号站有副本；Clone 后电脑站有工作副本",
+    "transfer": "换成“只想运行成品”的旅人，必须检查 Releases 的系统附件；另外一位直接 Clone 原仓库，证明 Clone 并非总要先 Fork。随机石障需验证可解。",
+    "source": "https://docs.github.com/en/get-started/using-github/hello-world",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "sign-up",
+    "actionId": "CH01-K1",
+    "action": "将新访客与旧访客请求分别送至两个官方入口说明",
+    "result": "入口用途反馈，不发出登录网络请求",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "sign-in",
+    "actionId": "CH01-K1",
+    "action": "将新访客与旧访客请求分别送至两个官方入口说明",
+    "result": "入口用途反馈，不发出登录网络请求",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "username",
+    "actionId": "CH01-K2",
+    "action": "给公开名帖、资料查看和安全调整请求分流",
+    "result": "三者影响范围分别高亮",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "profile",
+    "actionId": "CH01-K2",
+    "action": "给公开名帖、资料查看和安全调整请求分流",
+    "result": "三者影响范围分别高亮",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "settings",
+    "actionId": "CH01-K2",
+    "action": "给公开名帖、资料查看和安全调整请求分流",
+    "result": "三者影响范围分别高亮",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "two-factor-authentication",
+    "actionId": "CH01-K3",
+    "action": "安排防护方法和本人恢复途径，拒绝外人索取",
+    "result": "护匣记下方法名称，永不保存凭据值",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "passkey",
+    "actionId": "CH01-K3",
+    "action": "安排防护方法和本人恢复途径，拒绝外人索取",
+    "result": "护匣记下方法名称，永不保存凭据值",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 1,
+    "term": "recovery-codes",
+    "actionId": "CH01-K3",
+    "action": "安排防护方法和本人恢复途径，拒绝外人索取",
+    "result": "护匣记下方法名称，永不保存凭据值",
+    "transfer": "来信顺序和说辞改变；加入“已有账号但忘记如何设置安全”的访客以及伪装成维护者索取 Token 的请求。",
+    "source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "fork",
+    "actionId": "CH02-K1",
+    "action": "根据三种订单操作不同机器并选择交付站",
+    "result": "产生不同归属、位置、历史和关联",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "clone",
+    "actionId": "CH02-K1",
+    "action": "根据三种订单操作不同机器并选择交付站",
+    "result": "产生不同归属、位置、历史和关联",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "download-zip",
+    "actionId": "CH02-K1",
+    "action": "根据三种订单操作不同机器并选择交付站",
+    "result": "产生不同归属、位置、历史和关联",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "remote",
+    "actionId": "CH02-K2",
+    "action": "为 Clone 订单选远程地址类型并核对 remote 标签",
+    "result": "别名指向所用来源；SSH 不等于交出私钥",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "https",
+    "actionId": "CH02-K2",
+    "action": "为 Clone 订单选远程地址类型并核对 remote 标签",
+    "result": "别名指向所用来源；SSH 不等于交出私钥",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "ssh",
+    "actionId": "CH02-K2",
+    "action": "为 Clone 订单选远程地址类型并核对 remote 标签",
+    "result": "别名指向所用来源；SSH 不等于交出私钥",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "codespaces",
+    "actionId": "CH02-K3",
+    "action": "给云端开发订单安排 Codespaces 并打开其中的命令入口说明",
+    "result": "云端工作环境与本地电脑分开标识",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 2,
+    "term": "terminal",
+    "actionId": "CH02-K3",
+    "action": "给云端开发订单安排 Codespaces 并打开其中的命令入口说明",
+    "result": "云端工作环境与本地电脑分开标识",
+    "transfer": "加入同仓库 HTTPS 与 SSH 取址订单、Codespaces 云端订单；展示 SSH 公钥与私钥的用途区别，不要求提交任何钥匙。",
+    "source": "https://docs.github.com/en/get-started/using-git/getting-changes-from-a-remote-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "directory",
+    "actionId": "CH03-K1",
+    "action": "选工作目录并把 Terminal 操作接到该目录",
+    "result": "当前目录标签与日志路径同步改变",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "terminal",
+    "actionId": "CH03-K1",
+    "action": "选工作目录并把 Terminal 操作接到该目录",
+    "result": "当前目录标签与日志路径同步改变",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "nodejs",
+    "actionId": "CH03-K2",
+    "action": "根据项目说明接通运行条件并准备依赖",
+    "result": "环境满足与依赖安装状态分别变化",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "npm",
+    "actionId": "CH03-K2",
+    "action": "根据项目说明接通运行条件并准备依赖",
+    "result": "环境满足与依赖安装状态分别变化",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "dependency",
+    "actionId": "CH03-K2",
+    "action": "根据项目说明接通运行条件并准备依赖",
+    "result": "环境满足与依赖安装状态分别变化",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "installation",
+    "actionId": "CH03-K2",
+    "action": "根据项目说明接通运行条件并准备依赖",
+    "result": "环境满足与依赖安装状态分别变化",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "npm-install",
+    "actionId": "CH03-K2",
+    "action": "根据项目说明接通运行条件并准备依赖",
+    "result": "环境满足与依赖安装状态分别变化",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "npm-run-dev",
+    "actionId": "CH03-K3",
+    "action": "启动、访问并停止本机服务",
+    "result": "服务运行才可进入 localhost 展示窗",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 3,
+    "term": "localhost",
+    "actionId": "CH03-K3",
+    "action": "启动、访问并停止本机服务",
+    "result": "服务运行才可进入 localhost 展示窗",
+    "transfer": "给出端口占用和依赖未准备两个不同局面，先读日志再改对应接头；不允许盲目重复所有命令算过关。",
+    "source": "https://docs.npmjs.com/cli/v11/commands/npm-install",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "files",
+    "actionId": "CH04-K1",
+    "action": "在指定分支按目录取文件证据",
+    "result": "路径与当前分支标记同时显示",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "folders",
+    "actionId": "CH04-K1",
+    "action": "在指定分支按目录取文件证据",
+    "result": "路径与当前分支标记同时显示",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "branch",
+    "actionId": "CH04-K1",
+    "action": "在指定分支按目录取文件证据",
+    "result": "路径与当前分支标记同时显示",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "main",
+    "actionId": "CH04-K1",
+    "action": "在指定分支按目录取文件证据",
+    "result": "路径与当前分支标记同时显示",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "commit-history",
+    "actionId": "CH04-K2",
+    "action": "查对应历史和署名，给来源问题配证据",
+    "result": "提交记录、仓库拥有者和贡献者不混为一谈",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "commits-tab",
+    "actionId": "CH04-K2",
+    "action": "查对应历史和署名，给来源问题配证据",
+    "result": "提交记录、仓库拥有者和贡献者不混为一谈",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "owner",
+    "actionId": "CH04-K2",
+    "action": "查对应历史和署名，给来源问题配证据",
+    "result": "提交记录、仓库拥有者和贡献者不混为一谈",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "contributors",
+    "actionId": "CH04-K2",
+    "action": "查对应历史和署名，给来源问题配证据",
+    "result": "提交记录、仓库拥有者和贡献者不混为一谈",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "license",
+    "actionId": "CH04-K3",
+    "action": "用许可和可见性册回答使用与查看问题",
+    "result": "公开可看不等于无条件可用",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "public",
+    "actionId": "CH04-K3",
+    "action": "用许可和可见性册回答使用与查看问题",
+    "result": "公开可看不等于无条件可用",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "private",
+    "actionId": "CH04-K3",
+    "action": "用许可和可见性册回答使用与查看问题",
+    "result": "公开可看不等于无条件可用",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "releases",
+    "actionId": "CH04-K4",
+    "action": "将发行记录与其 Tag、附件正确配组",
+    "result": "版本位置与发行附件并列可对照",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "release",
+    "actionId": "CH04-K4",
+    "action": "将发行记录与其 Tag、附件正确配组",
+    "result": "版本位置与发行附件并列可对照",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 4,
+    "term": "tag",
+    "actionId": "CH04-K4",
+    "action": "将发行记录与其 Tag、附件正确配组",
+    "result": "版本位置与发行附件并列可对照",
+    "transfer": "把默认分支改名、Release 指向旧 Tag，问“当前 main 文件是否等于发行版”；玩家需查版本而非只记位置。",
+    "source": "https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "search",
+    "actionId": "CH05-K1",
+    "action": "依任务设置检索条件并筛候选",
+    "result": "候选列表实际缩小但仍需进一步判断",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "language",
+    "actionId": "CH05-K1",
+    "action": "依任务设置检索条件并筛候选",
+    "result": "候选列表实际缩小但仍需进一步判断",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "topics",
+    "actionId": "CH05-K1",
+    "action": "依任务设置检索条件并筛候选",
+    "result": "候选列表实际缩小但仍需进一步判断",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "stars",
+    "actionId": "CH05-K2",
+    "action": "调查热度与维护证据并拆穿夸大声明",
+    "result": "热度、分叉数量、归档和维护记录各自显示",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "forks",
+    "actionId": "CH05-K2",
+    "action": "调查热度与维护证据并拆穿夸大声明",
+    "result": "热度、分叉数量、归档和维护记录各自显示",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "archived",
+    "actionId": "CH05-K2",
+    "action": "调查热度与维护证据并拆穿夸大声明",
+    "result": "热度、分叉数量、归档和维护记录各自显示",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "updated",
+    "actionId": "CH05-K2",
+    "action": "调查热度与维护证据并拆穿夸大声明",
+    "result": "热度、分叉数量、归档和维护记录各自显示",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "issue",
+    "actionId": "CH05-K2",
+    "action": "调查热度与维护证据并拆穿夸大声明",
+    "result": "热度、分叉数量、归档和维护记录各自显示",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "requirements",
+    "actionId": "CH05-K3",
+    "action": "组合环境、说明和许可证据决定适配",
+    "result": "缺任一必要条件则任务证据组不成立",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "readme",
+    "actionId": "CH05-K3",
+    "action": "组合环境、说明和许可证据决定适配",
+    "result": "缺任一必要条件则任务证据组不成立",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "documentation",
+    "actionId": "CH05-K3",
+    "action": "组合环境、说明和许可证据决定适配",
+    "result": "缺任一必要条件则任务证据组不成立",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 5,
+    "term": "license",
+    "actionId": "CH05-K3",
+    "action": "组合环境、说明和许可证据决定适配",
+    "result": "缺任一必要条件则任务证据组不成立",
+    "transfer": "换一个用途，使先前获胜项目因 License 或 Requirements 不再合适；另一次加入 Archived 但许可满足的项目，教风险判断而非见 archived 一律错误。",
+    "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "star",
+    "actionId": "CH06-K1",
+    "action": "配置四种行为并预测下一批事件，实际运行对照",
+    "result": "收藏、通知、人物关注和副本四项独立状态变化",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "watch",
+    "actionId": "CH06-K1",
+    "action": "配置四种行为并预测下一批事件，实际运行对照",
+    "result": "收藏、通知、人物关注和副本四项独立状态变化",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "follow",
+    "actionId": "CH06-K1",
+    "action": "配置四种行为并预测下一批事件，实际运行对照",
+    "result": "收藏、通知、人物关注和副本四项独立状态变化",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "fork",
+    "actionId": "CH06-K1",
+    "action": "配置四种行为并预测下一批事件，实际运行对照",
+    "result": "收藏、通知、人物关注和副本四项独立状态变化",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "notifications",
+    "actionId": "CH06-K1",
+    "action": "配置四种行为并预测下一批事件，实际运行对照",
+    "result": "收藏、通知、人物关注和副本四项独立状态变化",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "issue",
+    "actionId": "CH06-K2",
+    "action": "把可复现问题与开放交流投到不同入口",
+    "result": "收到相应用途回执，游戏不发送真实消息",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 6,
+    "term": "discussions",
+    "actionId": "CH06-K2",
+    "action": "把可复现问题与开放交流投到不同入口",
+    "result": "收到相应用途回执，游戏不发送真实消息",
+    "transfer": "把任务改为“只收本仓库参与讨论”或“关注作者其他公开动态”，重新配置后比较前后漏接与噪声。",
+    "source": "https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "issue",
+    "actionId": "CH07-K1",
+    "action": "拼完整案卷并给合适任务分类",
+    "result": "可复现证据和标签意义可检查",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "label",
+    "actionId": "CH07-K1",
+    "action": "拼完整案卷并给合适任务分类",
+    "result": "可复现证据和标签意义可检查",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "good-first-issue",
+    "actionId": "CH07-K1",
+    "action": "拼完整案卷并给合适任务分类",
+    "result": "可复现证据和标签意义可检查",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "assignee",
+    "actionId": "CH07-K2",
+    "action": "根据权限安排承接、目标和跟进",
+    "result": "承接人与目标日期标签变化，订阅影响通知",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "milestone",
+    "actionId": "CH07-K2",
+    "action": "根据权限安排承接、目标和跟进",
+    "result": "承接人与目标日期标签变化，订阅影响通知",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "subscribe",
+    "actionId": "CH07-K2",
+    "action": "根据权限安排承接、目标和跟进",
+    "result": "承接人与目标日期标签变化，订阅影响通知",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "comment",
+    "actionId": "CH07-K3",
+    "action": "补充复现并定向讨论，修复后归档",
+    "result": "讨论和开放｜关闭状态分别记录",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "mention",
+    "actionId": "CH07-K3",
+    "action": "补充复现并定向讨论，修复后归档",
+    "result": "讨论和开放｜关闭状态分别记录",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "open",
+    "actionId": "CH07-K3",
+    "action": "补充复现并定向讨论，修复后归档",
+    "result": "讨论和开放｜关闭状态分别记录",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "closed",
+    "actionId": "CH07-K3",
+    "action": "补充复现并定向讨论，修复后归档",
+    "result": "讨论和开放｜关闭状态分别记录",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "contributing",
+    "actionId": "CH07-K4",
+    "action": "按三份协作告示选择贡献方式和报告渠道",
+    "result": "普通贡献、交流约定和敏感报告去处分开",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "code-of-conduct",
+    "actionId": "CH07-K4",
+    "action": "按三份协作告示选择贡献方式和报告渠道",
+    "result": "普通贡献、交流约定和敏感报告去处分开",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "security-policy",
+    "actionId": "CH07-K4",
+    "action": "按三份协作告示选择贡献方式和报告渠道",
+    "result": "普通贡献、交流约定和敏感报告去处分开",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 7,
+    "term": "contributor",
+    "actionId": "CH07-K4",
+    "action": "按三份协作告示选择贡献方式和报告渠道",
+    "result": "普通贡献、交流约定和敏感报告去处分开",
+    "transfer": "同一错误有不同描述，玩家识别为重复；更换任务目标与承接人能力，需重新排程。",
+    "source": "https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "origin",
+    "actionId": "CH08-K1",
+    "action": "命名三站并核对地址、归属和权限",
+    "result": "远端别名不是权力，也不是固定的公共服务器名称",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "upstream",
+    "actionId": "CH08-K1",
+    "action": "命名三站并核对地址、归属和权限",
+    "result": "远端别名不是权力，也不是固定的公共服务器名称",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "local-repository",
+    "actionId": "CH08-K1",
+    "action": "命名三站并核对地址、归属和权限",
+    "result": "远端别名不是权力，也不是固定的公共服务器名称",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "remote-repository",
+    "actionId": "CH08-K1",
+    "action": "命名三站并核对地址、归属和权限",
+    "result": "远端别名不是权力，也不是固定的公共服务器名称",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "fetch",
+    "actionId": "CH08-K2",
+    "action": "调度消息、整合和提交货运",
+    "result": "跟踪记录、本地分支｜工作区与远端分别变化",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "pull",
+    "actionId": "CH08-K2",
+    "action": "调度消息、整合和提交货运",
+    "result": "跟踪记录、本地分支｜工作区与远端分别变化",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "push",
+    "actionId": "CH08-K2",
+    "action": "调度消息、整合和提交货运",
+    "result": "跟踪记录、本地分支｜工作区与远端分别变化",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "working-directory",
+    "actionId": "CH08-K3",
+    "action": "对照未提交便条与已提交货件，执行网页同步后检查电脑",
+    "result": "Sync fork 改网页 Fork；未提交便条不能作为 Push 货件",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "sync-fork",
+    "actionId": "CH08-K3",
+    "action": "对照未提交便条与已提交货件，执行网页同步后检查电脑",
+    "result": "Sync fork 改网页 Fork；未提交便条不能作为 Push 货件",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 8,
+    "term": "commit",
+    "actionId": "CH08-K3",
+    "action": "对照未提交便条与已提交货件，执行网页同步后检查电脑",
+    "result": "Sync fork 改网页 Fork；未提交便条不能作为 Push 货件",
+    "transfer": "网页 Sync fork 已将 origin 更新到 u2，但电脑仍 u1；另一局本地有 c1、上游有 u2，需要先观察分叉再选整合路线。",
+    "source": "https://git-scm.com/docs/git-fetch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "branch",
+    "actionId": "CH09-K1",
+    "action": "选起点创建分支并独立确认切换",
+    "result": "两分支指针与当前分支标记分别展示",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "create-branch",
+    "actionId": "CH09-K1",
+    "action": "选起点创建分支并独立确认切换",
+    "result": "两分支指针与当前分支标记分别展示",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "main",
+    "actionId": "CH09-K1",
+    "action": "选起点创建分支并独立确认切换",
+    "result": "两分支指针与当前分支标记分别展示",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "switch-branch",
+    "actionId": "CH09-K1",
+    "action": "选起点创建分支并独立确认切换",
+    "result": "两分支指针与当前分支标记分别展示",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "changes",
+    "actionId": "CH09-K2",
+    "action": "查看工作区改动并比对新增/删除",
+    "result": "文件级变化与行级差异分开，未提交改动不自动隔离",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 9,
+    "term": "diff",
+    "actionId": "CH09-K2",
+    "action": "查看工作区改动并比对新增/删除",
+    "result": "文件级变化与行级差异分开，未提交改动不自动隔离",
+    "transfer": "两个已有分支指向不同提交，玩家选正确起点；另给可以带走和会被覆盖的两种未提交局面。",
+    "source": "https://git-scm.com/docs/git-switch",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "readme",
+    "actionId": "CH10-K1",
+    "action": "编辑目标文件并识别尚未提交的内容",
+    "result": "工作区变化而历史不变",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "uncommitted-changes",
+    "actionId": "CH10-K1",
+    "action": "编辑目标文件并识别尚未提交的内容",
+    "result": "工作区变化而历史不变",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "working-directory",
+    "actionId": "CH10-K1",
+    "action": "编辑目标文件并识别尚未提交的内容",
+    "result": "工作区变化而历史不变",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "diff",
+    "actionId": "CH10-K2",
+    "action": "逐行审查并选择相关快照，经历暂存后再编辑",
+    "result": "工作区与暂存内容可不同",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "changes",
+    "actionId": "CH10-K2",
+    "action": "逐行审查并选择相关快照，经历暂存后再编辑",
+    "result": "工作区与暂存内容可不同",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "stage",
+    "actionId": "CH10-K2",
+    "action": "逐行审查并选择相关快照，经历暂存后再编辑",
+    "result": "工作区与暂存内容可不同",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "commit",
+    "actionId": "CH10-K3",
+    "action": "写有效说明封卷并查看历史标识",
+    "result": "本地历史新增快照与说明，远端尚未变化",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "commit-message",
+    "actionId": "CH10-K3",
+    "action": "写有效说明封卷并查看历史标识",
+    "result": "本地历史新增快照与说明，远端尚未变化",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "sha",
+    "actionId": "CH10-K3",
+    "action": "写有效说明封卷并查看历史标识",
+    "result": "本地历史新增快照与说明，远端尚未变化",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 10,
+    "term": "push",
+    "actionId": "CH10-K4",
+    "action": "交付提交并核对远端回执",
+    "result": "远端收到同一模拟 SHA，工作区未提交项仍留本地",
+    "transfer": "随机遮挡与任务变更组合，相关签数量改为 2 或 4；加入暂存后修改场景，证明不存在“三张才允许提交”的 Git 规则。",
+    "source": "https://git-scm.com/docs/git-add",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "base-repository",
+    "actionId": "CH11-K1",
+    "action": "摆定来源与接收目标并预览方向",
+    "result": "两端限定自己的 Fork 安全练习",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "base-branch",
+    "actionId": "CH11-K1",
+    "action": "摆定来源与接收目标并预览方向",
+    "result": "两端限定自己的 Fork 安全练习",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "head-repository",
+    "actionId": "CH11-K1",
+    "action": "摆定来源与接收目标并预览方向",
+    "result": "两端限定自己的 Fork 安全练习",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "compare-branch",
+    "actionId": "CH11-K1",
+    "action": "摆定来源与接收目标并预览方向",
+    "result": "两端限定自己的 Fork 安全练习",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "pull-request",
+    "actionId": "CH11-K1",
+    "action": "摆定来源与接收目标并预览方向",
+    "result": "两端限定自己的 Fork 安全练习",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "new-pull-request",
+    "actionId": "CH11-K2",
+    "action": "检查变更创建草稿并准备讨论",
+    "result": "Draft｜Ready｜讨论与合并状态分开",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "draft",
+    "actionId": "CH11-K2",
+    "action": "检查变更创建草稿并准备讨论",
+    "result": "Draft｜Ready｜讨论与合并状态分开",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "ready-for-review",
+    "actionId": "CH11-K2",
+    "action": "检查变更创建草稿并准备讨论",
+    "result": "Draft｜Ready｜讨论与合并状态分开",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "files-changed",
+    "actionId": "CH11-K2",
+    "action": "检查变更创建草稿并准备讨论",
+    "result": "Draft｜Ready｜讨论与合并状态分开",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "conversation",
+    "actionId": "CH11-K2",
+    "action": "检查变更创建草稿并准备讨论",
+    "result": "Draft｜Ready｜讨论与合并状态分开",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "comment",
+    "actionId": "CH11-K3",
+    "action": "读意见并产生真正回应意见的新提交",
+    "result": "评审证据对应新版本",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "request-changes",
+    "actionId": "CH11-K3",
+    "action": "读意见并产生真正回应意见的新提交",
+    "result": "评审证据对应新版本",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "review",
+    "actionId": "CH11-K3",
+    "action": "读意见并产生真正回应意见的新提交",
+    "result": "评审证据对应新版本",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "commit",
+    "actionId": "CH11-K3",
+    "action": "读意见并产生真正回应意见的新提交",
+    "result": "评审证据对应新版本",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "resolve-conversation",
+    "actionId": "CH11-K4",
+    "action": "修订送达后解决讨论再请求复查",
+    "result": "已解决和已批准两个独立标记",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "approve",
+    "actionId": "CH11-K4",
+    "action": "修订送达后解决讨论再请求复查",
+    "result": "已解决和已批准两个独立标记",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "merge-conflict",
+    "actionId": "CH11-K5",
+    "action": "编辑冲突并核对仓库条件后合卷",
+    "result": "无标记残留且两方有效意图保留才允许模拟合并",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 11,
+    "term": "merge",
+    "actionId": "CH11-K5",
+    "action": "编辑冲突并核对仓库条件后合卷",
+    "result": "无标记残留且两方有效意图保留才允许模拟合并",
+    "transfer": "评审要求从补夜行说明换成修复路线，冲突来自两种相容意图；若变更已过时必须先更新证据再求批准。",
+    "source": "https://docs.github.com/en/pull-requests/reviewing-changes-in-pull-requests/reviewing-a-pull-request-with-required-reviews",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "actions",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "workflow",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "workflow-run",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "job",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "step",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "checks",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "passed",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "failed",
+    "actionId": "CH12-K1",
+    "action": "安排依赖并运行，读具体失败步骤日志",
+    "result": "每次运行、任务、步骤和检查结果分层显示",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "changelog",
+    "actionId": "CH12-K2",
+    "action": "修复说明并观察取消后状态",
+    "result": "取消没有产物通过结论，新修复需新 SHA 运行",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "cancelled",
+    "actionId": "CH12-K2",
+    "action": "修复说明并观察取消后状态",
+    "result": "取消没有产物通过结论，新修复需新 SHA 运行",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "artifact",
+    "actionId": "CH12-K3",
+    "action": "核对来源版本并装配发行箱",
+    "result": "构建输出和发行附件是不同阶段",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "tag",
+    "actionId": "CH12-K3",
+    "action": "核对来源版本并装配发行箱",
+    "result": "构建输出和发行附件是不同阶段",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "version",
+    "actionId": "CH12-K3",
+    "action": "核对来源版本并装配发行箱",
+    "result": "构建输出和发行附件是不同阶段",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "release",
+    "actionId": "CH12-K3",
+    "action": "核对来源版本并装配发行箱",
+    "result": "构建输出和发行附件是不同阶段",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  },
+  {
+    "chapter": 12,
+    "term": "github-pages",
+    "actionId": "CH12-K4",
+    "action": "将发布后静态展示用途匹配到 Pages",
+    "result": "显示站点与 Release 下载入口不同，不冒充已真实部署",
+    "transfer": "故障由缺变更说明换成步骤配置或任务依赖错误；插入并行可行 Job，要求观察依赖而非死记一条顺序。",
+    "source": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+    "sourceStatus": "沿用内容配置；语义关键来源另见 ART_DIRECTION.md；逐词 UI 最新性属 B/C 内容审读"
+  }
+]

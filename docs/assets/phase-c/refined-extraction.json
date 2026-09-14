@@ -1,0 +1,1473 @@
+[
+  {
+    "chapter": 0,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-0.png",
+    "crop": {
+      "left": 46,
+      "top": 55,
+      "right": 341,
+      "bottom": 461
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-1.png",
+    "crop": {
+      "left": 514,
+      "top": 11,
+      "right": 837,
+      "bottom": 464
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-2.png",
+    "crop": {
+      "left": 891,
+      "top": 214,
+      "right": 1349,
+      "bottom": 476
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-3.png",
+    "crop": {
+      "left": 1419,
+      "top": 6,
+      "right": 1747,
+      "bottom": 471
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-4.png",
+    "crop": {
+      "left": 29,
+      "top": 567,
+      "right": 435,
+      "bottom": 816
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-5.png",
+    "crop": {
+      "left": 462,
+      "top": 533,
+      "right": 880,
+      "bottom": 827
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-6.png",
+    "crop": {
+      "left": 933,
+      "top": 533,
+      "right": 1249,
+      "bottom": 830
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 0,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-0.png",
+    "file": "public/assets/phase-c/refined/ch0-7.png",
+    "crop": {
+      "left": 1318,
+      "top": 539,
+      "right": 1749,
+      "bottom": 826
+    },
+    "retained": 1,
+    "removedComponents": 17
+  },
+  {
+    "chapter": 1,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-0.png",
+    "crop": {
+      "left": 41,
+      "top": 121,
+      "right": 416,
+      "bottom": 430
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-1.png",
+    "crop": {
+      "left": 504,
+      "top": 75,
+      "right": 842,
+      "bottom": 417
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-2.png",
+    "crop": {
+      "left": 967,
+      "top": 106,
+      "right": 1308,
+      "bottom": 397
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-3.png",
+    "crop": {
+      "left": 1351,
+      "top": 127,
+      "right": 1742,
+      "bottom": 389
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-4.png",
+    "crop": {
+      "left": 43,
+      "top": 500,
+      "right": 448,
+      "bottom": 785
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-5.png",
+    "crop": {
+      "left": 515,
+      "top": 455,
+      "right": 903,
+      "bottom": 813
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-6.png",
+    "crop": {
+      "left": 924,
+      "top": 481,
+      "right": 1325,
+      "bottom": 806
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 1,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-1.png",
+    "file": "public/assets/phase-c/refined/ch1-7.png",
+    "crop": {
+      "left": 1469,
+      "top": 437,
+      "right": 1674,
+      "bottom": 854
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 2,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-0.png",
+    "crop": {
+      "left": 22,
+      "top": 79,
+      "right": 444,
+      "bottom": 428
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-1.png",
+    "crop": {
+      "left": 464,
+      "top": 34,
+      "right": 870,
+      "bottom": 424
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-2.png",
+    "crop": {
+      "left": 904,
+      "top": 56,
+      "right": 1316,
+      "bottom": 435
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-3.png",
+    "crop": {
+      "left": 1339,
+      "top": 150,
+      "right": 1760,
+      "bottom": 406
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-4.png",
+    "crop": {
+      "left": 27,
+      "top": 470,
+      "right": 424,
+      "bottom": 851
+    },
+    "retained": 3,
+    "removedComponents": 107
+  },
+  {
+    "chapter": 2,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-5.png",
+    "crop": {
+      "left": 448,
+      "top": 542,
+      "right": 877,
+      "bottom": 834
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-6.png",
+    "crop": {
+      "left": 904,
+      "top": 582,
+      "right": 1320,
+      "bottom": 866
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 2,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-2.png",
+    "file": "public/assets/phase-c/refined/ch2-7.png",
+    "crop": {
+      "left": 1323,
+      "top": 441,
+      "right": 1755,
+      "bottom": 851
+    },
+    "retained": 1,
+    "removedComponents": 109
+  },
+  {
+    "chapter": 3,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-0.png",
+    "crop": {
+      "left": 50,
+      "top": 9,
+      "right": 398,
+      "bottom": 429
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-1.png",
+    "crop": {
+      "left": 471,
+      "top": 68,
+      "right": 856,
+      "bottom": 416
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-2.png",
+    "crop": {
+      "left": 927,
+      "top": 91,
+      "right": 1299,
+      "bottom": 417
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-3.png",
+    "crop": {
+      "left": 1375,
+      "top": 60,
+      "right": 1734,
+      "bottom": 409
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-4.png",
+    "crop": {
+      "left": 30,
+      "top": 498,
+      "right": 433,
+      "bottom": 858
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-5.png",
+    "crop": {
+      "left": 524,
+      "top": 481,
+      "right": 853,
+      "bottom": 826
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-6.png",
+    "crop": {
+      "left": 969,
+      "top": 465,
+      "right": 1282,
+      "bottom": 837
+    },
+    "retained": 1,
+    "removedComponents": 30
+  },
+  {
+    "chapter": 3,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-3.png",
+    "file": "public/assets/phase-c/refined/ch3-7.png",
+    "crop": {
+      "left": 1458,
+      "top": 464,
+      "right": 1662,
+      "bottom": 853
+    },
+    "retained": 4,
+    "removedComponents": 27
+  },
+  {
+    "chapter": 4,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-0.png",
+    "crop": {
+      "left": 49,
+      "top": 9,
+      "right": 375,
+      "bottom": 431
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-1.png",
+    "crop": {
+      "left": 476,
+      "top": 51,
+      "right": 865,
+      "bottom": 396
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-2.png",
+    "crop": {
+      "left": 909,
+      "top": 73,
+      "right": 1324,
+      "bottom": 407
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-3.png",
+    "crop": {
+      "left": 1438,
+      "top": 28,
+      "right": 1727,
+      "bottom": 431
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-4.png",
+    "crop": {
+      "left": 85,
+      "top": 460,
+      "right": 421,
+      "bottom": 868
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-5.png",
+    "crop": {
+      "left": 464,
+      "top": 464,
+      "right": 869,
+      "bottom": 853
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-6.png",
+    "crop": {
+      "left": 976,
+      "top": 483,
+      "right": 1309,
+      "bottom": 865
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 4,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-4.png",
+    "file": "public/assets/phase-c/refined/ch4-7.png",
+    "crop": {
+      "left": 1376,
+      "top": 466,
+      "right": 1743,
+      "bottom": 869
+    },
+    "retained": 1,
+    "removedComponents": 13
+  },
+  {
+    "chapter": 5,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-0.png",
+    "crop": {
+      "left": 17,
+      "top": 63,
+      "right": 465,
+      "bottom": 404
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-1.png",
+    "crop": {
+      "left": 570,
+      "top": 9,
+      "right": 806,
+      "bottom": 443
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-2.png",
+    "crop": {
+      "left": 930,
+      "top": 38,
+      "right": 1328,
+      "bottom": 405
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-3.png",
+    "crop": {
+      "left": 1439,
+      "top": 13,
+      "right": 1698,
+      "bottom": 435
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-4.png",
+    "crop": {
+      "left": 13,
+      "top": 505,
+      "right": 447,
+      "bottom": 851
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-5.png",
+    "crop": {
+      "left": 510,
+      "top": 476,
+      "right": 873,
+      "bottom": 839
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-6.png",
+    "crop": {
+      "left": 904,
+      "top": 501,
+      "right": 1339,
+      "bottom": 838
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 5,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-5.png",
+    "file": "public/assets/phase-c/refined/ch5-7.png",
+    "crop": {
+      "left": 1482,
+      "top": 447,
+      "right": 1683,
+      "bottom": 879
+    },
+    "retained": 1,
+    "removedComponents": 12
+  },
+  {
+    "chapter": 6,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-0.png",
+    "crop": {
+      "left": 39,
+      "top": 39,
+      "right": 410,
+      "bottom": 403
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-1.png",
+    "crop": {
+      "left": 516,
+      "top": 8,
+      "right": 878,
+      "bottom": 442
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-2.png",
+    "crop": {
+      "left": 913,
+      "top": 75,
+      "right": 1327,
+      "bottom": 409
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-3.png",
+    "crop": {
+      "left": 1345,
+      "top": 32,
+      "right": 1764,
+      "bottom": 430
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-4.png",
+    "crop": {
+      "left": 10,
+      "top": 459,
+      "right": 437,
+      "bottom": 855
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-5.png",
+    "crop": {
+      "left": 556,
+      "top": 454,
+      "right": 850,
+      "bottom": 865
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-6.png",
+    "crop": {
+      "left": 950,
+      "top": 471,
+      "right": 1289,
+      "bottom": 850
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 6,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-6.png",
+    "file": "public/assets/phase-c/refined/ch6-7.png",
+    "crop": {
+      "left": 1447,
+      "top": 436,
+      "right": 1657,
+      "bottom": 876
+    },
+    "retained": 1,
+    "removedComponents": 7
+  },
+  {
+    "chapter": 7,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-0.png",
+    "crop": {
+      "left": 51,
+      "top": 41,
+      "right": 414,
+      "bottom": 428
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-1.png",
+    "crop": {
+      "left": 462,
+      "top": 82,
+      "right": 892,
+      "bottom": 442
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-2.png",
+    "crop": {
+      "left": 1095,
+      "top": 93,
+      "right": 1307,
+      "bottom": 394
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-3.png",
+    "crop": {
+      "left": 1364,
+      "top": 74,
+      "right": 1729,
+      "bottom": 445
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-4.png",
+    "crop": {
+      "left": 72,
+      "top": 442,
+      "right": 400,
+      "bottom": 852
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-5.png",
+    "crop": {
+      "left": 455,
+      "top": 505,
+      "right": 867,
+      "bottom": 826
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-6.png",
+    "crop": {
+      "left": 918,
+      "top": 484,
+      "right": 1328,
+      "bottom": 842
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 7,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-7.png",
+    "file": "public/assets/phase-c/refined/ch7-7.png",
+    "crop": {
+      "left": 1460,
+      "top": 539,
+      "right": 1663,
+      "bottom": 812
+    },
+    "retained": 1,
+    "removedComponents": 9
+  },
+  {
+    "chapter": 8,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-0.png",
+    "crop": {
+      "left": 15,
+      "top": 62,
+      "right": 439,
+      "bottom": 424
+    },
+    "retained": 3,
+    "removedComponents": 1237
+  },
+  {
+    "chapter": 8,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-1.png",
+    "crop": {
+      "left": 454,
+      "top": 53,
+      "right": 885,
+      "bottom": 436
+    },
+    "retained": 5,
+    "removedComponents": 1235
+  },
+  {
+    "chapter": 8,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-2.png",
+    "crop": {
+      "left": 896,
+      "top": 41,
+      "right": 1334,
+      "bottom": 455
+    },
+    "retained": 1,
+    "removedComponents": 1239
+  },
+  {
+    "chapter": 8,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-3.png",
+    "crop": {
+      "left": 1346,
+      "top": 111,
+      "right": 1763,
+      "bottom": 396
+    },
+    "retained": 3,
+    "removedComponents": 1237
+  },
+  {
+    "chapter": 8,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-4.png",
+    "crop": {
+      "left": 17,
+      "top": 486,
+      "right": 438,
+      "bottom": 848
+    },
+    "retained": 2,
+    "removedComponents": 1238
+  },
+  {
+    "chapter": 8,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-5.png",
+    "crop": {
+      "left": 499,
+      "top": 477,
+      "right": 862,
+      "bottom": 852
+    },
+    "retained": 1,
+    "removedComponents": 1239
+  },
+  {
+    "chapter": 8,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-6.png",
+    "crop": {
+      "left": 906,
+      "top": 496,
+      "right": 1308,
+      "bottom": 839
+    },
+    "retained": 1,
+    "removedComponents": 1239
+  },
+  {
+    "chapter": 8,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-8.png",
+    "file": "public/assets/phase-c/refined/ch8-7.png",
+    "crop": {
+      "left": 1334,
+      "top": 502,
+      "right": 1767,
+      "bottom": 839
+    },
+    "retained": 1,
+    "removedComponents": 1239
+  },
+  {
+    "chapter": 9,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-0.png",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "right": 455,
+      "bottom": 438
+    },
+    "retained": 50,
+    "removedComponents": 6610
+  },
+  {
+    "chapter": 9,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-1.png",
+    "crop": {
+      "left": 459,
+      "top": 0,
+      "right": 864,
+      "bottom": 437
+    },
+    "retained": 31,
+    "removedComponents": 6629
+  },
+  {
+    "chapter": 9,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-2.png",
+    "crop": {
+      "left": 885,
+      "top": 13,
+      "right": 1337,
+      "bottom": 437
+    },
+    "retained": 56,
+    "removedComponents": 6604
+  },
+  {
+    "chapter": 9,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-3.png",
+    "crop": {
+      "left": 1347,
+      "top": 21,
+      "right": 1725,
+      "bottom": 415
+    },
+    "retained": 30,
+    "removedComponents": 6630
+  },
+  {
+    "chapter": 9,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-4.png",
+    "crop": {
+      "left": 70,
+      "top": 469,
+      "right": 405,
+      "bottom": 867
+    },
+    "retained": 39,
+    "removedComponents": 6621
+  },
+  {
+    "chapter": 9,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-5.png",
+    "crop": {
+      "left": 434,
+      "top": 478,
+      "right": 876,
+      "bottom": 838
+    },
+    "retained": 15,
+    "removedComponents": 6645
+  },
+  {
+    "chapter": 9,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-6.png",
+    "crop": {
+      "left": 916,
+      "top": 455,
+      "right": 1317,
+      "bottom": 876
+    },
+    "retained": 25,
+    "removedComponents": 6635
+  },
+  {
+    "chapter": 9,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-9.png",
+    "file": "public/assets/phase-c/refined/ch9-7.png",
+    "crop": {
+      "left": 1341,
+      "top": 469,
+      "right": 1759,
+      "bottom": 871
+    },
+    "retained": 23,
+    "removedComponents": 6637
+  },
+  {
+    "chapter": 10,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-0.png",
+    "crop": {
+      "left": 10,
+      "top": 54,
+      "right": 439,
+      "bottom": 420
+    },
+    "retained": 28,
+    "removedComponents": 1162
+  },
+  {
+    "chapter": 10,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-1.png",
+    "crop": {
+      "left": 479,
+      "top": 51,
+      "right": 849,
+      "bottom": 421
+    },
+    "retained": 6,
+    "removedComponents": 1184
+  },
+  {
+    "chapter": 10,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-2.png",
+    "crop": {
+      "left": 905,
+      "top": 54,
+      "right": 1328,
+      "bottom": 400
+    },
+    "retained": 2,
+    "removedComponents": 1188
+  },
+  {
+    "chapter": 10,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-3.png",
+    "crop": {
+      "left": 1404,
+      "top": 19,
+      "right": 1768,
+      "bottom": 424
+    },
+    "retained": 5,
+    "removedComponents": 1185
+  },
+  {
+    "chapter": 10,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-4.png",
+    "crop": {
+      "left": 61,
+      "top": 465,
+      "right": 471,
+      "bottom": 838
+    },
+    "retained": 11,
+    "removedComponents": 1179
+  },
+  {
+    "chapter": 10,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-5.png",
+    "crop": {
+      "left": 489,
+      "top": 453,
+      "right": 856,
+      "bottom": 858
+    },
+    "retained": 4,
+    "removedComponents": 1186
+  },
+  {
+    "chapter": 10,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-6.png",
+    "crop": {
+      "left": 907,
+      "top": 494,
+      "right": 1347,
+      "bottom": 823
+    },
+    "retained": 6,
+    "removedComponents": 1184
+  },
+  {
+    "chapter": 10,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-10.png",
+    "file": "public/assets/phase-c/refined/ch10-7.png",
+    "crop": {
+      "left": 1375,
+      "top": 464,
+      "right": 1749,
+      "bottom": 845
+    },
+    "retained": 6,
+    "removedComponents": 1184
+  },
+  {
+    "chapter": 11,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-0.png",
+    "crop": {
+      "left": 49,
+      "top": 49,
+      "right": 544,
+      "bottom": 399
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-1.png",
+    "crop": {
+      "left": 574,
+      "top": 6,
+      "right": 907,
+      "bottom": 433
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-2.png",
+    "crop": {
+      "left": 1034,
+      "top": 5,
+      "right": 1298,
+      "bottom": 420
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-3.png",
+    "crop": {
+      "left": 1442,
+      "top": 6,
+      "right": 1689,
+      "bottom": 424
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-4.png",
+    "crop": {
+      "left": 61,
+      "top": 493,
+      "right": 488,
+      "bottom": 820
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-5.png",
+    "crop": {
+      "left": 579,
+      "top": 440,
+      "right": 855,
+      "bottom": 858
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-6.png",
+    "crop": {
+      "left": 982,
+      "top": 473,
+      "right": 1302,
+      "bottom": 848
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 11,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-11.png",
+    "file": "public/assets/phase-c/refined/ch11-7.png",
+    "crop": {
+      "left": 1450,
+      "top": 426,
+      "right": 1687,
+      "bottom": 863
+    },
+    "retained": 1,
+    "removedComponents": 8
+  },
+  {
+    "chapter": 12,
+    "index": 0,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-0.png",
+    "crop": {
+      "left": 41,
+      "top": 9,
+      "right": 412,
+      "bottom": 478
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 1,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-1.png",
+    "crop": {
+      "left": 467,
+      "top": 47,
+      "right": 719,
+      "bottom": 468
+    },
+    "retained": 6,
+    "removedComponents": 15
+  },
+  {
+    "chapter": 12,
+    "index": 2,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-2.png",
+    "crop": {
+      "left": 774,
+      "top": 45,
+      "right": 1150,
+      "bottom": 470
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 3,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-3.png",
+    "crop": {
+      "left": 1196,
+      "top": 43,
+      "right": 1515,
+      "bottom": 504
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 4,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-4.png",
+    "crop": {
+      "left": 22,
+      "top": 551,
+      "right": 379,
+      "bottom": 974
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 5,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-5.png",
+    "crop": {
+      "left": 379,
+      "top": 551,
+      "right": 791,
+      "bottom": 931
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 6,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-6.png",
+    "crop": {
+      "left": 828,
+      "top": 511,
+      "right": 1148,
+      "bottom": 966
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "chapter": 12,
+    "index": 7,
+    "source": "public/assets/phase-c/props/chapter-12.png",
+    "file": "public/assets/phase-c/refined/ch12-7.png",
+    "crop": {
+      "left": 1139,
+      "top": 511,
+      "right": 1516,
+      "bottom": 1009
+    },
+    "retained": 1,
+    "removedComponents": 20
+  },
+  {
+    "source": "/Users/maoyu/.codex/generated_images/01a09e38-6bd2-7da3-88a9-33a41982357f/exec-ede8ceb7-e95e-4800-9f25-a35e3a41dba1.png",
+    "file": "public/assets/phase-c/refined/map-paper.png",
+    "method": "Generated magenta backdrop keyed to alpha; fringe despill"
+  },
+  {
+    "source": "/Users/maoyu/.codex/generated_images/01a09e38-6bd2-7da3-88a9-33a41982357f/exec-3c1a6d84-9f02-470d-9e5c-e395ebb4b4ae.png",
+    "file": "public/assets/phase-c/refined/inn-nodes.png",
+    "method": "Generated magenta backdrop keyed to alpha; fringe despill"
+  },
+  {
+    "source": "/Users/maoyu/.codex/generated_images/01a09e38-6bd2-7da3-88a9-33a41982357f/exec-ebe08120-8b8b-4090-b09e-403a2acd9db3.png",
+    "file": "public/assets/phase-c/refined/bone-die.png",
+    "method": "Generated magenta backdrop keyed to alpha; fringe despill"
+  }
+]

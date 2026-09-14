@@ -1,0 +1,130 @@
+[
+  {
+    "source": "src/app/about/page.tsx",
+    "route": "about",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/adventure/page.tsx",
+    "route": "adventure",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=chapter",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/adventure-demo/page.tsx",
+    "route": "adventure-demo",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=chapter",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/capstone/page.tsx",
+    "route": "capstone",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/demo/page.tsx",
+    "route": "demo",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/error.tsx",
+    "route": "error.tsx",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=errors",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/field-guide/page.tsx",
+    "route": "field-guide",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/field-practice/page.tsx",
+    "route": "field-practice",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/glossary/page.tsx",
+    "route": "glossary",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/loading.tsx",
+    "route": "loading.tsx",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=errors",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/map/page.tsx",
+    "route": "map",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=chapter",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/not-found.tsx",
+    "route": "not-found.tsx",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=errors",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/page.tsx",
+    "route": "/",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/play/page.tsx",
+    "route": "play",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=chapter",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/sponsor/page.tsx",
+    "route": "sponsor",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  },
+  {
+    "source": "src/app/start/page.tsx",
+    "route": "start",
+    "roles": "标题=马善政；品牌短句=志莽行书；正文｜错误｜输入｜中文数字=霞鹜文楷；英文标签=Cormorant；代码｜路径=等宽",
+    "sample": "review/sample.html?view=guide",
+    "mustAudit": "正文、按钮、placeholder、focus、disabled、动态消息与页脚；继承后逐组件覆盖清除现代字体声明",
+    "stage": "A 规范与全页样张；B/C 接入；D 离线实机"
+  }
+]

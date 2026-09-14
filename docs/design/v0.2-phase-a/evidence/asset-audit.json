@@ -1,0 +1,44 @@
+{
+  "generatedCalls": 19,
+  "selectedReviewImages": 13,
+  "rejectedImages": 4,
+  "selectedSprites": [
+    {
+      "id": "lock-a",
+      "alpha": 0.6595
+    },
+    {
+      "id": "lock-b",
+      "alpha": 0.5963
+    },
+    {
+      "id": "coin-pouch",
+      "alpha": 0.6573
+    },
+    {
+      "id": "silver-note",
+      "alpha": 0.5179
+    },
+    {
+      "id": "travel-pass",
+      "alpha": 0.6847
+    },
+    {
+      "id": "button-final",
+      "alpha": 0.5314
+    },
+    {
+      "id": "slip-final",
+      "alpha": 0.3363
+    },
+    {
+      "id": "lock-open-final",
+      "alpha": 0.5546
+    },
+    {
+      "id": "lock-complete-final",
+      "alpha": 0.6347
+    }
+  ],
+  "note": "Native .icns container exported only; game integration and device acceptance remain B/C/D."
+}

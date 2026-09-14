@@ -1,0 +1,176 @@
+[
+  {
+    "file": "src/components/adventure/adventure-game.tsx",
+    "iconImports": [
+      "BookOpen",
+      "MapTrifold",
+      "Backpack",
+      "ArrowRight",
+      "ArrowCounterClockwise",
+      "DownloadSimple",
+      "CheckCircle"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/appraisal-market.tsx",
+    "iconImports": [
+      "BookOpen",
+      "CheckCircle",
+      "Scroll",
+      "Stamp",
+      "HandPointing"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/chapter-workbench.tsx",
+    "iconImports": [
+      "MapTrifold",
+      "ArrowCounterClockwise",
+      "BookOpenText",
+      "Stamp",
+      "Scroll",
+      "Envelope",
+      "Flame",
+      "Signpost",
+      "Gear",
+      "Tree",
+      "Package",
+      "CaretRight"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/foundation-lesson.tsx",
+    "iconImports": [
+      "BookOpenText",
+      "Check",
+      "Compass",
+      "MapPin",
+      "Scroll",
+      "ShieldCheck",
+      "Sparkle",
+      "TerminalWindow"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/handbook.tsx",
+    "iconImports": [
+      "X",
+      "ArrowSquareOut",
+      "CaretLeft",
+      "CaretRight",
+      "BookmarkSimple"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/jianghu-map.tsx",
+    "iconImports": [
+      "Flag",
+      "LockKey",
+      "Stamp",
+      "Compass"
+    ],
+    "inlineSvg": true,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/mechanism-trace.tsx",
+    "iconImports": [],
+    "inlineSvg": true,
+    "strategy": "语义线仅作解释层，货件/炉具/印章改用生成资产"
+  },
+  {
+    "file": "src/components/adventure/scene-environment.tsx",
+    "iconImports": [],
+    "inlineSvg": true,
+    "strategy": "按章节器物替换；禁止保留粗线正式道具"
+  },
+  {
+    "file": "src/components/adventure/world-map.tsx",
+    "iconImports": [
+      "LockKey",
+      "MapPin",
+      "CheckCircle"
+    ],
+    "inlineSvg": true,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/adventure/wuxia-game.tsx",
+    "iconImports": [
+      "Backpack",
+      "BookOpenText",
+      "ArrowRight",
+      "MapTrifold",
+      "DownloadSimple",
+      "CheckCircle"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/capstone/capstone-checklist.tsx",
+    "iconImports": [
+      "CheckCircle",
+      "Warning"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/capstone/graduation-quiz.tsx",
+    "iconImports": [
+      "CheckCircle"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/share/adventure-share-card.tsx",
+    "iconImports": [
+      "DownloadSimple"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/share/share-card-generator.tsx",
+    "iconImports": [
+      "DownloadSimple"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/vocabulary/glossary-explorer.tsx",
+    "iconImports": [
+      "MagnifyingGlass"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  },
+  {
+    "file": "src/components/workbench/game-workbench.tsx",
+    "iconImports": [
+      "ArrowCounterClockwise",
+      "ArrowRight",
+      "Check",
+      "CheckCircle",
+      "Compass",
+      "Info",
+      "LockSimpleOpen",
+      "X"
+    ],
+    "inlineSvg": false,
+    "strategy": "按公共 G 组和本章 C 组替换；兼容入口一并验收"
+  }
+]

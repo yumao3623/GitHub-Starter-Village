@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Stage C generated sprite-sheet transparency review",
+  "method": "Imagegen source sheets were reviewed and RGB checkerboard exports were converted to RGBA alpha while preserving generated objects and grid positions.",
+  "reviewedAt": "2026-09-12",
+  "files": "public/assets/phase-c/props/chapter-0.png through chapter-12.png"
+}

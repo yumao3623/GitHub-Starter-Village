@@ -1,6 +1,8 @@
 # 阶段 E：江湖闯关体验修复需求
 
-状态：**待审核，尚未实施**  
+> **历史需求稿（2026-09-14）**：本文形成早于 C V2 全主线交付。当前 A/B/C 事实以 [PHASE_ABC_BASELINE.md](PHASE_ABC_BASELINE.md) 和 [PHASE_C_V2_REAUDIT_RESULT.md](../verification/PHASE_C_V2_REAUDIT_RESULT.md) 为准；本文的“前六章切片”不代表当前主线缺少第 0–12 章。
+
+状态：**历史方案，未作为当前阶段状态**
 版本：v0.1 · 2026-09-11  
 前置：阶段 A—D 已在当前分支交付；本文件针对实际体验问题，不假定旧实现已经满足这些要求。
 

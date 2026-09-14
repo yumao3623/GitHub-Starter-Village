@@ -1,42 +1,15 @@
 'use client';
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
-import { Flag, LockKey, Stamp, Compass } from '@phosphor-icons/react';
-import { chapterScenes } from '@/content/scenarios/chapter-scenes';
-import { earnedChapters, nextChapter, type WuxiaState, type WuxiaAction } from '@/core/game/wuxia';
-import { PlacedCharacter } from './character-placement';
-import { Button } from '@/components/ui/button';
-export function JianghuMap({ state, dispatch }: {
-    state: WuxiaState;
-    dispatch: React.Dispatch<WuxiaAction>;
-}) {
-    const scroll = useRef<HTMLDivElement>(null);
-    const [size, setSize] = useState({ w: 1200, h: 700 });
-    const [arrived, setArrived] = useState(false);
-    useEffect(() => { if (!scroll.current)
-        return; const observer = new ResizeObserver(([entry]) => setSize({ w: entry.contentRect.width, h: entry.contentRect.height })); observer.observe(scroll.current); return () => observer.disconnect(); }, []);
-    const earned = earnedChapters(state);
-    const next = nextChapter(state);
-    const target = chapterScenes[next];
-    const from = state.rewardFrom !== null ? chapterScenes[state.rewardFrom] : target;
-    const moving = state.rewardFrom !== null && state.rewardFrom < 12;
-    const route = chapterScenes.slice(from.chapter + 1, next + 1).map((p, i) => { const prev = chapterScenes[from.chapter + i].mapAnchor; const q = p.mapAnchor; return `Q ${(prev.x + q.x) * size.w / 200} ${(prev.y + q.y) * size.h / 200 + 35} ${q.x * size.w / 100} ${q.y * size.h / 100}`; }).join(' ');
-    const path = `path('M ${from.mapAnchor.x * size.w / 100} ${from.mapAnchor.y * size.h / 100} ${route}')`;
-    return <section className="jianghu-map" aria-labelledby="jianghu-title"><header className="map-caption"><small>从村口入谷，沿山道向右历练</small><h1 id="jianghu-title">云溪谷 · 十三章江湖</h1><p>地点、道具与迷雾记录你的主线进度。</p></header>
-  <div ref={scroll} className="jianghu-scroll"><div className="jianghu-art"/>
-   <svg className="jianghu-road" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden>{chapterScenes.slice(1).map((scene, i) => { const p = chapterScenes[i].mapAnchor; const q = scene.mapAnchor; return <path key={scene.chapter} className={scene.chapter <= next ? 'open' : ''} d={`M ${p.x * 12} ${p.y * 7} Q ${(p.x + q.x) * 6} ${(p.y + q.y) * 3.5 + 35} ${q.x * 12} ${q.y * 7}`}/>; })}</svg>
-   {chapterScenes.map(scene => {
-            const locked = scene.chapter > next;
-            const anchor = scene.mapAnchor;
-            const clearing = moving && scene.chapter === next;
-            return <div key={scene.chapter} className="map-region" data-region={scene.parentMapRegionId}>
-    {(scene.chapter === next + 1 || clearing) && <div aria-hidden data-fog-for={scene.chapter} className={`jianghu-fog ${clearing ? 'revealing' : ''}`} style={{ left: `${anchor.x - 6}%`, width: scene.chapter === next + 1 ? `${100 - anchor.x + 6}%` : undefined }}/>}
-    <div className={`place-pin ${locked ? 'locked' : earned.includes(scene.chapter) ? 'earned' : 'current'}`} style={{ left: `${anchor.x}%`, top: `${anchor.y}%` }}>{locked ? <span className="locked-landmark" aria-label={`第 ${scene.chapter} 章 ${scene.title}，完成前一章解锁`}><LockKey size={20}/><small>{scene.chapter}</small></span> : <button aria-label={`第 ${scene.chapter} 章 · ${scene.title}`} onClick={() => dispatch({ type: 'enter', chapter: scene.chapter })}>{earned.includes(scene.chapter) ? <Stamp size={24}/> : <Flag size={26}/>}<strong>{scene.chapter} · {scene.title}</strong>{earned.includes(scene.chapter) && <small>{scene.returnMapReward.item}</small>}</button>}</div>
-   </div>;
-        })}
-   <div className="map-character-plane"><div key={`${state.rewardFrom}-${next}`} onAnimationEnd={e => { if (e.animationName === 'walk-road')
-        setArrived(true); }} className={`map-traveller ${moving ? 'travelling' : ''}`} style={{ left: moving ? 0 : `${target.mapAnchor.x}%`, top: moving ? 0 : `${target.mapAnchor.y}%`, offsetPath: moving ? path : undefined } as CSSProperties}><PlacedCharacter id={state.character!} pose={moving && !arrived ? 'walking' : 'standing'}/></div></div>
-  </div>
-  <div className="map-next"><Compass size={30}/><div><strong>{earned.length === 13 ? '云溪谷全线贯通' : `下一站：第 ${next} 章 · ${target.title}`}</strong><p role="status">{state.notice || '只有当前与已完成地点可以进入。'}</p></div><Button onClick={() => dispatch({ type: 'enter', chapter: next })}>{earned.length === 13 ? '重访百炼炉' : '前往当前任务'}</Button></div>
-  <details className="map-chapter-index"><summary>主线地点索引（键盘可用）</summary><ol>{chapterScenes.map(scene => <li key={scene.chapter}><button disabled={scene.chapter > next} onClick={() => dispatch({ type: 'enter', chapter: scene.chapter })}>第 {scene.chapter} 章 · {scene.title}</button><span>{earned.includes(scene.chapter) ? '已获印章' : scene.chapter === next ? '当前历练' : '迷雾覆盖'}</span></li>)}</ol></details>
- </section>;
+import {useState} from 'react';
+import {chapterScenes} from '@/content/scenarios/chapter-scenes';
+import {campaignChapters,numerals,lastCampaignChapter} from '@/content/minigames/campaign';
+import {earnedChapters,nextChapter,type WuxiaState,type WuxiaAction} from '@/core/game/wuxia';
+import {PlacedCharacter} from './character-placement';
+import {Act} from './campaign/shared';
+import {innRules} from '@/content/minigames/inn';
+import {SideQuest} from './campaign/sidequest';
+export function JianghuMap({state,dispatch}:{state:WuxiaState;dispatch:React.Dispatch<WuxiaAction>}){
+ const earned=earnedChapters(state),next=nextChapter(state),[selected,setSelected]=useState(next),[sidequestOpen,setSidequestOpen]=useState(false);const focus=chapterScenes[selected],target=chapterScenes[next];
+ const sidequestUnlocked=earned.length>=innRules.unlockChapters;
+ return <section className="campaign-map" aria-labelledby="jianghu-title"><header><div><small>山川为卷 · 循路求知</small><h1 id="jianghu-title">云溪谷</h1></div><p>已集 {earned.length} / {campaignChapters.length} 枚章印 · {state.wallet.copper} 文 · {state.wallet.silver} 两</p></header><div className="map-viewport"><div className="campaign-map-art"><div className="map-interior"><div className="map-landscape"/>{chapterScenes.map(scene=>{const locked=scene.chapter>next,completed=earned.includes(scene.chapter);return <div key={scene.chapter} className={`campaign-map-pin ${locked?'locked':completed?'complete':'available'} ${selected===scene.chapter?'selected':''}`} style={{left:`${scene.mapAnchor.x}%`,top:`${scene.mapAnchor.y}%`}}>{locked&&<span className="map-cloud" aria-hidden/>}<button aria-label={`第 ${scene.chapter} 章 ${scene.title}，${locked?'待解锁':completed?'已完成':'可进入'}`} aria-pressed={selected===scene.chapter} onClick={()=>setSelected(scene.chapter)} onDoubleClick={()=>!locked&&dispatch({type:'enter',chapter:scene.chapter})}><span className="map-scroll-sprite" style={{backgroundImage:`url(/assets/phase-c/nodes/chapter-${scene.chapter}.png)`,backgroundPosition:`${locked?0:completed?100:50}% 50%`}}/><span className="map-place-label">{scene.title}</span></button></div>;})}<div className="campaign-map-hero" style={{left:`${target.mapAnchor.x}%`,top:`${target.mapAnchor.y+6}%`}}><PlacedCharacter id={state.character!} pose="standing"/></div>{state.rewardFrom!==null&&state.rewardFrom<lastCampaignChapter&&<div key={state.rewardFrom} aria-hidden className="map-reveal-cloud" style={{left:`${target.mapAnchor.x-8}%`,top:`${target.mapAnchor.y-10}%`}}/>}<div className={`campaign-map-pin inn-map-pin ${sidequestUnlocked?'available':'locked'}`} style={{left:'84%',top:'78%'}}><button aria-label={`百戏客栈，${sidequestUnlocked?'可进入':'待解锁，可免费试桌'}`} onClick={()=>setSidequestOpen(true)}><span className="map-scroll-sprite inn-scroll" style={{backgroundImage:'url(/assets/phase-c/refined/inn-nodes.png)',backgroundPosition:sidequestUnlocked?'100% center':'0% center'}}/><span className="map-place-label">百戏客栈</span></button></div></div></div></div><div className="campaign-map-bottom"><div><strong>第{numerals[selected]}章 · {focus.title}</strong><p>{selected>next?`先完成第${numerals[selected-1]}章，取得通行凭证后道路显现。`:earned.includes(selected)?`${focus.returnMapReward.item} 已收进行囊；可重访练习新局面。`:'当前地点已经开放，带着上一章的线索前往。'}</p></div><SelectChapter value={selected} onChange={setSelected}/><Act disabled={selected>next} onClick={()=>dispatch({type:'enter',chapter:selected})}>{earned.includes(selected)?'重访此地':'前往此地'}</Act>{earned.length===campaignChapters.length&&<a className="campaign-action" href="#jianghu-ending">全线通关 · 留步饮茶</a>}</div>{sidequestOpen&&<SideQuest state={state} dispatch={dispatch} onClose={()=>setSidequestOpen(false)}/>}</section>;
 }
+function SelectChapter({value,onChange}:{value:number;onChange:(n:number)=>void}){return <label className="map-index-label">地点索引<select aria-label="主线地点索引" value={value} onChange={e=>onChange(Number(e.target.value))}>{chapterScenes.map(s=><option key={s.chapter} value={s.chapter}>第{numerals[s.chapter]}章 · {s.title}</option>)}</select></label>;}

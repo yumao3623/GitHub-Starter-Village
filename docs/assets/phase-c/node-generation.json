@@ -1,0 +1,80 @@
+[
+  {
+    "chapter": 0,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"零\" (chapter 0). This is essential: NOT 四, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-ae1acd79-98c5-496e-a2de-56ea81b1fd3d.png",
+    "file": "public/assets/phase-c/nodes/chapter-0.png"
+  },
+  {
+    "chapter": 1,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"一\" (chapter 1). This is essential: the exact \"一\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-cd196d15-47e2-45b2-bac4-7b71d4ab6a85.png",
+    "file": "public/assets/phase-c/nodes/chapter-1.png"
+  },
+  {
+    "chapter": 2,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"二\" (chapter 2). This is essential: the exact \"二\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-f89eacbb-30e2-4aad-9d3e-fdcf33b2a64e.png",
+    "file": "public/assets/phase-c/nodes/chapter-2.png"
+  },
+  {
+    "chapter": 3,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"三\" (chapter 3). This is essential: the exact \"三\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-735d69c6-6459-476d-ac87-9c644ab8511d.png",
+    "file": "public/assets/phase-c/nodes/chapter-3.png"
+  },
+  {
+    "chapter": 4,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"四\" (chapter 4). This is essential: the exact \"四\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-f84b8029-d977-4c77-a6d8-90a9f84d0507.png",
+    "file": "public/assets/phase-c/nodes/chapter-4.png"
+  },
+  {
+    "chapter": 5,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"五\" (chapter 5). This is essential: the exact \"五\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-5bbb07ce-d9f3-4fa2-af1c-9d082f7f2446.png",
+    "file": "public/assets/phase-c/nodes/chapter-5.png"
+  },
+  {
+    "chapter": 6,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"六\" (chapter 6). This is essential: the exact \"六\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-3626149b-3dde-438f-9e1a-d1092c16f80d.png",
+    "file": "public/assets/phase-c/nodes/chapter-6.png"
+  },
+  {
+    "chapter": 7,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"七\" (chapter 7). This is essential: the exact \"七\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-02f6a18a-672c-4114-bb0c-da5fcd766ab4.png",
+    "file": "public/assets/phase-c/nodes/chapter-7.png"
+  },
+  {
+    "chapter": 8,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"八\" (chapter 8). This is essential: the exact \"八\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-04cc4bee-d420-41ed-90be-f8fbceecf3af.png",
+    "file": "public/assets/phase-c/nodes/chapter-8.png"
+  },
+  {
+    "chapter": 9,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"九\" (chapter 9). This is essential: the exact \"九\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-63250988-cfaa-4a6b-a745-ea698f459db0.png",
+    "file": "public/assets/phase-c/nodes/chapter-9.png"
+  },
+  {
+    "chapter": 10,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"十\" (chapter 10). This is essential: the exact \"十\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-a2182cac-0e78-4abf-a71b-dae184e778fd.png",
+    "file": "public/assets/phase-c/nodes/chapter-10.png"
+  },
+  {
+    "chapter": 11,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"十一\" (chapter 11). This is essential: the exact \"十一\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-edcaa56b-b856-4b96-a87d-a36c7f459768.png",
+    "file": "public/assets/phase-c/nodes/chapter-11.png"
+  },
+  {
+    "chapter": 12,
+    "prompt": "Use case: historical-scene. Production game sprite strip 3:1 aspect ratio, exactly three equal square cells left-to-right. Each cell contains the SAME entire upright paper scroll map marker at the SAME scale, 12% padding, matching the attached reference: aged ivory paper, sage brocade, dark wood rollers, tarnished brass fittings, mineral ink mountains, fine hand-painted ink lines. TRUE TRANSPARENT background. Left: CLOSED brass padlock fastened to scroll; middle: OPEN padlock and loose green ribbon; right: NO padlock and small vermilion completion seal at upper right. In the center of ALL THREE scrolls print ONLY the exact large readable Chinese calligraphy numeral \"十二\" (chapter 12). This is essential: the exact \"十二\" on each scroll, no other numerals. No captions, no UI, no shadows outside object, no glow. Each full object contained in its own cell; no touching adjacent cells. Maintain the reference's paper textures and muted palette. Output sharp game-ready sprites.",
+    "source": "/Users/maoyu/.codex/generated_images/01a093dd-3ba5-7e81-b4dd-58b689f147a7/exec-824c2bd3-258f-461d-ad6f-2c77c9b2a783.png",
+    "file": "public/assets/phase-c/nodes/chapter-12.png"
+  }
+]
