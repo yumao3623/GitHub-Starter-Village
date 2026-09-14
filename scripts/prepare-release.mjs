@@ -53,8 +53,8 @@ check("worktree", dirty === false, "当前工作树仍有未提交变更；发�
 check("targets", config.targets.every((target) => target.public === false), "仍有目标平台标记为 public；在真实下载复核前必须保持关闭。", "所有目标平台公开开关均已关闭");
 let ghAuth = false;
 try {
-  execFileSync("gh", ["auth", "status"], { stdio: "pipe" });
-  ghAuth = true;
+  const authOutput = execFileSync("gh", ["auth", "status"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+  ghAuth = !/failed to log in|invalid token|not logged in/i.test(authOutput);
 } catch {
   ghAuth = false;
 }
