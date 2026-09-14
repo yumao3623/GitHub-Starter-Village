@@ -16,12 +16,12 @@
 - ✅ versionTag：标签与版本一致：v0.2.0
 - ✅ artifact：GitHubStarterVillage-0.2.0-darwin-arm64.zip
 - ✅ artifactVersion：版本一致：0.2.0
-- ⛔ source：候选产物由未提交工作树构建，不能作为可追溯公开 Release。
+- ✅ source：已通过
 - ⛔ signing：签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
 - ⛔ notarization：公证状态为 not-performed；需对同一最终产物完成公证并 staple。
 - ⛔ systemAcceptance：干净系统验收状态为 pending。
 - ✅ publishedFlag：产物仍标记为未发布
-- ⛔ worktree：当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。
+- ✅ worktree：已通过
 - ✅ targets：所有目标平台公开开关均已关闭
 - ⛔ githubAuth：当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
 
@@ -31,11 +31,9 @@
 
 ## 阻塞项
 
-- 候选产物由未提交工作树构建，不能作为可追溯公开 Release。
 - 签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
 - 公证状态为 not-performed；需对同一最终产物完成公证并 staple。
 - 干净系统验收状态为 pending。
-- 当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。
 - 当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
 
 机器可读证据：[PHASE_E_RELEASE_READINESS_2026-09-14.json](PHASE_E_RELEASE_READINESS_2026-09-14.json)
