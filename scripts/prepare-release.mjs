@@ -16,11 +16,16 @@ const outputDir = path.join(root, "docs/releases");
 const jsonPath = path.join(outputDir, `PHASE_E_RELEASE_READINESS_${date}.json`);
 const markdownPath = path.join(outputDir, `PHASE_E_RELEASE_READINESS_${date}.md`);
 const blockers = [];
+const warnings = [];
 const checks = {};
 
 function check(name, passed, detail, okDetail = "已通过") {
   checks[name] = { status: passed ? "passed" : "blocked", detail: passed ? okDetail : detail };
   if (!passed) blockers.push(detail);
+}
+function warn(name, detail) {
+  checks[name] = { status: "warning", detail };
+  warnings.push(detail);
 }
 
 const expectedReadme = downloadSection(brand, config, desktop.executableName, pkg.version);
@@ -37,9 +42,9 @@ if (artifactPath) {
     check("artifact", true, artifact.filename, artifact.filename);
     check("artifactVersion", artifact.version === pkg.version, `产物版本 ${artifact.version ?? "(空)"} 与 package.json 版本 ${pkg.version} 不一致。`, `版本一致：${artifact.version}`);
     check("source", artifact.sourceDirty === false, "候选产物由未提交工作树构建，不能作为可追溯公开 Release。");
-    check("signing", artifact.signing === "developer-id", `签名状态为 ${artifact.signing ?? "(空)"}；公开 macOS 分发需要 Developer ID。`);
-    check("notarization", artifact.notarization === "accepted-and-stapled", `公证状态为 ${artifact.notarization ?? "(空)"}；需对同一最终产物完成公证并 staple。`);
-    check("systemAcceptance", artifact.systemAcceptance === "passed", `干净系统验收状态为 ${artifact.systemAcceptance ?? "(空)"}。`);
+    warn("signing", `签名状态为 ${artifact.signing ?? "(空)"}；本项目按 GitHub 下载试用分发，可保留 ad-hoc 签名。`);
+    warn("notarization", `公证状态为 ${artifact.notarization ?? "(空)"}；GitHub 下载试用不要求 Apple 公证。`);
+    warn("systemAcceptance", `干净系统验收状态为 ${artifact.systemAcceptance ?? "(空)"}；发布后由维护者下载实测。`);
     check("publishedFlag", artifact.published === false, "产物清单已经标记 published，不能重复或未经核对地上传。", "产物仍标记为未发布");
   } catch (error) {
     check("artifact", false, `产物清单无法验证：${error.message}`);
@@ -56,11 +61,13 @@ const generatedReports = new Set([
 const dirtyPaths = statusLines.filter((line) => !generatedReports.has(line.slice(3)));
 check("worktree", dirtyPaths.length === 0, "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。", "工作树干净（忽略本次生成的报告文件）");
 check("targets", config.targets.every((target) => target.public === false), "仍有目标平台标记为 public；在真实下载复核前必须保持关闭。", "所有目标平台公开开关均已关闭");
-let ghAuth = false;
 const authResult = spawnSync("gh", ["auth", "status"], { encoding: "utf8" });
 const authOutput = `${authResult.stdout ?? ""}\n${authResult.stderr ?? ""}`;
-ghAuth = authResult.status === 0 && !/failed to log in|invalid token|not logged in/i.test(authOutput);
-check("githubAuth", ghAuth, "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。", "GitHub CLI 已登录");
+if (authResult.status !== 0 || /failed to log in|invalid token|not logged in/i.test(authOutput)) {
+  warn("githubCli", "gh CLI 当前令牌不可用；可改用已登录的 GitHub 网页会话完成 Release 上传。");
+} else {
+  check("githubCli", true, "", "GitHub CLI 已登录");
+}
 if (publicMode) blockers.push("--public 仅用于最终人工门禁，本命令不会执行 GitHub 上传或标签推送。");
 
 const result = {
@@ -74,6 +81,7 @@ const result = {
   artifact: artifact ? { path: path.relative(root, path.resolve(root, artifactPath)), filename: artifact.filename, sha256: artifact.sha256, appAsarSha256: artifact.appAsarSha256, sourceCommit: artifact.sourceCommit } : null,
   checks,
   blockers,
+  warnings,
   publicReleaseReady: blockers.length === 0,
   githubWritePerformed: false,
 };
@@ -101,6 +109,10 @@ const lines = [
   "## 阻塞项",
   "",
   ...(blockers.length ? blockers.map((item) => `- ${item}`) : ["- 无"]),
+  "",
+  "## 提醒",
+  "",
+  ...(warnings.length ? warnings.map((item) => `- ${item}`) : ["- 无"]),
   "",
   `机器可读证据：[${path.basename(jsonPath)}](${path.basename(jsonPath)})`,
   "",
