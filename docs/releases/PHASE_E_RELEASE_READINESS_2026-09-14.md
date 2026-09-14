@@ -23,7 +23,7 @@
 - ✅ publishedFlag：产物仍标记为未发布
 - ✅ worktree：已通过
 - ✅ targets：所有目标平台公开开关均已关闭
-- ⛔ githubAuth：当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
+- ✅ githubAuth：GitHub CLI 已登录
 
 ## 发布动作边界
 
@@ -34,6 +34,5 @@
 - 签名状态为 adhoc；公开 macOS 分发需要 Developer ID。
 - 公证状态为 not-performed；需对同一最终产物完成公证并 staple。
 - 干净系统验收状态为 pending。
-- 当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。
 
 机器可读证据：[PHASE_E_RELEASE_READINESS_2026-09-14.json](PHASE_E_RELEASE_READINESS_2026-09-14.json)

@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "phase": "E",
   "purpose": "local-release-preparation",
-  "generatedAt": "2026-09-14T14:31:46.447Z",
+  "generatedAt": "2026-09-14T14:36:06.044Z",
   "repository": "https://github.com/yumao3623/GitHub-Starter-Village",
   "releaseTag": "v0.2.0",
   "packageVersion": "0.2.0",
   "artifact": {
-    "path": "artifacts/desktop/darwin-arm64-1789396169249/artifact.json",
+    "path": "artifacts/desktop/darwin-arm64-1789396488571/artifact.json",
     "filename": "GitHubStarterVillage-0.2.0-darwin-arm64.zip",
-    "sha256": "64e4c218876c6a70d440ba8a356c6c9e010caf631a482b9b84123bd689eb788a",
-    "appAsarSha256": "3f6c255fb42475bb49492719808e21b3aa4064974cf98f4c5180a1443cf6a082",
-    "sourceCommit": "c8de85f3b29f67c6612ec99e0f2bba7c1776aba4"
+    "sha256": "1abc4cff01949beb273d6092d7e73db2e9de49ed73c44d69aa532c392dc3ed9c",
+    "appAsarSha256": "57fb91bb8b437260cf0d80a3d17ccf3a91a18af35bf03e2f99f828fdcfaa030d",
+    "sourceCommit": "c0c00aa0e521513abaf29a5db827659929148bac"
   },
   "checks": {
     "readme": {
@@ -67,15 +67,14 @@
       "detail": "所有目标平台公开开关均已关闭"
     },
     "githubAuth": {
-      "status": "blocked",
-      "detail": "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。"
+      "status": "passed",
+      "detail": "GitHub CLI 已登录"
     }
   },
   "blockers": [
     "签名状态为 adhoc；公开 macOS 分发需要 Developer ID。",
     "公证状态为 not-performed；需对同一最终产物完成公证并 staple。",
-    "干净系统验收状态为 pending。",
-    "当前 gh 登录不可用；发布前需由维护者在本机完成 GitHub CLI 身份验证。"
+    "干净系统验收状态为 pending。"
   ],
   "publicReleaseReady": false,
   "githubWritePerformed": false
