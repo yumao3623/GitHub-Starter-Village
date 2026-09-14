@@ -48,8 +48,13 @@ if (artifactPath) {
   check("artifact", false, "未提供 artifact.json；请先用同一源码运行 npm run desktop:build 与 npm run desktop:package。");
 }
 
-const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-check("worktree", dirty === false, "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。");
+const statusLines = execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim().split("\n").filter(Boolean);
+const generatedReports = new Set([
+  `docs/releases/PHASE_E_RELEASE_READINESS_${date}.json`,
+  `docs/releases/PHASE_E_RELEASE_READINESS_${date}.md`,
+]);
+const dirtyPaths = statusLines.filter((line) => !generatedReports.has(line.slice(3)));
+check("worktree", dirtyPaths.length === 0, "当前工作树仍有未提交变更；发布候选必须记录对应提交并由维护者审核。", "工作树干净（忽略本次生成的报告文件）");
 check("targets", config.targets.every((target) => target.public === false), "仍有目标平台标记为 public；在真实下载复核前必须保持关闭。", "所有目标平台公开开关均已关闭");
 let ghAuth = false;
 try {
